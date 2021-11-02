@@ -1,0 +1,28 @@
+{
+  "name": "geofencing",
+  "version": "1.0.0",
+  "description": "스마트 지오펜싱 재난정보 전달 플랫폼",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/limyoursun/geofencing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/limyoursun/geofencing/issues"
+  },
+  "homepage": "https://github.com/limyoursun/geofencing#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.4",
+    "gulp": "^4.0.2",
+    "gulp-file-include": "^2.3.0"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "jquery-ui": "^1.12.1"
+  }
+}
