@@ -43,3 +43,20 @@ $(function () {
     $(this).toggleClass('on');
     $(this).parent('p').nextAll('ul').slideToggle('fast');
   })
+})
+
+// main : slide & drag
+$('.btn_slide').on('click', function () {
+  $('.slide_con').toggleClass('close');
+})
+$( "#draggable" ).draggable();
+
+// main : weather
+$('.btn_weather').on('click', function () {
+  $(this).toggleClass('on');
+  $('.con_weather').fadeToggle();
+})
+$('.btn_weather_close').on('click', function () {
+  $('.btn_weather').toggleClass('on');
+  $('.con_weather').fadeToggle();
+})

@@ -1,53 +1,57 @@
-<!-- Header -->
 <header>
-  <div class="util">
-    <ul class="user_svc">
-      <li><b>관리자</b>님 반갑습니다.</li>
-      <li><button type="button">내정보</button></li>
-      <li><button type="button">로그아웃</button></li>
-      <li><button type="button">상황판 본부용</button></li>
-    </ul>
+  <div class="hd_top flex_wrap f_sb">
+    <h1 class="hd_logo">
+      <a href="./main.html">
+        <img src="../images/img_logo.png" alt="스마트 지오펜싱 재난정보 전달 플랫폼">
+      </a>
+    </h1>
+    <div class="util_wrap flex_wrap f_sb">
+      <div>
+        <span><a href="#" class="util user">내정보</a></span>
+        <span>관리자님 반갑습니다.</span>
+      </div>
+      <div class="flex_wrap f_sb">
+        <ul>
+          <li class="alert_wrap">
+            <a href="#" class="util alert">알림</a>
+            <span class="on">2</span>
+          </li>
+          <li><a href="#" class="util login">로그인&sol;로그아웃</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="system_wrap">
+      <span class="system">시스템</span>
+    </div>
   </div>
-  <nav>
-    <h1><a href="#"><img src="../images/img_logo.png" alt="우주전파센터 재난대응 시스템"></a></h1>
-    <ul id="gnb">
+  <nav class="gnb">
+    <ul>
       <li>
-        <a href="#" class="depth1 empty">센터용 상황판</a>
+        <a href="#">모니터링</a>
       </li>
       <li>
-        <a href="#" class="depth1 empty">모의훈련 상황판</a>
+        <a href="#">발령현황</a>
       </li>
       <li>
-        <a href="#" class="depth1 empty">본부용 상황판</a>
+        <a href="#">수동발령</a>
       </li>
       <li>
-        <a href="#" class="depth1 on active">재난 기준 관리</a>
-        <ul class="depth2">
-          <li><a href="#" class="on">실무&sol;표준 매뉴얼 관리</a></li>
-          <li><a href="#">행동 매뉴얼 관리</a></li>
-          <li><a href="#">상황판단회의 보고서 관리</a></li>
-          <li><a href="#">상황대응 보고서 관리</a></li>
-          <li><a href="#">국내 보도자료 관리</a></li>
-          <li><a href="#">해외 보도자료 관리</a></li>
+        <a href="#">발령이력</a>
+      </li>
+      <li class="on depth2_wrap">
+        <a href="#">통계</a>
+        <ul>
+          <li class="on"><a href="#">재난발생통계</a></li>
+          <li><a href="#">경보발령통계</a></li>
+          <li><a href="#">모바일 사용자통계</a></li>
         </ul>
       </li>
       <li>
-        <a href="#" class="depth1">상황 관리</a>
-        <ul class="depth2">
-          <li><a href="#">재난대응 시나리오 관리</a></li>
-          <li><a href="#">재난&sol;모의 이력관리</a></li>
-        </ul>
+        <a href="#">환경설정</a>
       </li>
       <li>
-        <a href="#" class="depth1">공통 관리</a>
-        <ul class="depth2">
-          <li><a href="#">내&sol;외부 주소록관리</a></li>
-          <li><a href="#">그룹 관리</a></li>
-          <li><a href="#">사용자관리</a></li>
-          <li><a href="#">코드 관리</a></li>
-        </ul>
+        <a href="#">시스템관리</a>
       </li>
     </ul>
   </nav>
 </header>
-<!-- // Header -->
