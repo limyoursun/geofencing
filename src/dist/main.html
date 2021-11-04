@@ -24,20 +24,18 @@
         <img src="../images/img_logo.png" alt="스마트 지오펜싱 재난정보 전달 플랫폼">
       </a>
     </h1>
-    <div class="util_wrap flex_wrap f_sb">
-      <div>
-        <span><a href="#" class="util user">내정보</a></span>
-        <span>관리자님 반갑습니다.</span>
-      </div>
-      <div class="flex_wrap f_sb">
-        <ul>
-          <li class="alert_wrap">
-            <a href="#" class="util alert">알림</a>
-            <span class="on">2</span>
-          </li>
-          <li><a href="#" class="util login">로그인&sol;로그아웃</a></li>
-        </ul>
-      </div>
+    <div class="util_wrap flex_wrap f_e">
+      <ul>
+        <li>
+          <span><a href="#" class="util user">내정보</a></span>
+          <span><b>관리자</b>님 반갑습니다.</span>
+        </li>
+        <li class="alert_wrap">
+          <a href="#" class="util alert">알림</a>
+          <span class="on">2</span>
+        </li>
+        <li><a href="#" class="util log">로그인&sol;로그아웃</a></li>
+      </ul>
     </div>
     <div class="system_wrap">
       <span class="system">시스템</span>
@@ -46,13 +44,13 @@
   <nav class="gnb">
     <ul>
       <li>
-        <a href="#">모니터링</a>
+        <a href="./main.html">모니터링</a>
       </li>
       <li>
-        <a href="#">발령현황</a>
+        <a href="./issue01.html">발령현황</a>
       </li>
       <li>
-        <a href="#">수동발령</a>
+        <a href="./issue02.html">수동발령</a>
       </li>
       <li>
         <a href="#">발령이력</a>
@@ -76,7 +74,7 @@
 </header>
     <!-- Contents -->
     <div class="con_wrap">
-      <div class="slide_con">
+      <div class="con_l">
         <div class="slide_tit flex_wrap f_sb">
           <h2>실시간 모니터링</h2>
           <i class="axi axi-info-outline">
@@ -103,7 +101,7 @@
           </div>
           <i class="axi axi-bell2"></i>
         </div>
-        <div class="slide_main">
+        <div class="slide_main monitoring">
           <ul class="monitoring_wrap">
             <li class="on">
               <a href="./main_02.html">
@@ -308,6 +306,18 @@
       </div>
       <div class="toast_alarm">
         <ul>
+          <li class="rain flex_wrap f_sb">
+            <div>
+              <img src="../images/ico_toast.png" alt="경고 아이콘">
+              <span>[<span>호우경보발표</span>] 재난정보 승인요청이 접수되었습니다.</span>
+            </div>
+            <div>
+              <span>12:34:56</span>
+              <button type="button">
+                <i class="axi axi-close"></i>
+              </button>
+            </div>
+          </li>
           <li class="fire flex_wrap f_sb">
             <div>
               <img src="../images/ico_toast.png" alt="경고 아이콘">

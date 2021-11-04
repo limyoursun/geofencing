@@ -38,7 +38,9 @@ $(function () {
   closePop.on('click', function () {
     $(this).parents('.pop_overlay').hide();
   })
-
+  $('.btn_cancel').on('click', function () {
+    $(this).parents('.pop_overlay').fadeOut();
+  })
   $('.con_list .more').on('click', function () {
     $(this).toggleClass('on');
     $(this).parent('p').nextAll('ul').slideToggle('fast');
@@ -47,7 +49,7 @@ $(function () {
 
 // main : slide & drag
 $('.btn_slide').on('click', function () {
-  $('.slide_con').toggleClass('close');
+  $('.con_l').toggleClass('close');
 })
 $("#draggable").draggable();
 

@@ -7,34 +7,11 @@
     <div class="con_wrap">
       <div class="con_l">
         <div class="slide_tit flex_wrap f_sb">
-          <h2>실시간 모니터링</h2>
-          <i class="axi axi-info-outline">
-            <div class="how_to_use">
-              <h3 class="font_blue font_b">스마트 지오펜싱 재난정보 전달시스템 사용법</h3>
-              <ul class="dot_list">
-                <li>실시간 모니터링 목록을 확인한다.(자동 새로고침 적용, 주기 30초)</li>
-                <li>승인요청(실제) 접수시 “승인 요청 알림(팝업)” 화면으로 알림을 확인한다.(훈련 및 테스트 제외)</li>
-                <li>알림화면에서 해당 “재난경보 승인 바로가기“ 버튼을 누르고 해당 재난경보 내용을 확인한다.</li>
-                <li>재난경보 내용을 확인/편집한 후 하단의 송출/반려 버튼을 누른다.(단, 반려시 반려사유 필수 입력)</li>
-                <li>재난경보 내용 편집시 하단의 수정요청 버튼을 누른다.</li>
-                <li>여러건의 재난경보 송출시 현재시각으로부터 5분이내 송출건이 있을 경우 알림을 제공한다.</li>
-              </ul>
-            </div>
-          </i>
+          <h2>발령현황</h2>
         </div>
-        <div class="live_wrap flex_wrap f_sb">
-          <div>
-            <span>2021.08.27</span>
-            <span>실시간 재난발생 현황</span>
-            <span class="font_blue font_b">승인요청</span>
-            <span class="font_blue font_b">2</span>
-            <span class="font_blue font_b">건</span>
-          </div>
-          <i class="axi axi-bell2"></i>
-        </div>
-        <div class="slide_sub monitoring">
+        <div class="slide_main">
           <div class="alignR">
-            <a href="./main.html"><button type="button" class="btn_s btn_grayline">목록보기</button></a>
+            <a href="./issue01.html"><button type="button" class="btn_s btn_grayline">목록보기</button></a>
           </div>
           <div class="disaster_type flex_wrap">
             <h3 class="heavy_rain">호우경보 발표</h3>
@@ -56,9 +33,9 @@
             </li>
             <li>
               <b>발령매체</b>
-              <ul>
+              <ul class="media_select">
                 <li>
-                  <input disabled checked type="checkbox" id="type1">
+                  <input checked type="checkbox" id="type1">
                   <label for="type1">지자체</label>
                 </li>
                 <li>
@@ -86,7 +63,6 @@
             </li>
           </ul>
           <img src="../images/img_main_02.png" alt="호우주의보 임시이미지">
-
           <ul class="monitoring_detail monitoring_text">
             <li>
               <div class="flex_wrap f_sb">
@@ -96,7 +72,6 @@
               <textarea disabled id="sms_templete" title="text_example"
                 onkeyup="fn_checkByte(this)">Lorem ipsum dolor sit amet, consectetur</textarea>
             </li>
-
             <script>
               function fn_checkByte(obj) {
                 const maxByte = 90; //최대 90바이트
@@ -134,7 +109,6 @@
               <textarea disabled id="sms_templete2" title="text_example2"
                 onkeyup="fn_checkByte2(this)">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat sem a consectetur eleifend.</textarea>
             </li>
-
             <script>
               function fn_checkByte2(obj) {
                 const maxByte = 180; //최대 90바이트
@@ -199,26 +173,24 @@
             </ul>
           </div>
           <img src="../images/bg_main_02.png" alt="임시 배경">
-
         </div>
       </div>
       @@include('inc/toast.html')
     </div>
     <!-- // Contents -->
   </div>
+  @@include('inc/p_issue01.html')
   @@include('inc/script.html')
-  @@include('inc/p_main03_1.html')
-  @@include('inc/p_main03_2.html')
 
   <script>
-    $(".btn_approval").on('click', function () {
-      $('.p_main03_1').parent('.pop_overlay').fadeIn();
+    $('.btn_detailsearch').on('click', function () {
+      $(this).toggleClass('on');
+      $(this).prev('.detailsearch_wrap').slideToggle();
     })
-    $(".btn_reject").on('click', function () {
-      $('.p_main03_2').parent('.pop_overlay').fadeIn();
+    $(".btn_reason").on('click', function () {
+      $('.p_issue01').parent('.pop_overlay').fadeIn();
     })
   </script>
-
 </body>
 
 </html>

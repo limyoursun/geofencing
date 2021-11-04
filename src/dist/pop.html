@@ -3,74 +3,231 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>우주전파센터 재난대응 시스템</title>
-  <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="../plugins/axicon/axicon.min.css" />
-  <link rel="stylesheet" href="../plugins/jquery-ui/themes/base/jquery-ui.min.css" />
-  <link rel="stylesheet" href="../plugins/jqueryui-timepicker-addon/dist/jquery-ui-timepicker-addon.min.css" />
-  <link rel="stylesheet" href="../plugins/jqGrid/css/ui.jqgrid.css" />
+  <title>스마트 지오펜싱 재난정보 전달 플랫폼</title>
+  <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.png">
+  <link rel="stylesheet" href="../plugins/axicon/axicon.min.css">
+  <link rel="stylesheet" href="../plugins/jquery-ui/themes/base/jquery-ui.min.css">
+  <link rel="stylesheet" href="../plugins/jqueryui-timepicker-addon/dist/jquery-ui-timepicker-addon.min.css">
+  <link rel="stylesheet" href="../plugins/jqGrid/css/ui.jqgrid.css">
   <link rel="stylesheet" href="../plugins/summernote/css/summernote-lite.css">
   <link rel="stylesheet" href="../css/common.css">
   <link rel="stylesheet" href="../css/sub.css">
   <link rel="stylesheet" href="../css/pop.css">
 </head>
+
 <body>
   <div id="wrap">
-    <!-- Header -->
-<header>
-  <div class="util">
-    <ul class="user_svc">
-      <li><b>관리자</b>님 반갑습니다.</li>
-      <li><button type="button">내정보</button></li>
-      <li><button type="button">로그아웃</button></li>
-      <li><button type="button">상황판 본부용</button></li>
-    </ul>
+    <header>
+  <div class="hd_top flex_wrap f_sb">
+    <h1 class="hd_logo">
+      <a href="./main.html">
+        <img src="../images/img_logo.png" alt="스마트 지오펜싱 재난정보 전달 플랫폼">
+      </a>
+    </h1>
+    <div class="util_wrap flex_wrap f_e">
+      <ul>
+        <li>
+          <span><a href="#" class="util user">내정보</a></span>
+          <span><b>관리자</b>님 반갑습니다.</span>
+        </li>
+        <li class="alert_wrap">
+          <a href="#" class="util alert">알림</a>
+          <span class="on">2</span>
+        </li>
+        <li><a href="#" class="util log">로그인&sol;로그아웃</a></li>
+      </ul>
+    </div>
+    <div class="system_wrap">
+      <span class="system">시스템</span>
+    </div>
   </div>
-  <nav>
-    <h1><a href="#"><img src="../images/img_logo.png" alt="우주전파센터 재난대응 시스템"></a></h1>
-    <ul id="gnb">
+  <nav class="gnb">
+    <ul>
       <li>
-        <a href="#" class="depth1 empty">센터용 상황판</a>
+        <a href="./main.html">모니터링</a>
       </li>
       <li>
-        <a href="#" class="depth1 empty">모의훈련 상황판</a>
+        <a href="./issue01.html">발령현황</a>
       </li>
       <li>
-        <a href="#" class="depth1 empty">본부용 상황판</a>
+        <a href="./issue02.html">수동발령</a>
       </li>
       <li>
-        <a href="#" class="depth1 on active">재난 기준 관리</a>
-        <ul class="depth2">
-          <li><a href="#" class="on">실무&sol;표준 매뉴얼 관리</a></li>
-          <li><a href="#">행동 매뉴얼 관리</a></li>
-          <li><a href="#">상황판단회의 보고서 관리</a></li>
-          <li><a href="#">상황대응 보고서 관리</a></li>
-          <li><a href="#">국내 보도자료 관리</a></li>
-          <li><a href="#">해외 보도자료 관리</a></li>
+        <a href="#">발령이력</a>
+      </li>
+      <li class="on depth2_wrap">
+        <a href="#">통계</a>
+        <ul>
+          <li class="on"><a href="#">재난발생통계</a></li>
+          <li><a href="#">경보발령통계</a></li>
+          <li><a href="#">모바일 사용자통계</a></li>
         </ul>
       </li>
       <li>
-        <a href="#" class="depth1">상황 관리</a>
-        <ul class="depth2">
-          <li><a href="#">재난대응 시나리오 관리</a></li>
-          <li><a href="#">재난&sol;모의 이력관리</a></li>
-        </ul>
+        <a href="#">환경설정</a>
       </li>
       <li>
-        <a href="#" class="depth1">공통 관리</a>
-        <ul class="depth2">
-          <li><a href="#">내&sol;외부 주소록관리</a></li>
-          <li><a href="#">그룹 관리</a></li>
-          <li><a href="#">사용자관리</a></li>
-          <li><a href="#">코드 관리</a></li>
-        </ul>
+        <a href="#">시스템관리</a>
       </li>
     </ul>
   </nav>
 </header>
-<!-- // Header -->
     <!-- Contents -->
-    
+    <div class="pop_overlay">
+  <div class="pop_wrap p_cmmn02_1_1">
+    <div class="pop_tit">
+      <h1>내정보</h1>
+      <button type="button" class="btn_pop_close" closePop></button>
+    </div>
+    <div class="pop_body">
+      <div class="pop_cont">
+        <table class="tbl_info">
+          <caption>내정보</caption>
+          <tr>
+            <th><label for="id">ID</label></th>
+            <td colspan="2" class="alignL">admin</td>
+          </tr>
+          <tr>
+            <th scope="row"><label for="pw">비밀번호</label></th>
+            <td><input type="password" id="pw" value="************" disabled></td>
+            <td><button type="button" class="btn btn_gray">변경</button></td>
+          </tr>
+          <tr>
+            <th><label for="name">이름</label></th>
+            <td colspan="2"><input type="text" id="name" value="홍길동" disabled></td>
+          </tr>
+          <tr>
+            <th><label for="division">소속기관</label></th>
+            <td colspan="2" class="alignL">경남도청</td>
+          </tr>
+          <tr>
+            <th><label for="team">부서 / 직급</label></th>
+            <td colspan="2">
+              <span class="flex_wrap f_sb input_50">
+                <input type="text" id="team" value="시설물유지" disabled> /
+                <input type="text" id="position" value="과장" disabled>
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <th rowspan="2"><label for="number">연락처</label></th>
+            <td colspan="2" class="number">
+              <input type="text" id="number" placeholder="부서전화" value="02-899-7894" disabled>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" class="phonenumber">
+              <input type="text" id="phonenumber" placeholder="휴대전화" value="010-1234-5678" disabled>
+            </td>
+          </tr>
+          <tr>
+            <th><label for="authority">권한</label></th>
+            <td colspan="2" class="alignL">사용자</td>
+          </tr>
+        </table>
+        <div class="btn_wrap alignR">
+          <button type="button" class="btn btn_blue">저장</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="pop_overlay">
+  <div class="pop_wrap p_cmmn02_1_2">
+    <div class="pop_tit">
+      <h1>내정보</h1>
+      <button type="button" class="btn_pop_close" closePop></button>
+    </div>
+    <div class="pop_body">
+      <div class="pop_cont">
+        <table class="tbl_info">
+          <caption>내정보</caption>
+          <tr>
+            <th><label for="id">ID</label></th>
+            <td colspan="2" class="alignL">admin</td>
+          </tr>
+          <tr>
+            <th scope="row"><label for="pw">비밀번호</label></th>
+            <td><input type="password" id="pw" value="************" disabled></td>
+            <td><button type="button" class="btn btn_gray">변경</button></td>
+          </tr>
+          <tr>
+            <th><label for="name">이름</label></th>
+            <td colspan="2"><input type="text" id="name"></td>
+          </tr>
+          <tr>
+            <th><label for="division">소속기관</label></th>
+            <td colspan="2" class="alignL">경남도청</td>
+          </tr>
+          <tr>
+            <th><label for="team">부서 / 직급</label></th>
+            <td colspan="2">
+              <span class="flex_wrap f_sb input_50">
+                <input type="text" id="team" placeholder="부서"> /
+                <input type="text" id="position" placeholder="직급">
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <th rowspan="2"><label for="number">연락처</label></th>
+            <td colspan="2" class="number">
+              <input type="text" id="number" placeholder="부서전화">
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" class="phonenumber">
+              <input type="text" id="phonenumber" placeholder="휴대전화">
+            </td>
+          </tr>
+          <tr>
+            <th><label for="authority">권한</label></th>
+            <td colspan="2">
+              <select name="authority" title="authority">
+                <option value="">권한선택</option>
+                <option value="">사용자</option>
+                <option value="">관리자</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+        <div class="btn_wrap alignR">
+          <button type="button" class="btn btn_blue">저장</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="pop_overlay">
+  <div class="pop_wrap p_cmmn02_1_3">
+    <div class="pop_tit">
+      <h1>비밀번호 변경</h1>
+      <button type="button" class="btn_pop_close" closePop></button>
+    </div>
+    <div class="pop_body">
+      <div class="pop_cont">
+        <table class="tbl_row">
+          <caption>비밀번호 변경</caption>
+          <tr>
+            <th scope="row"><label for="pwchange">현재 비밀번호</label></th>
+            <td><input type="password" id="pwchange"></td>
+          </tr>
+          <tr>
+            <th scope="row"><label for="newpw">새 비밀번호</label></th>
+            <td><input type="password" id="newpw"></td>
+          </tr>
+          <tr>
+            <th scope="row"><label for="newpwcheck">비밀번호 확인</label></th>
+            <td><input type="password" id="newpwcheck"></td>
+          </tr>
+        </table>
+        <div class="btn_wrap alignR">
+          <button type="button" class="btn btn_blue">저장</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
     <!-- // Contents -->
   </div>
   <script src="../plugins/jquery/dist/jquery.min.js"></script>
@@ -86,4 +243,5 @@
 <script src="../js/ui_common.js"></script>
 <script src="../js/file_attach.js"></script>
 </body>
+
 </html>

@@ -5,7 +5,7 @@
     @@include('inc/header.html')
     <!-- Contents -->
     <div class="con_wrap">
-      <div class="slide_con">
+      <div class="con_l">
         <div class="slide_tit flex_wrap f_sb">
           <h2>실시간 모니터링</h2>
           <i class="axi axi-info-outline">
@@ -32,7 +32,7 @@
           </div>
           <i class="axi axi-bell2"></i>
         </div>
-        <div class="slide_main">
+        <div class="slide_main monitoring">
           <ul class="monitoring_wrap">
             <li class="on">
               <a href="./main_02.html">
@@ -235,22 +235,7 @@
 
         </div>
       </div>
-      <div class="toast_alarm">
-        <ul>
-          <li class="fire flex_wrap f_sb">
-            <div>
-              <img src="../images/ico_toast.png" alt="경고 아이콘">
-              <span>[<span>호우경보발표</span>] 재난정보 승인요청이 접수되었습니다.</span>
-            </div>
-            <div>
-              <span>12:34:56</span>
-              <button type="button">
-                <i class="axi axi-close"></i>
-              </button>
-            </div>
-          </li>
-        </ul>
-      </div>
+      @@include('inc/toast.html')
     </div>
     <!-- // Contents -->
   </div>

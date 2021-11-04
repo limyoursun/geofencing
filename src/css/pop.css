@@ -1,93 +1,62 @@
 @charset "utf-8";
+
 /* pop common */
-.pop_overlay{position:fixed;z-index:8000;top:0;left:0;width:100%;height:100%;background-color: rgba(0, 0, 0, 0.3);}
-.pop_wrap{width:602px;position:fixed;top:50%;left:50%;background-color:#fff;transform:translateX(-50%) translateY(-50%);border:1px solid #284278;}
-
-.w_400{width: 400px !important;}
-.w_600{width: 600px !important;}
-.w_700{width: 700px !important;}
-.w_800{width: 800px !important;}
-.w_850{width: 850px !important;}
-.tbl_view.th_20 th{width:20% !important;}
-.tbl_view.th_20 td{width:80% !important;}
-.tbl_view.th_25 th{width:25% !important;}
-.tbl_view.th_25 td{width:25% !important;}
-
-.pop_wrap .paginate .pre, .pop_wrap .paginate .next, .pop_wrap .paginate .first, .pop_wrap .paginate .last, .pop_wrap .paginate a, .pop_wrap .paginate .on{min-width:30px;width:30px;height:30px;padding:3px;}
-.pop_wrap .paginate .pre, .pop_wrap .paginate .next, .pop_wrap .paginate .first, .pop_wrap .paginate .last{padding:6px;}
-.pop_wrap .btn_wrap{margin-top:20px;}
-.pop_body{max-height:750px;margin:1px;padding:35px 32px;overflow-y:auto;}
-.pop_tit{display:flex;justify-content:space-between;padding:17px 24px 16px 28px;background-color:#284278;}
-.pop_tit h1{font-size:20px;font-weight:bold;color:#fff;letter-spacing:-2px;}
-.btn_pop_close{position:relative;top:1px;width:18px;height:18px;}
+.pop_overlay{display:none;position:fixed;z-index:9998;top:0;left:0;width:100%;height:100%;background-color: rgba(0, 0, 0, 0.3);}
+.pop_wrap{width:410px;position:fixed;top:50%;left:50%;background-color:#fff;transform:translateX(-50%) translateY(-50%);}
+.pop_body{max-height:695px;margin:1px;padding:22px 20px 0;overflow-y:auto;}
+.pop_tit{display:flex;justify-content:space-between;padding:10px 15px;background-color:#073973;}
+.pop_tit h1{font-size:16px;font-weight:bold;color:#fff;}
+.btn_pop_close{position:relative;top:1px;width:17px;height:17px;}
 .btn_pop_close::before{content:'';display:block;width:100%;height:100%;background:url(../images/btn_pop_close.png);}
 .pop_wrap .search.f_sb{justify-content:space-between;}
+.pop_wrap .btn_wrap{padding:16px 0;}
 .pop_wrap .tbl_row th,
 .pop_wrap .tbl_row td{height:25px;padding:3px;border:1px solid #d7d7d7;}
 .pop_wrap table textarea{line-height:22px;}
 .tbl_info label{font-weight:600;}
 .tbl_info th,.tbl_info td{height:30px;padding:3px;background-color:transparent;border:1px solid transparent;text-align:left;}
-.pop_cont h2{margin-bottom:7px;font-size:17px;font-weight:bold;color:#284778;letter-spacing:-0.85px;}
-.p_center01 .pop_cont dt,.p_center01 .pop_cont dd{font-size:16px;line-height:26px;}
-.p_center01 .pop_cont dt{position:relative;font-weight:bold;color:#284278;}
-.p_center01 .pop_cont dl{padding-left:22px;}
-.dl_inline{display:inline-block;}
-dl>.dl_inline:first-child::before{display:none;}
-dl>.dl_inline:nth-child(2)::before{display:none;}
-dl>.dl_inline::before{content:',';margin-right:5px;}
-.pop_wrap .tbl_view th{padding:14px 19px 13px;line-height: 29px;}
-.pop_wrap .tbl_view td{padding:11px 10px 13px;}
-.pop_wrap .tbl_view input{padding-bottom:1px;}
-.pop_wrap .tbl_view input[type=text]{line-height:32px;height:32px;}
 
-.pop_wrap .tbl_view select{width:100%;}
-.pop_wrap .tbl_view input.datepicker{width:100px;margin-right:10px;}
+.pop_cont .tit{border-bottom:1px solid #005aab;margin-bottom:10px;padding-bottom:5px;}
+.pop_cont .tit h2{font-size:16px;font-weight:600;color:#005aab;}
+.pop_box{width:100%;height:100px;padding:10px 20px; background-color:#e7e7e4;}
+.pop_box i{align-self:center;font-size:30px;color:#073973;margin-right:20px;}
+.pop_box p{align-self:center;font-size:14px;line-height:23px;}
 
+/* 내정보(p_cmmn02-1) */
+.p_cmmn02_1_1 input[type = text]{padding:0;border:1px solid transparent;}
+.pop_wrap #pw{width:auto;padding-left:5px;color:#bbb;}
+.pop_wrap #number,
+.pop_wrap #phonenumber{padding-left:25px;}
+.pop_wrap .number,
+.pop_wrap .phonenumber{position:relative;}
+.pop_wrap .number::before,.pop_wrap .phonenumber::before{position:absolute;top:45%;font-size:16px;font-family:'axicon';transform:translateY(-50%);color:#777;}
+.pop_wrap .number::before,
+.pop_wrap .number::before{content:'\f095';left:10px;}
+.pop_wrap .phonenumber::before,
+.pop_wrap .phonenumber::before{content:'\e865';left:7px;}
+.pop_wrap table input[type = text],
+.pop_wrap table input[type = date],
+.pop_wrap table input[type = password],
+.pop_wrap table select,
+.pop_wrap table textarea{width:100%;}
+.input_50 input{max-width:45%;}
+.p_admin01_1 table th,
+.p_cmmn02_1_1 table th,
+.p_cmmn02_1_2 table th{width:30%;text-align:left;}
+.p_cmmn02_1_3 table th{width:30%;}
+.input_50{line-height:20px;}
+.p_admin02_1.pop_wrap th,
+.p_admin02_2.pop_wrap th{width:35%;}
+.p_admin02_1 .tbl_row .alignL,
+.p_admin02_2 .tbl_row .alignL{padding-left:8px;}
+.radio_check{padding-right:10px;}
+.group_ch{display:flex;align-items:center;justify-content:space-between;}
+.group_ch label{display:flex;align-items:center;width:27%;}
+.group_ch input{width:85%;margin-left:5px;}
+.p_acc03_2_1 textarea,
+.p_acc03_2_2 textarea{height:50px;}
 
-.td_select li{display:inline-block;width:19%;}
-.td_select input[type=radio]{display:inline-block;width:30%;}
-.td_select label{display:inline-block;width:20%;word-break:keep-all;}
-
-
-
-/* 파일 첨부 공통 */
-.where{color:#000;display:block;margin:25px 15px;}
-.filebox input[type="file"]{border:0;height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;}
-.filebox label{display:inline-block;vertical-align:middle;}
-.filebox .upload-name{background-color:#f5f5f5;border:1px solid #ebebeb;border-bottom-color:#e2e2e2;display:inline-block;line-height:33px;padding-left:10px;width:78%;}
-
-/* 업무 수행 여부 */
-.workwhether_wrap{display:flex;justify-content:space-between;}
-.workwhether_wrap>div:first-child{display:flex;justify-content:space-between;}
-.tbl_pop h3,
-.workwhether_wrap h3{margin-right:10px;font-size:16px;font-weight:bold;line-height:30px;color:#284778;}
-.workwhether_wrap ul,
-.workwhether_wrap li{display:inline-block;font-size:16px;line-height:30px;margin-right:5px;}
-.workwhether_wrap ul{margin-right:10px;}
-
-/* center(상황판 팝업 : 수정 예정) */
-.send_wrap select{width:100%;padding-left:13px;font-size:15px;height:34px;margin-bottom:2px;border:1px solid #cdcdcd;}
-.send_wrap textarea{width:100%;height:160px;padding:20px;font-size:14px;line-height:22px;}
-.send_wrap span{color:#3c7ed3;}
-.sms_templete{width:220px;}
-.sms_templete p:last-child{padding-right:10px;font-size:14px;color:#939393;}
-.send_wrap>div span,.sms_templete p:first-child, .send_group th{border:1px solid #697286;background-color:#697286;font-size:14px;color:#e1e5f0;text-align:center;letter-spacing:-1.05px;}
-.sms_templete p:first-child{height:29px;line-height:24px;}
-.send_group tbody{border-top:100px;}
-.tbl_pop{margin:15px 0 29px;padding:15px 0;border:2px solid #284278;border-right-width:0;border-left-width:0;}
-.send_wrap{margin:15px 0 29px;padding:24px 25px;border:2px solid #284278;border-right-width:0;border-left-width:0;}
-.send_wrap>div{margin-top:9px;}
-.send_wrap>div input{width:325px;height:30px;margin:0 -1px 0 -2px;vertical-align:top;}
-.send_wrap>div span{width:95px;height:30px;line-height:26px;vertical-align:top;}
-.send_group{position:relative;width:250px;}
-.send_wrap li> div{height:222px;border:1px solid #cdcdcd;}
-.send_group tbody::before{display:block;content:'';background-color:transparent;width:100%;height:8px;}
-.send_group th{height:25px;padding:4px 0 6px;}
-.send_group td:last-child{text-align:left;}
-.send_group label{font-size:14px;line-height:25px;}
-.send_group input[type = checkbox]{margin:0 10px;vertical-align:middle;}
-.send_group .btn_wrap{position:absolute;bottom:9px;left:8px;}
-.p_common02 .tbl_com td{padding:0;}
-.p_center01 .tbl_pop tbody{min-height:200px;}
-.p_center01 .tbl_view{border:none;border-width:0;}
-.p_center01 .tbl_view th{width:40%;text-align:left;}
+.text_sample{border:1px solid #e9e9e9;margin-top:10px;padding:20px;}
+.text_sample h3{font-size:16px;font-weight:bold;color:#073973;}
+.text_sample h3::before{display:inline-block;content:'';width:3px;height:13px;background-color:#073973;margin-right:5px;}
+.text_sample input[type = text]{width:80%;}
