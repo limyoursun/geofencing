@@ -49,7 +49,7 @@ $(function () {
 $('.btn_slide').on('click', function () {
   $('.slide_con').toggleClass('close');
 })
-$( "#draggable" ).draggable();
+$("#draggable").draggable();
 
 // main : weather
 $('.btn_weather').on('click', function () {
@@ -60,3 +60,11 @@ $('.btn_weather_close').on('click', function () {
   $('.btn_weather').toggleClass('on');
   $('.con_weather').fadeToggle();
 })
+
+// toast alert
+$('.toast_alarm li').find('button').on('click', function () {
+  console.log('didi');
+  $(this).parents('li').fadeToggle();
+})
+setTimeout(() => $('.toast_alarm').fadeIn('slow'), 500);
+setTimeout(() => $('.toast_alarm').fadeOut('slow'), 4500);
