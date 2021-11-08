@@ -27,6 +27,8 @@ $(function () {
       $("input[name='" + getName + "'].from").datepicker("option", "maxDate", selectedDate);
     }
   });
+  $('#datetimepicker').datetimepicker();
+
 
   // pop
   var popBtn = $('[openpop]');

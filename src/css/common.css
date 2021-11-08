@@ -21,6 +21,7 @@ input[type="text"],input[type="password"],textarea,select{height:27px;border:1px
 input[type=checkbox]{width:15px;height:14px;}
 select{min-width:50px;height:27px;padding-right:20px;background:url(../images/btn_select.png) right 5px center no-repeat, rgba(255,255,255,.9);;-webkit-appearance:none;-moz-appearance:none;appearance:none;}
 select::-ms-expand {display:none;}
+textarea{width:100%;min-height:50px;resize:none;}
 
 /* Common */
 .blind{position:absolute;left:-9999px;top:-9999px;width:0;height:0;font-size:0;overflow:hidden;line-height:0;text-indent:-9999px;}

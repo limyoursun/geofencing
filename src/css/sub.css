@@ -123,11 +123,14 @@ background-position-x:center;}
 .disaster_type .heavy_rain::before{background-position-y:0%;}
 .disaster_type .fire::before{background-position-y:38%;}
 .monitoring_detail{margin-top:10px;}
-.monitoring_detail li{font-size:13px;line-height:26px;}
+.monitoring_detail li{font-size:13px;line-height:30px;}
 .monitoring_detail>li>ul,
 .monitoring_detail>li>ul>li{display:inline-block;}
 .monitoring_detail b{color:#000;}
 .monitoring_detail b::after{content:':';font-weight:normal;margin:0 2px;}
+.media_select li{margin-left:5px;}
+.media_select input[type=checkbox],
+.media_select input[type=radio]{vertical-align:text-bottom;}
 
 .slide_tit i{position:relative;}
 .how_to_use{display:none;position:absolute;width:540px;padding:23px 15px;background-color:#fff;font-size:13px;border:1px solid #a0a7b4;box-shadow: 0.3px 4px 5px 0 rgba(0, 0, 0, 0.2);letter-spacing:-0.65px;}
@@ -147,7 +150,7 @@ background-position-x:center;}
 .weather_wrap i{font-size:22px;cursor:pointer;}
 .request_wrap .type_wrap li{vertical-align:text-top;}
 
-.con{overflow:hidden;}
+.con{width:100%;height:100%;overflow:hidden;}
 #draggable{position:relative;}
 .request_spot{position:absolute;padding:0 10px;border-radius:100px;line-height:47px;text-align:center;box-shadow: 0.3px 4px 5px 0 rgba(0, 0, 0, 0.2);}
 .request_spot::after{display:inline-block;content:'';}
@@ -177,13 +180,15 @@ background-position-x:center;}
 .monitoring_detail.monitoring_text textarea{display:block;width:100%;resize:none;line-height:23px;}
 .monitoring_text li{margin-bottom:20px;}
 .monitoring_text li:nth-of-type(2) textarea{height:75px;}
+.monitoring_text li:nth-of-type(3) textarea{height:150px;}
+.monitoring_detail .btn_wrap{margin-top:15px;}
 
-/* issue01 */
+/* issue */
 .detailsearch_wrap{display:none;}
 .tbl_top>button{align-self:flex-end;}
+.con_r .nonemain{position:absolute;top:56px;left:496px;}
+.datetimepicker_wrap{position:relative;}
+.datetimepicker_wrap::after{position:absolute;top:7px;right:5px;display:inline-block;content:'';width:20px;height:20px;background:url(../images/btn_calendar.png)no-repeat;}
 
 
-
-
-
-
+.con_l .slide_main.none_scroll{overflow-y:auto !important;}
