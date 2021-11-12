@@ -18,29 +18,30 @@
 
 <body>
   <div class="login_wrap">
-    <div class="login_box">
-      <h1 class="tit_login flex_wrap f_sb">
-        <img src="../images/img_logo_b.png" alt="경상남도 로고">
-      </h1>
-      <div class="login">
-        <h2>LOGIN</h2>
-        <div class="flex_wrap">
-          <ul>
-            <li>
-              <label for="login_id">ID</label>
-              <input type="text" id="login_id">
-            </li>
-            <li>
-              <label for="login_pw">Password</label>
-              <input type="password" id="login_pw">
-            </li>
-            <li class="login_check">
+    <div class="login">
+      <div class="login_tit">
+        <h1 class="tit_login flex_wrap f_sb">
+          <img src="../images/img_logo.png" alt="경상남도 로고">
+          <span>LOGIN</span>
+        </h1>
+      </div>
+      <div class="login_body">
+        <div class="login_input flex_wrap f_sb">
+          <div>
+            <span class="axi axi-user">
+              <input type="text" id="id" name="user" placeholder="사용자 아이디" title="사용자 아이디" value="" />
+            </span>
+            <span class="axi axi-lock3">
+              <input type="password" id="pwd" name="password" placeholder="비밀번호" title="비밀번호" value="" />
+            </span>
+            <div class="alignL login_check">
               <input type="checkbox" id="login_remember"><label for="login_remember">ID 기억하기</label>
-            </li>
-          </ul>
-          <button type="button" class="btn btn_blue">로그인</button>
+            </div>
+          </div>
+          <div>
+            <button type="submit" class="btn_login">로그인</button>
+          </div>
         </div>
-
       </div>
     </div>
   </div>

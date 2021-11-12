@@ -179,16 +179,16 @@
     </div>
     <!-- // Contents -->
   </div>
-  @@include('inc/p_issue01.html')
   @@include('inc/script.html')
+  @@include('inc/p_main03_1.html')
+  @@include('inc/p_main03_2.html')
 
   <script>
-    $('.btn_detailsearch').on('click', function () {
-      $(this).toggleClass('on');
-      $(this).prev('.detailsearch_wrap').slideToggle();
+    $(".btn_approval").on('click', function () {
+      $('.p_main03_1').parent('.pop_overlay').fadeIn();
     })
-    $(".btn_reason").on('click', function () {
-      $('.p_issue01').parent('.pop_overlay').fadeIn();
+    $(".btn_reject").on('click', function () {
+      $('.p_main03_2').parent('.pop_overlay').fadeIn();
     })
   </script>
 </body>

@@ -1,0 +1,264 @@
+@@include('inc/top.html')
+
+<body>
+  <div id="wrap">
+    @@include('inc/header.html')
+    <!-- Contents -->
+    <div class="con_wrap">
+      <div class="only_con_wrap">
+        <div class="con">
+          <div class="slide_tit flex_wrap f_sb">
+            <h2>시스템관리</h2>
+          </div>
+          <div class="tab box_tab">
+            <ul class="tab_list">
+              <li><a href="#tab01" class="on">사용자관리</a></li>
+              <li><a href="#tab02">코드관리</a></li>
+              <li><a href="#tab03">수신처관리</a></li>
+            </ul>
+          </div>
+          <div class="tab_conts stats">
+            <div id="tab01" class="tab_cont">
+              <div class="search_area">
+                <ul class="search f_s">
+                  <li>
+                    <select name="" id="">
+                      <option value="부서선택">부서선택</option>
+                    </select>
+                    <select title="검색조건">
+                      <option value="">검색조건</option>
+                    </select>
+                    <input type="text" id="location" placeholder="검색어">
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn_blue">검색</button>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="tbl_wrap">
+                <div class="btn_wrap alignR">
+                  <button type="button" class="btn btn_blue">추가</button>
+                  <button type="button" class="btn btn_gray">삭제</button>
+                </div>
+                <table class="tbl_default">
+                  <colgroup>
+                    <col width="80">
+                    <col width="250">
+                    <col width="*">
+                    <col width="250">
+                    <col width="250">
+                    <col width="250">
+                    <col width="250">
+                    <col width="250">
+                    <col class="fix_scroll">
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th scope="col">순번</th>
+                      <th scope="col">매체코드</th>
+                      <th scope="col">매체명</th>
+                      <th scope="col">기관명</th>
+                      <th scope="col">수신자 ID</th>
+                      <th scope="col">전송시각</th>
+                      <th scope="col">응답시각</th>
+                      <th scope="col">응답결과</th>
+                      <th>&nbsp;</th>
+                    </tr>
+                  </thead>
+                </table>
+                <div class="tbl_body_wrap tbl_scroll" style="height:595px;">
+                  <table class="tbl_default">
+                    <colgroup>
+                      <col width="80">
+                      <col width="250">
+                      <col width="*">
+                      <col width="250">
+                      <col width="250">
+                      <col width="250">
+                      <col width="250">
+                      <col width="250">
+                    </colgroup>
+                    <tbody>
+                      <tr class="on">
+                        <td>1</td>
+                        <td>I-C-MSP1.0</td>
+                        <td>디지털사이니지</td>
+                        <td></td>
+                        <td>Dg001</td>
+                        <td>2020-08-12 12:34:56</td>
+                        <td>2020-08-12 12:34:56</td>
+                        <td>성공</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Dg001</td>
+                        <td>2020-08-12 12:34:56</td>
+                        <td>-</td>
+                        <td>실패</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div id="tab02" class="tab_cont">
+            </div>
+
+
+
+
+            <div id="tab03" class="tab_cont">
+              <div class="search_area">
+                <ul class="search f_s">
+                  <li>
+                    <select name="" id="">
+                      <option value="기관유형">기관유형</option>
+                    </select>
+                    <select title="검색조건">
+                      <option value="">검색조건</option>
+                    </select>
+                    <input type="text" id="location" placeholder="검색어">
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn_blue">검색</button>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="tbl_wrap">
+                <div class="btn_wrap alignR">
+                  <button type="button" class="btn btn_blue">추가</button>
+                  <button type="button" class="btn btn_gray">삭제</button>
+                </div>
+                <table class="tbl_default">
+                  <colgroup>
+                    <col width="80">
+                    <col width="250">
+                    <col width="*">
+                    <col width="250">
+                    <col width="250">
+                    <col width="250">
+                    <col width="250">
+                    <col width="250">
+                    <col class="fix_scroll">
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th scope="col">순번</th>
+                      <th scope="col">매체코드</th>
+                      <th scope="col">매체명</th>
+                      <th scope="col">기관명</th>
+                      <th scope="col">수신자 ID</th>
+                      <th scope="col">전송시각</th>
+                      <th scope="col">응답시각</th>
+                      <th scope="col">응답결과</th>
+                      <th>&nbsp;</th>
+                    </tr>
+                  </thead>
+                </table>
+                <div class="tbl_body_wrap tbl_scroll" style="height:595px;">
+                  <table class="tbl_default">
+                    <colgroup>
+                      <col width="80">
+                      <col width="250">
+                      <col width="*">
+                      <col width="250">
+                      <col width="250">
+                      <col width="250">
+                      <col width="250">
+                      <col width="250">
+                    </colgroup>
+                    <tbody>
+                      <tr class="on">
+                        <td>1</td>
+                        <td>I-C-MSP1.0</td>
+                        <td>디지털사이니지</td>
+                        <td></td>
+                        <td>Dg001</td>
+                        <td>2020-08-12 12:34:56</td>
+                        <td>2020-08-12 12:34:56</td>
+                        <td>성공</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Dg001</td>
+                        <td>2020-08-12 12:34:56</td>
+                        <td>-</td>
+                        <td>실패</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        @@include('inc/toast.html')
+      </div>
+    </div>
+    <!-- // Contents -->
+  </div>
+  @@include('inc/p_issue01.html')
+  @@include('inc/script.html')
+
+  <script>
+    $('.btn_detailsearch').on('click', function () {
+      $(this).toggleClass('on');
+      $(this).prev('.detailsearch_wrap').slideToggle();
+    })
+    $(".btn_reason").on('click', function () {
+      $('.p_issue01').parent('.pop_overlay').fadeIn();
+    })
+  </script>
+
+</body>
+
+</html>

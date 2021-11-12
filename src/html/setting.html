@@ -1,0 +1,535 @@
+@@include('inc/top.html')
+
+<body>
+  <div id="wrap">
+    @@include('inc/header.html')
+    <!-- Contents -->
+    <div class="con_wrap">
+      <div class="only_con_wrap">
+        <div class="con">
+          <div class="slide_tit flex_wrap f_sb">
+            <h2>환경설정</h2>
+          </div>
+          <div class="tab box_tab">
+            <ul class="tab_list">
+              <li><a href="#tab01" class="on">표준문안관리</a></li>
+              <li><a href="#tab02">규약어관리</a></li>
+              <li><a href="#tab03">지역그룹관리</a></li>
+            </ul>
+          </div>
+          <div class="tab_conts">
+            <div id="tab01" class="tab_cont">
+              <div class="standard_wrap flex_wrap f_sb">
+                <div>
+                  <div>
+                    <div class="search_area">
+                      <ul class="search f_s">
+                        <li>
+                          <select name="재난유형1">
+                            <option value="전체">전체</option>
+                            <option selected value="자연재난">자연재난</option>
+                            <option value="사회재난">사회재난</option>
+                          </select>
+                          <select name="재난유형2">
+                            <option value="전체">전체</option>
+                            <option selected value="호우">호우</option>
+                            <option value="산사태">산사태</option>
+                            <option value="황사">황사</option>
+                            <option value="화재">화재</option>
+                          </select>
+                          <button type="button" class="btn btn_blue">검색</button>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="tbl_wrap">
+                      <div class="tbl_top flex_wrap f_sb">
+                        <p>검색결과 : 총 <b class="font_blue">4</b>건</p>
+                        <button type="button" class="btn btn_skyblue">추가
+                        </button>
+                      </div>
+                      <table class="tbl_default">
+                        <colgroup>
+                          <col width="180">
+                          <col width="180">
+                          <col width="180">
+                          <col width="250">
+                          <col width="180">
+                          <col width="180">
+                          <col width="180">
+                          <col class="fix_scroll">
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th scope="col">재난유형</th>
+                            <th scope="col">재난명</th>
+                            <th scope="col">재난등급</th>
+                            <th scope="col">발령매체</th>
+                            <th scope="col">자동발송</th>
+                            <th scope="col">사용여부</th>
+                            <th scope="col">수정</th>
+                            <th>&nbsp;</th>
+                          </tr>
+                        </thead>
+                      </table>
+                      <div class="tbl_body_wrap tbl_scroll" style="height:128px;">
+                        <table class="tbl_default">
+                          <colgroup>
+                            <col width="180">
+                            <col width="180">
+                            <col width="180">
+                            <col width="250">
+                            <col width="180">
+                            <col width="180">
+                            <col width="180">
+                          </colgroup>
+                          <tbody>
+                            <tr>
+                              <td>자연재난</td>
+                              <td>호우</td>
+                              <td>경보</td>
+                              <td>지자체/민간/유관기관</td>
+                              <td>자동 전송</td>
+                              <td>Y</td>
+                              <td>
+                                <button class="btn">수정</button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>자연재난</td>
+                              <td>호우</td>
+                              <td>경보</td>
+                              <td>지자체/민간/유관기관</td>
+                              <td>자동 전송</td>
+                              <td>Y</td>
+                              <td>
+                                <button class="btn">수정</button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>자연재난</td>
+                              <td>호우</td>
+                              <td>경보</td>
+                              <td>지자체/민간/유관기관</td>
+                              <td>자동 전송</td>
+                              <td>Y</td>
+                              <td>
+                                <button class="btn">수정</button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>자연재난</td>
+                              <td>호우</td>
+                              <td>경보</td>
+                              <td>지자체/민간/유관기관</td>
+                              <td>자동 전송</td>
+                              <td>Y</td>
+                              <td>
+                                <button class="btn">수정</button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ico_arrow">
+                    <i class="axi axi-arrow-drop-down"></i>
+                  </div>
+                  <div class="standard_detail">
+                    <ul class="dot_list monitoring_detail">
+                      <li>
+                        <b>사용여부</b>
+                      <span datavalue="on" class="btn_toggle"></span>
+                      </li>
+                      <li>
+                        <b>자동발송</b>
+                      <span datavalue="off" class="btn_toggle"></span>
+                      </li>
+                      <li>
+                        <b>재난유형</b>
+                        <span>
+                          <ul class="breadcrumb">
+                            <li>자연재난</li>
+                            <li>호우</li>
+                            <li>경보</li>
+                            <li>발표</li>
+                          </ul>
+                        </span>
+                      </li>
+                      <li>
+                        <b>발령매체</b>
+                        <ul>
+                          <li>
+                            <input checked type="checkbox" id="type1">
+                            <label for="type1">지자체</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="type2">
+                            <label for="type2">민간</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="type3">
+                            <label for="type3">유관기관</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="type4">
+                            <label for="type4">모바일</label>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <ul class="monitoring_detail monitoring_text">
+                      <li>
+                        <div class="flex_wrap f_sb">
+                          <b>발령문안(전광판)</b>
+                          <p class="alignR"><span id="nowByte1">39</span>/80 bytes</p>
+                        </div>
+                        <textarea id="sms_templete1" title="text_example"
+                          onkeyup="fn_checkByte1(this)">Lorem ipsum dolor sit amet, consectetur</textarea>
+                      </li>
+                      <script>
+                        function fn_checkByte1(obj) {
+                          const maxByte = 80; //최대 90바이트
+                          const text_val = obj.value; //입력한 문자
+                          const text_len = text_val.length; //입력한 문자수
+
+                          let totalByte = 0;
+                          for (let i = 0; i < text_len; i++) {
+                            const each_char = text_val.charAt(i);
+                            const uni_char = escape(each_char) //유니코드 형식으로 변환
+                            if (uni_char.length > 4) {
+                              // 한글 : 2Byte
+                              totalByte += 2;
+                            } else {
+                              // 영문,숫자,특수문자 : 1Byte
+                              totalByte += 1;
+                            }
+                          }
+                          if (totalByte > maxByte) {
+                            alert('최대 90Byte까지만 입력가능합니다.');
+                            document.getElementById("nowByte1").innerText = totalByte;
+                            document.getElementById("nowByte1").style.color = "red";
+                          } else {
+                            document.getElementById("nowByte1").innerText = totalByte;
+                            document.getElementById("nowByte1").style.color = "#3c7ed3";
+                          }
+                        }
+                      </script>
+
+                      <li>
+                        <div class="flex_wrap f_sb">
+                          <b>발령문안(버스정보)</b>
+                          <p class="alignR"><span id="nowByte2">39</span>/180 bytes</p>
+                        </div>
+                        <textarea id="sms_templete2" title="text_example"
+                          onkeyup="fn_checkByte2(this)">Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur</textarea>
+                      </li>
+                      <script>
+                        function fn_checkByte2(obj) {
+                          const maxByte = 180; //최대 90바이트
+                          const text_val = obj.value; //입력한 문자
+                          const text_len = text_val.length; //입력한 문자수
+
+                          let totalByte = 0;
+                          for (let i = 0; i < text_len; i++) {
+                            const each_char = text_val.charAt(i);
+                            const uni_char = escape(each_char) //유니코드 형식으로 변환
+                            if (uni_char.length > 4) {
+                              // 한글 : 2Byte
+                              totalByte += 2;
+                            } else {
+                              // 영문,숫자,특수문자 : 1Byte
+                              totalByte += 1;
+                            }
+                          }
+                          if (totalByte > maxByte) {
+                            alert('최대 90Byte까지만 입력가능합니다.');
+                            document.getElementById("nowByte2").innerText = totalByte;
+                            document.getElementById("nowByte2").style.color = "red";
+                          } else {
+                            document.getElementById("nowByte2").innerText = totalByte;
+                            document.getElementById("nowByte2").style.color = "#3c7ed3";
+                          }
+                        }
+                      </script>
+
+                      <li>
+                        <div class="flex_wrap f_sb">
+                          <b>발령문안(모바일)</b>
+                          <p class="alignR"><span id="nowByte3">102</span>/315 bytes</p>
+                        </div>
+                        <textarea id="sms_templete3" title="text_example2"
+                          onkeyup="fn_checkByte3(this)">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat sem a consectetur eleifend.</textarea>
+                      </li>
+                      <script>
+                        function fn_checkByte3(obj) {
+                          const maxByte = 315; //최대 90바이트
+                          const text_val = obj.value; //입력한 문자
+                          const text_len = text_val.length; //입력한 문자수
+
+                          let totalByte = 0;
+                          for (let i = 0; i < text_len; i++) {
+                            const each_char = text_val.charAt(i);
+                            const uni_char = escape(each_char) //유니코드 형식으로 변환
+                            if (uni_char.length > 4) {
+                              // 한글 : 2Byte
+                              totalByte += 2;
+                            } else {
+                              // 영문,숫자,특수문자 : 1Byte
+                              totalByte += 1;
+                            }
+                          }
+                          if (totalByte > maxByte) {
+                            alert('최대 180Byte까지만 입력가능합니다.');
+                            document.getElementById("nowByte3").innerText = totalByte;
+                            document.getElementById("nowByte3").style.color = "red";
+                          } else {
+                            document.getElementById("nowByte3").innerText = totalByte;
+                            document.getElementById("nowByte3").style.color = "#3c7ed3";
+                          }
+                        }
+                      </script>
+                    </ul>
+
+                    <div class="btn_wrap alignC">
+                      <button type="button" class="btn btn_blue">저장</button>
+                      <button type="button" class="btn btn_gray">취소</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="tbl_wrap">
+                  <h2>규약어</h2>
+                  <div class="search_area">
+                    <ul class="search f_s">
+                      <li>
+                        <input type="text" name="search" placeholder="검색어를 입력하세요">
+                        <button type="button" class="btn btn_blue">검색</button>
+                      </li>
+                    </ul>
+                  </div>
+                  <table class="tbl_default">
+                    <colgroup>
+                      <col width="*">
+                      <col width="150">
+                      <col width="150">
+                      <col class="fix_scroll">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th scope="col">소계</th>
+                        <th scope="col">지자체</th>
+                        <th scope="col">민간</th>
+                      </tr>
+                    </thead>
+                  </table>
+                  <div class="tbl_body_wrap tbl_scroll" style="height:668px;">
+                    <table class="tbl_default">
+                      <colgroup>
+                        <col width="*">
+                        <col width="150">
+                        <col width="150">
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                        </tr>
+                        <tr>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                        </tr>
+                        <tr>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                        </tr>
+                        <tr>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                        </tr>
+                        <tr>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                        </tr>
+                        <tr>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                        </tr>
+                        <tr>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                        </tr>
+                        <tr>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                        </tr>
+                        <tr>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                        </tr>
+                        <tr>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                        </tr>
+                        <tr>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                        </tr>
+                        <tr>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                        </tr>
+                        <tr>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                        </tr>
+                        <tr>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                        </tr>
+                        <tr>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                        </tr>
+                        <tr>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="tab02" class="tab_cont">
+              <div class="search_area">
+                <ul class="search f_s">
+                  <li>
+                    <select name="" id="">
+                      <option value="전체">전체</option>
+                    </select>
+                  </li>
+                  <li>
+                    <select name="" id="">
+                      <option value="전체">전체</option>
+                    </select>
+                  </li>
+                  <li>
+                    <span class="period period_multi">
+                      <input type="text" class="datepicker from" name="date" placeholder="YYYY-MM-DD" readonly
+                        dataformat="from" title="시작 날짜 선택">
+                      <input type="text" class="datepicker to" name="date" placeholder="YYYY-MM-DD" readonly
+                        dataformat="to" title="종료  날짜 선택">
+                    </span>
+                  </li>
+                  <li>
+                    <select title="전체">
+                      <option value="">전체</option>
+                    </select>
+                    <input type="text" id="location" placeholder="검색어">
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn_blue">검색</button>
+                  </li>
+                </ul>
+              </div>
+              <div style="height:300px;">
+                <h2>최근 30일 재난발생 추이</h2>
+                <div id="chart2" style="width:100%;height:100%"></div>
+              </div>
+              <div class="flex_wrap f_sb">
+                <div style="width:48%;height:250px;">
+                  <h2>연도별 재난발생 추이</h2>
+                  <div id="chart3" style="width:100%;height:100%"></div>
+                </div>
+                <div style="width:48%;height:250px;">
+                  <h2>월별 재난발생 추이</h2>
+                  <div id="chart4" style="width:100%;height:100%"></div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+            <div id="tab03" class="tab_cont">
+              <div class="search_area">
+                <ul class="search f_s">
+                  <li>
+                    <select name="" id="">
+                      <option value="전체">전체</option>
+                    </select>
+                  </li>
+                  <li>
+                    <select name="" id="">
+                      <option value="전체">전체</option>
+                    </select>
+                  </li>
+                  <li>
+                    <span class="period period_multi">
+                      <input type="text" class="datepicker from" name="date" placeholder="YYYY-MM-DD" readonly
+                        dataformat="from" title="시작 날짜 선택">
+                      <input type="text" class="datepicker to" name="date" placeholder="YYYY-MM-DD" readonly
+                        dataformat="to" title="종료  날짜 선택">
+                    </span>
+                  </li>
+                  <li>
+                    <select title="전체">
+                      <option value="">전체</option>
+                    </select>
+                    <input type="text" id="location" placeholder="검색어">
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn_blue">검색</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="flex_wrap f_sb">
+                <div style="width:40%;height:660px;">
+                  <h2>시도별 재난발생 통계</h2>
+                  <div id="chart5" style="width:100%;height:100%"></div>
+                </div>
+                <div style="width:60%;height:660px;">
+                  <h2>시군구별 재난발생 통계</h2>
+                  <div id="chart6" style="width:100%;height:100%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        @@include('inc/toast.html')
+      </div>
+    </div>
+    <!-- // Contents -->
+  </div>
+  @@include('inc/p_issue01.html')
+  @@include('inc/script.html')
+
+  <script>
+    $('.btn_detailsearch').on('click', function () {
+      $(this).toggleClass('on');
+      $(this).prev('.detailsearch_wrap').slideToggle();
+    })
+    $(".btn_reason").on('click', function () {
+      $('.p_issue01').parent('.pop_overlay').fadeIn();
+    })
+  </script>
+</body>
+
+</html>

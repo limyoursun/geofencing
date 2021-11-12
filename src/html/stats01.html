@@ -1,0 +1,719 @@
+@@include('inc/top.html')
+
+<body>
+  <div id="wrap">
+    @@include('inc/header.html')
+    <!-- Contents -->
+    <div class="con_wrap">
+      <div class="only_con_wrap">
+        <div class="con">
+          <div class="slide_tit flex_wrap f_sb">
+            <h2>재난발생통계</h2>
+          </div>
+          <div class="tab box_tab">
+            <ul class="tab_list">
+              <li><a href="#tab01" class="on">재난별</a></li>
+              <li><a href="#tab02">기간별</a></li>
+              <li><a href="#tab03">지역별</a></li>
+            </ul>
+          </div>
+          <div class="tab_conts stats">
+            <div id="tab01" class="tab_cont">
+              <div class="search_area">
+                <ul class="search f_s">
+                  <li>
+                    <select name="" id="">
+                      <option value="전체">전체</option>
+                    </select>
+                  </li>
+                  <li>
+                    <select name="" id="">
+                      <option value="전체">전체</option>
+                    </select>
+                  </li>
+                  <li>
+                    <span class="period period_multi">
+                      <input type="text" class="datepicker from" name="date" placeholder="YYYY-MM-DD" readonly
+                        dataformat="from" title="시작 날짜 선택">
+                      <input type="text" class="datepicker to" name="date" placeholder="YYYY-MM-DD" readonly
+                        dataformat="to" title="종료  날짜 선택">
+                    </span>
+                  </li>
+                  <li>
+                    <select title="전체">
+                      <option value="">전체</option>
+                    </select>
+                    <input type="text" id="location" placeholder="검색어">
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn_blue">검색</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="flex_wrap f_sb">
+                <div style="width:40%;height:660px;">
+                  <h2>재난별 재난발생 통계</h2>
+                  <div id="chart1" style="width:100%;height:100%"></div>
+                </div>
+                <div class="tbl_wrap">
+                  <table class="tbl_default">
+                    <colgroup>
+                      <col width="*">
+                      <col width="150">
+                      <col width="150">
+                      <col width="150">
+                      <col width="150">
+                      <col width="150">
+                      <col class="fix_scroll">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th scope="col" rowspan="2">재난구분</th>
+                        <th scope="col" rowspan="2">재난명</th>
+                        <th scope="col" colspan="4">발생건수</th>
+                      </tr>
+                      <tr>
+                        <th scope="col">소계</th>
+                        <th scope="col">지자체</th>
+                        <th scope="col">민간</th>
+                        <th scope="col">모바일</th>
+                      </tr>
+                    </thead>
+                  </table>
+                  <div class="tbl_body_wrap tbl_scroll" style="height:590px;">
+                    <table class="tbl_default">
+                      <colgroup>
+                        <col width="*">
+                        <col width="150">
+                        <col width="150">
+                        <col width="150">
+                        <col width="150">
+                        <col width="150">
+                        <col width="150">
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td>전체</td>
+                          <td>합계</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                        </tr>
+                        <tr>
+                          <td>자연재난</td>
+                          <td>호우</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                        </tr>
+                        <tr>
+                          <td>사회재난</td>
+                          <td>화재</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                        </tr>
+                        <tr>
+                          <td>자연재난</td>
+                          <td>산사태</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                        </tr>
+                        <tr>
+                          <td>자연재난</td>
+                          <td>산사태</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                        </tr>
+                        <tr>
+                          <td>자연재난</td>
+                          <td>산사태</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                        </tr>
+                        <tr>
+                          <td>자연재난</td>
+                          <td>산사태</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                        </tr>
+                        <tr>
+                          <td>자연재난</td>
+                          <td>산사태</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                        </tr>
+                        <tr>
+                          <td>자연재난</td>
+                          <td>산사태</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                        </tr>
+                        <tr>
+                          <td>자연재난</td>
+                          <td>산사태</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                        </tr>
+                        <tr>
+                          <td>자연재난</td>
+                          <td>산사태</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                        </tr>
+                        <tr>
+                          <td>자연재난</td>
+                          <td>산사태</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                        </tr>
+                        <tr>
+                          <td>자연재난</td>
+                          <td>산사태</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                        </tr>
+                        <tr>
+                          <td>자연재난</td>
+                          <td>산사태</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                        </tr>
+                        <tr>
+                          <td>자연재난</td>
+                          <td>산사태</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                        </tr>
+                        <tr>
+                          <td>자연재난</td>
+                          <td>산사태</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                        </tr>
+                        <tr>
+                          <td>자연재난</td>
+                          <td>산사태</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="tab02" class="tab_cont">
+              <div class="search_area">
+                <ul class="search f_s">
+                  <li>
+                    <select name="" id="">
+                      <option value="전체">전체</option>
+                    </select>
+                  </li>
+                  <li>
+                    <select name="" id="">
+                      <option value="전체">전체</option>
+                    </select>
+                  </li>
+                  <li>
+                    <span class="period period_multi">
+                      <input type="text" class="datepicker from" name="date" placeholder="YYYY-MM-DD" readonly
+                        dataformat="from" title="시작 날짜 선택">
+                      <input type="text" class="datepicker to" name="date" placeholder="YYYY-MM-DD" readonly
+                        dataformat="to" title="종료  날짜 선택">
+                    </span>
+                  </li>
+                  <li>
+                    <select title="전체">
+                      <option value="">전체</option>
+                    </select>
+                    <input type="text" id="location" placeholder="검색어">
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn_blue">검색</button>
+                  </li>
+                </ul>
+              </div>
+              <div style="height:300px;">
+                <h2>최근 30일 재난발생 추이</h2>
+                <div id="chart2" style="width:100%;height:100%"></div>
+              </div>
+              <div class="flex_wrap f_sb">
+                <div style="width:48%;height:250px;">
+                  <h2>연도별 재난발생 추이</h2>
+                  <div id="chart3" style="width:100%;height:100%"></div>
+                </div>
+                <div style="width:48%;height:250px;">
+                  <h2>월별 재난발생 추이</h2>
+                  <div id="chart4" style="width:100%;height:100%"></div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+            <div id="tab03" class="tab_cont">
+              <div class="search_area">
+                <ul class="search f_s">
+                  <li>
+                    <select name="" id="">
+                      <option value="전체">전체</option>
+                    </select>
+                  </li>
+                  <li>
+                    <select name="" id="">
+                      <option value="전체">전체</option>
+                    </select>
+                  </li>
+                  <li>
+                    <span class="period period_multi">
+                      <input type="text" class="datepicker from" name="date" placeholder="YYYY-MM-DD" readonly
+                        dataformat="from" title="시작 날짜 선택">
+                      <input type="text" class="datepicker to" name="date" placeholder="YYYY-MM-DD" readonly
+                        dataformat="to" title="종료  날짜 선택">
+                    </span>
+                  </li>
+                  <li>
+                    <select title="전체">
+                      <option value="">전체</option>
+                    </select>
+                    <input type="text" id="location" placeholder="검색어">
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn_blue">검색</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="flex_wrap f_sb">
+                <div style="width:40%;height:660px;">
+                  <h2>시도별 재난발생 통계</h2>
+                  <div id="chart5" style="width:100%;height:100%"></div>
+                </div>
+                <div style="width:60%;height:660px;">
+                  <div class="flex_wrap">
+                    <h2>시군구별 재난발생 통계</h2>
+                    <select name="statement">
+                      <option value="서울특별시">서울특별시</option>
+                    </select>
+                  </div>
+                  <div id="chart6" style="width:100%;height:100%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        @@include('inc/toast.html')
+      </div>
+    </div>
+    <!-- // Contents -->
+  </div>
+  @@include('inc/p_issue01.html')
+  @@include('inc/script.html')
+
+  <script>
+    $('.btn_detailsearch').on('click', function () {
+      $(this).toggleClass('on');
+      $(this).prev('.detailsearch_wrap').slideToggle();
+    })
+    $(".btn_reason").on('click', function () {
+      $('.p_issue01').parent('.pop_overlay').fadeIn();
+    })
+  </script>
+
+  <script type="text/javascript">
+    var dom = document.getElementById("chart1");
+    var myChart = echarts.init(dom);
+    var app = {};
+    var option;
+    option = {
+      tooltip: {
+        trigger: 'item'
+      },
+      legend: {
+        bottom: '5%',
+        left: 'center'
+      },
+      series: [
+        {
+          name: '재난별 발생 통계',
+          type: 'pie',
+          radius: ['40%', '70%'],
+          avoidLabelOverlap: false,
+          label: {
+            show: false,
+            position: 'center'
+          },
+          emphasis: {
+            label: {
+              show: false,
+              fontSize: '40',
+              fontWeight: 'bold'
+            }
+          },
+          labelLine: {
+            show: false
+          },
+          data: [
+            { value: 1048, name: '호우' },
+            { value: 735, name: '산사태' },
+            { value: 580, name: '황사' },
+            { value: 484, name: '화재' }
+          ]
+        }
+      ]
+    };
+    if (option && typeof option === 'object') {
+      myChart.setOption(option);
+    }
+
+
+
+
+    var dom = document.getElementById("chart2");
+    var myChart = echarts.init(dom);
+    var app = {};
+    var option;
+    option = {
+      tooltip: {
+        trigger: 'axis'
+      },
+      legend: {
+        top: 'top',
+        right: '1%'
+      },
+      grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+      },
+      xAxis: {
+        type: 'category',
+        boundaryGap: false,
+        data: ['2021-11-12', '2021-11-11', '2021-11-10', '2021-11-09', '2021-11-08', '2021-11-07', '2021-11-06', '2021-11-05', '2021-11-04', '2021-11-03', '2021-11-02', '2021-11-01','2021-10-31', '2021-10-30', '2021-10-29', '2021-10-28', '2021-10-27', '2021-10-26', '2021-10-25', '2021-10-24', '2021-10-23', '2021-10-22', '2021-10-21', '2021-10-20','2021-10-19', '2021-10-18', '2021-10-17', '2021-10-16', '2021-10-15', '2021-10-14', '2021-10-13', '2021-10-12']
+      },
+      yAxis: {
+        type: 'value'
+      },
+      series: [
+        {
+          name: '호우',
+          type: 'line',
+          stack: 'Total',
+          data: [120, 132, 101, 134, 90, 230, 210, 301, 334, 390, 330, 450, 120, 132, 101, 134, 90, 230, 210, 301, 334, 390, 330, 450, 120, 132, 101, 134, 90, 230, 210]
+        },
+        {
+          name: '산사태',
+          type: 'line',
+          stack: 'Total',
+          data: [220, 182, 191, 234, 290, 330, 310, 201, 154, 190, 330, 200, 220, 182, 191, 234, 290, 330, 310, 201, 154, 190, 330, 200, 220, 182, 191, 234, 290, 330, 310]
+        },
+        {
+          name: '황사',
+          type: 'line',
+          stack: 'Total',
+          data: [150, 232, 201, 154, 190, 330, 410, 234, 290, 330, 310, 300, 150, 232, 201, 154, 190, 330, 410, 234, 290, 330, 310, 300, 150, 232, 201, 154, 190, 330, 330]
+        },
+        {
+          name: '화재',
+          type: 'line',
+          stack: 'Total',
+          data: [320, 332, 301, 334, 390, 330, 320, 134, 90, 230, 210, 200, 320, 332, 301, 334, 390, 330, 320, 134, 90, 230, 210, 200, 320, 332, 301, 334, 390, 330, 330]
+        }
+      ]
+    };
+    if (option && typeof option === 'object') {
+      myChart.setOption(option);
+    }
+
+
+
+    var dom = document.getElementById("chart3");
+    var myChart = echarts.init(dom);
+    var app = {};
+    var option;
+    option = {
+      tooltip: {
+        trigger: 'axis'
+      },
+      legend: {
+        data: ['호우', '산사태', '황사', '화재']
+      },
+      grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+      },
+      xAxis: {
+        type: 'category',
+        boundaryGap: false,
+        data: ['2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021']
+      },
+      yAxis: {
+        type: 'value'
+      },
+      series: [
+        {
+          name: '호우',
+          type: 'line',
+          stack: 'Total',
+          data: [120, 132, 101, 134, 90, 230, 210, 301, 334, 390, 330, 450]
+        },
+        {
+          name: '산사태',
+          type: 'line',
+          stack: 'Total',
+          data: [220, 182, 191, 234, 290, 330, 310, 201, 154, 190, 330, 200]
+        },
+        {
+          name: '황사',
+          type: 'line',
+          stack: 'Total',
+          data: [150, 232, 201, 154, 190, 330, 410, 234, 290, 330, 310, 300]
+        },
+        {
+          name: '화재',
+          type: 'line',
+          stack: 'Total',
+          data: [320, 332, 301, 334, 390, 330, 320, 134, 90, 230, 210, 200]
+        }
+      ]
+    };
+    if (option && typeof option === 'object') {
+      myChart.setOption(option);
+    }
+
+
+
+    var dom = document.getElementById("chart4");
+    var myChart = echarts.init(dom);
+    var app = {};
+    var option;
+    option = {
+      tooltip: {
+        trigger: 'axis'
+      },
+      legend: {
+        top: 'top',
+        right: '1%'
+      },
+      grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+      },
+      xAxis: {
+        type: 'category',
+        boundaryGap: false,
+        data: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월']
+      },
+      yAxis: {
+        type: 'value'
+      },
+      series: [
+        {
+          name: '호우',
+          type: 'line',
+          stack: 'Total',
+          data: [120, 132, 101, 134, 90, 230, 210, 301, 334, 390, 330, 450]
+        },
+        {
+          name: '산사태',
+          type: 'line',
+          stack: 'Total',
+          data: [220, 182, 191, 234, 290, 330, 310, 201, 154, 190, 330, 200]
+        },
+        {
+          name: '황사',
+          type: 'line',
+          stack: 'Total',
+          data: [150, 232, 201, 154, 190, 330, 410, 234, 290, 330, 310, 300]
+        },
+        {
+          name: '화재',
+          type: 'line',
+          stack: 'Total',
+          data: [320, 332, 301, 334, 390, 330, 320, 134, 90, 230, 210, 200]
+        }
+      ]
+    };
+    if (option && typeof option === 'object') {
+      myChart.setOption(option);
+    }
+
+
+
+    var dom = document.getElementById("chart5");
+    var myChart = echarts.init(dom);
+    var app = {};
+    var option;
+    option = {
+      tooltip: {
+        trigger: 'item'
+      },
+      legend: {
+        bottom: '5%',
+        left: 'center'
+      },
+      series: [
+        {
+          name: '시도별 재난발생 통계',
+          type: 'pie',
+          radius: ['40%', '70%'],
+          avoidLabelOverlap: false,
+          label: {
+            show: false,
+            position: 'center'
+          },
+          emphasis: {
+            label: {
+              show: false,
+              fontSize: '40',
+              fontWeight: 'bold'
+            }
+          },
+          labelLine: {
+            show: false
+          },
+          data: [
+            { value: 1048, name: '서울특별시' },
+            { value: 735, name: '부산광역시' },
+            { value: 580, name: '대구광역시' }
+          ]
+        }
+      ]
+    };
+    if (option && typeof option === 'object') {
+      myChart.setOption(option);
+    }
+
+
+
+    var dom = document.getElementById("chart6");
+var myChart = echarts.init(dom);
+var app = {};
+var option;
+option = {
+  tooltip: {
+    trigger: 'axis',
+    axisPointer: {
+      // Use axis to trigger tooltip
+      type: 'shadow' // 'shadow' as default; can also be 'line' or 'shadow'
+    }
+  },
+  legend: {
+    right:'right'
+  },
+  grid: {
+    left: '3%',
+    right: '4%',
+    bottom: '3%',
+    containLabel: true
+  },
+  xAxis: {
+    type: 'value'
+  },
+  yAxis: {
+    type: 'category',
+    data: ['종로구', '중구', '용산구', '성동구', '광진구', '동대문구', '중랑구', '성북구', '강북구', '도봉구', '노원구', '은평구', '서대문구', '마포구', '양천구', '강서구', '구로구', '금천구', '영등포구', '동작구', '관악구', '서초구', '강남구', '송파구', '강동구']
+  },
+  series: [
+    {
+      name: '호우',
+      type: 'bar',
+      stack: 'total',
+      emphasis: {
+        focus: 'series'
+      },
+      data: [32, 30, 30, 33, 39, 33, 32, 32, 30, 30, 33, 39, 33, 32,32, 30, 30, 33, 39, 33, 32, 32, 30, 30, 33, 39, 33, 32]
+    },
+    {
+      name: '산사태',
+      type: 'bar',
+      stack: 'total',
+      emphasis: {
+        focus: 'series'
+      },
+      data: [12, 13, 10, 13, 9, 23, 21, 12, 13, 10, 13, 9, 23, 21, 12, 13, 10, 13, 9, 23, 21, 12, 13, 10, 13, 9, 23, 21]
+    },
+    {
+      name: '황사',
+      type: 'bar',
+      stack: 'total',
+      emphasis: {
+        focus: 'series'
+      },
+      data: [12, 13, 10, 13, 9, 23, 21, 12, 13, 10, 13, 9, 23, 21, 12, 13, 10, 13, 9, 23, 21, 12, 13, 10, 13, 9, 23, 21]
+    },
+    {
+      name: '화재',
+      type: 'bar',
+      stack: 'total',
+      emphasis: {
+        focus: 'series'
+      },
+      data: [12, 13, 10, 13, 9, 23, 21, 12, 13, 10, 13, 9, 23, 21, 12, 13, 10, 13, 9, 23, 21, 12, 13, 10, 13, 9, 23, 21]
+    }
+  ]
+};
+
+if (option && typeof option === 'object') {
+    myChart.setOption(option);
+}
+  </script>
+</body>
+
+</html>

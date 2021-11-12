@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>스마트 지오펜싱 재난정보 전달 플랫폼</title>
+  <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.png">
+  <link rel="stylesheet" href="../plugins/axicon/axicon.min.css">
+  <link rel="stylesheet" href="../plugins/jquery-ui/themes/base/jquery-ui.min.css">
+  <link rel="stylesheet" href="../plugins/jqueryui-timepicker-addon/dist/jquery-ui-timepicker-addon.min.css">
+  <link rel="stylesheet" href="../plugins/jqueryui-timepicker-addon/dist/jquery.datetimepicker.css">
+  <link rel="stylesheet" href="../plugins/jqGrid/css/ui.jqgrid.css">
+  <link rel="stylesheet" href="../plugins/summernote/css/summernote-lite.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/sub.css">
+  <link rel="stylesheet" href="../css/pop.css">
+</head>
+
+<body>
+  <div id="wrap">
+    <header>
+  <div class="hd_top flex_wrap f_sb">
+    <h1 class="hd_logo">
+      <a href="./main.html">
+        <img src="../images/img_logo.png" alt="스마트 지오펜싱 재난정보 전달 플랫폼">
+      </a>
+    </h1>
+    <div class="util_wrap flex_wrap f_e">
+      <ul>
+        <li>
+          <span><a href="#" class="util user">내정보</a></span>
+          <span><b>관리자</b>님 반갑습니다.</span>
+        </li>
+        <li class="alert_wrap">
+          <a href="#" class="util alert">알림</a>
+          <span class="on">2</span>
+        </li>
+        <li><a href="#" class="util log">로그인&sol;로그아웃</a></li>
+      </ul>
+    </div>
+    <div class="system_wrap">
+      <span class="system">시스템</span>
+    </div>
+  </div>
+  <nav class="gnb">
+    <ul>
+      <li>
+        <a href="./main.html">모니터링</a>
+      </li>
+      <li>
+        <a href="./issue01.html">발령현황</a>
+      </li>
+      <li>
+        <a href="./issue02.html">수동발령</a>
+      </li>
+      <li>
+        <a href="./issue03.html">발령이력</a>
+      </li>
+      <li class="on depth2_wrap">
+        <a href="./stats01.html">통계</a>
+        <ul>
+          <li class="on"><a href="./stats01.html">재난발생통계</a></li>
+          <li><a href="./stats02.html">경보발령통계</a></li>
+          <li><a href="#">모바일 사용자통계</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="./setting.html">환경설정</a>
+      </li>
+      <li>
+        <a href="./admin.html">시스템관리</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+    <!-- Contents -->
+    <div class="con_wrap">
+      <div class="only_con_wrap">
+        <div class="con">
+          <div class="slide_tit flex_wrap f_sb">
+            <h2>시스템관리</h2>
+          </div>
+          <div class="tab box_tab">
+            <ul class="tab_list">
+              <li><a href="#tab01" class="on">사용자관리</a></li>
+              <li><a href="#tab02">코드관리</a></li>
+              <li><a href="#tab03">수신처관리</a></li>
+            </ul>
+          </div>
+          <div class="tab_conts stats">
+            <div id="tab01" class="tab_cont">
+              <div class="search_area">
+                <ul class="search f_s">
+                  <li>
+                    <select name="" id="">
+                      <option value="부서선택">부서선택</option>
+                    </select>
+                    <select title="검색조건">
+                      <option value="">검색조건</option>
+                    </select>
+                    <input type="text" id="location" placeholder="검색어">
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn_blue">검색</button>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="tbl_wrap">
+                <div class="btn_wrap alignR">
+                  <button type="button" class="btn btn_blue">추가</button>
+                  <button type="button" class="btn btn_gray">삭제</button>
+                </div>
+                <table class="tbl_default">
+                  <colgroup>
+                    <col width="80">
+                    <col width="250">
+                    <col width="*">
+                    <col width="250">
+                    <col width="250">
+                    <col width="250">
+                    <col width="250">
+                    <col width="250">
+                    <col class="fix_scroll">
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th scope="col">순번</th>
+                      <th scope="col">매체코드</th>
+                      <th scope="col">매체명</th>
+                      <th scope="col">기관명</th>
+                      <th scope="col">수신자 ID</th>
+                      <th scope="col">전송시각</th>
+                      <th scope="col">응답시각</th>
+                      <th scope="col">응답결과</th>
+                      <th>&nbsp;</th>
+                    </tr>
+                  </thead>
+                </table>
+                <div class="tbl_body_wrap tbl_scroll" style="height:595px;">
+                  <table class="tbl_default">
+                    <colgroup>
+                      <col width="80">
+                      <col width="250">
+                      <col width="*">
+                      <col width="250">
+                      <col width="250">
+                      <col width="250">
+                      <col width="250">
+                      <col width="250">
+                    </colgroup>
+                    <tbody>
+                      <tr class="on">
+                        <td>1</td>
+                        <td>I-C-MSP1.0</td>
+                        <td>디지털사이니지</td>
+                        <td></td>
+                        <td>Dg001</td>
+                        <td>2020-08-12 12:34:56</td>
+                        <td>2020-08-12 12:34:56</td>
+                        <td>성공</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Dg001</td>
+                        <td>2020-08-12 12:34:56</td>
+                        <td>-</td>
+                        <td>실패</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div id="tab02" class="tab_cont">
+            </div>
+
+
+
+
+            <div id="tab03" class="tab_cont">
+              <div class="search_area">
+                <ul class="search f_s">
+                  <li>
+                    <select name="" id="">
+                      <option value="기관유형">기관유형</option>
+                    </select>
+                    <select title="검색조건">
+                      <option value="">검색조건</option>
+                    </select>
+                    <input type="text" id="location" placeholder="검색어">
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn_blue">검색</button>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="tbl_wrap">
+                <div class="btn_wrap alignR">
+                  <button type="button" class="btn btn_blue">추가</button>
+                  <button type="button" class="btn btn_gray">삭제</button>
+                </div>
+                <table class="tbl_default">
+                  <colgroup>
+                    <col width="80">
+                    <col width="250">
+                    <col width="*">
+                    <col width="250">
+                    <col width="250">
+                    <col width="250">
+                    <col width="250">
+                    <col width="250">
+                    <col class="fix_scroll">
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th scope="col">순번</th>
+                      <th scope="col">매체코드</th>
+                      <th scope="col">매체명</th>
+                      <th scope="col">기관명</th>
+                      <th scope="col">수신자 ID</th>
+                      <th scope="col">전송시각</th>
+                      <th scope="col">응답시각</th>
+                      <th scope="col">응답결과</th>
+                      <th>&nbsp;</th>
+                    </tr>
+                  </thead>
+                </table>
+                <div class="tbl_body_wrap tbl_scroll" style="height:595px;">
+                  <table class="tbl_default">
+                    <colgroup>
+                      <col width="80">
+                      <col width="250">
+                      <col width="*">
+                      <col width="250">
+                      <col width="250">
+                      <col width="250">
+                      <col width="250">
+                      <col width="250">
+                    </colgroup>
+                    <tbody>
+                      <tr class="on">
+                        <td>1</td>
+                        <td>I-C-MSP1.0</td>
+                        <td>디지털사이니지</td>
+                        <td></td>
+                        <td>Dg001</td>
+                        <td>2020-08-12 12:34:56</td>
+                        <td>2020-08-12 12:34:56</td>
+                        <td>성공</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Dg001</td>
+                        <td>2020-08-12 12:34:56</td>
+                        <td>-</td>
+                        <td>실패</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="toast_alarm">
+        <ul>
+          <li class="rain flex_wrap f_sb">
+            <div>
+              <img src="../images/ico_toast.png" alt="경고 아이콘">
+              <span>[<span>호우경보발표</span>] 재난정보 승인요청이 접수되었습니다.</span>
+            </div>
+            <div>
+              <span>12:34:56</span>
+              <button type="button">
+                <i class="axi axi-close"></i>
+              </button>
+            </div>
+          </li>
+          <li class="fire flex_wrap f_sb">
+            <div>
+              <img src="../images/ico_toast.png" alt="경고 아이콘">
+              <span>[<span>호우경보발표</span>] 재난정보 승인요청이 접수되었습니다.</span>
+            </div>
+            <div>
+              <span>12:34:56</span>
+              <button type="button">
+                <i class="axi axi-close"></i>
+              </button>
+            </div>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </div>
+    <!-- // Contents -->
+  </div>
+  <div class="pop_overlay">
+  <div class="pop_wrap p_issue01">
+    <div class="pop_tit">
+      <h1>반려 사유</h1>
+      <button type="button" class="btn_pop_close" closePop></button>
+    </div>
+    <div class="pop_body">
+      <div class="pop_cont">
+        <div class="pop_box flex_wrap">
+          <i class="axi axi-exclamation-triangle"></i>
+          <p>여기에 반려 사유를 보여준다.</p>
+        </div>
+        <div class="btn_wrap alignR">
+          <button type="button" class="btn_cancel btn btn_gray">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+
+</script>
+  <script src="../plugins/jquery/dist/jquery.min.js"></script>
+<script src="../plugins/jquery-ui/jquery-ui.min.js"></script>
+<script src="../plugins/jquery-ui/ui/i18n/datepicker-ko.js"></script>
+<script src="../plugins/jqueryui-timepicker-addon/dist/jquery-ui-timepicker-addon.min.js"></script>
+<script src="../plugins/jqueryui-timepicker-addon/dist/jquery.datetimepicker.full.min.js"></script>
+<script src="../plugins/jqueryui-timepicker-addon/dist/i18n/jquery-ui-timepicker-ko.js"></script>
+<script src="../plugins/jqGrid/js/jquery.jqGrid.min.js"></script>
+<script src="../plugins/jqGrid/js/i18n/grid.locale-kr.js"></script>
+<script src="../plugins/echarts/dist/echarts.min.js"></script>
+<script src="../js/ui_common.js"></script>
+<script src="../js/file_attach.js"></script>
+
+  <script>
+    $('.btn_detailsearch').on('click', function () {
+      $(this).toggleClass('on');
+      $(this).prev('.detailsearch_wrap').slideToggle();
+    })
+    $(".btn_reason").on('click', function () {
+      $('.p_issue01').parent('.pop_overlay').fadeIn();
+    })
+  </script>
+
+</body>
+
+</html>

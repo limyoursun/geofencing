@@ -54,21 +54,21 @@
         <a href="./issue02.html">수동발령</a>
       </li>
       <li>
-        <a href="#">발령이력</a>
+        <a href="./issue03.html">발령이력</a>
       </li>
       <li class="on depth2_wrap">
-        <a href="#">통계</a>
+        <a href="./stats01.html">통계</a>
         <ul>
-          <li class="on"><a href="#">재난발생통계</a></li>
-          <li><a href="#">경보발령통계</a></li>
+          <li class="on"><a href="./stats01.html">재난발생통계</a></li>
+          <li><a href="./stats02.html">경보발령통계</a></li>
           <li><a href="#">모바일 사용자통계</a></li>
         </ul>
       </li>
       <li>
-        <a href="#">환경설정</a>
+        <a href="./setting.html">환경설정</a>
       </li>
       <li>
-        <a href="#">시스템관리</a>
+        <a href="./admin.html">시스템관리</a>
       </li>
     </ul>
   </nav>
@@ -108,15 +108,15 @@
               <b><label for="situation1">재난상황</label></b>
               <ul class="media_select">
                 <li>
-                  <input checked type="radio" id="situation1">
+                  <input checked type="radio" name="situation" id="situation1">
                   <label for="situation1">실제</label>
                 </li>
                 <li>
-                  <input type="radio" id="situation2">
+                  <input type="radio" name="situation" id="situation2">
                   <label for="situation2">훈련</label>
                 </li>
                 <li>
-                  <input type="radio" id="situation3">
+                  <input type="radio" name="situation" id="situation3">
                   <label for="situation3">테스트</label>
                 </li>
               </ul>
@@ -151,10 +151,10 @@
             </li>
             <li>
               <b><label for="locate">송출지역</label></b>
-              <textarea name="locate"></textarea>
-            <div class="btn_wrap alignR">
-              <button type="button" class="btn_m btn_blue">문안생성</button>
-            </div>
+              <textarea name="locate" disabled placeholder="우측에서 선택해 주세요"></textarea>
+              <div class="btn_wrap alignR">
+                <button type="button" class="btn_m btn_blue">문안생성</button>
+              </div>
             </li>
           </ul>
           <ul class="monitoring_detail monitoring_text">
@@ -275,9 +275,67 @@
           </div>
         </div>
       </div>
-      <div class="con_r">
-        <div class="nonemain">
-          
+      <div class="con_r issue02">
+        <div class="cont_body">
+          <div class="tab box_tab">
+            <ul class="tab_list">
+              <li><a href="#tab01" class="on">지도에서 선택</a></li>
+              <li><a href="#tab02">그룹지역 선택</a></li>
+            </ul>
+          </div>
+          <div class="tab_conts">
+            <div id="tab01" class="tab_cont">
+              <div>
+                <div>
+                  <h3>선택된 송출지역</h3>
+                </div>
+                <div class="selectlocate_wrap flex_wrap f_sb">
+                  <ul>
+                    <li>
+                      <span>강원도</span>
+                      <i class="axi axi-close"></i>
+                    </li>
+                    <li>
+                      <span>충청북도</span>
+                      <i class="axi axi-close"></i>
+                    </li>
+                    <li>
+                      <span>세종특별자치시</span>
+                      <i class="axi axi-close"></i>
+                    </li>
+                  </ul>
+                  <button class="btn_skyblue">송출지역 적용</button>
+                </div>
+              </div>
+              <div class="select_map">
+
+              </div>
+            </div>
+
+            <div id="tab02" class="tab_cont">
+              <div>
+                <div>
+                  <h3>선택된 송출지역</h3>
+                </div>
+                <div class="selectlocate_wrap flex_wrap f_sb">
+                  <ul>
+                    <li>
+                      <span>강원영동</span>
+                      <i class="axi axi-close"></i>
+                    </li>
+                    <li>
+                      <span>세종특별자치시</span>
+                      <i class="axi axi-close"></i>
+                    </li>
+                  </ul>
+                  <button class="btn_skyblue">송출지역 적용</button>
+                </div>
+              </div>
+              <div class="select_map">
+
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="toast_alarm">
@@ -314,7 +372,7 @@
   <div class="pop_overlay">
   <div class="pop_wrap p_issue01">
     <div class="pop_tit">
-      <h1>비밀번호 변경</h1>
+      <h1>반려 사유</h1>
       <button type="button" class="btn_pop_close" closePop></button>
     </div>
     <div class="pop_body">
@@ -342,9 +400,7 @@
 <script src="../plugins/jqueryui-timepicker-addon/dist/i18n/jquery-ui-timepicker-ko.js"></script>
 <script src="../plugins/jqGrid/js/jquery.jqGrid.min.js"></script>
 <script src="../plugins/jqGrid/js/i18n/grid.locale-kr.js"></script>
-<script src="../plugins/smarteditor2/js/service/HuskyEZCreator.js"></script>
-<script src="../plugins/summernote/js/summernote-lite.js"></script>
-<script src="../plugins/summernote/js/lang/summernote-ko-KR.js"></script>
+<script src="../plugins/echarts/dist/echarts.min.js"></script>
 <script src="../js/ui_common.js"></script>
 <script src="../js/file_attach.js"></script>
 
@@ -356,9 +412,6 @@
     $(".btn_reason").on('click', function () {
       $('.p_issue01').parent('.pop_overlay').fadeIn();
     })
-
-
-    
   </script>
 </body>
 

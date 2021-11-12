@@ -54,21 +54,21 @@
         <a href="./issue02.html">수동발령</a>
       </li>
       <li>
-        <a href="#">발령이력</a>
+        <a href="./issue03.html">발령이력</a>
       </li>
       <li class="on depth2_wrap">
-        <a href="#">통계</a>
+        <a href="./stats01.html">통계</a>
         <ul>
-          <li class="on"><a href="#">재난발생통계</a></li>
-          <li><a href="#">경보발령통계</a></li>
+          <li class="on"><a href="./stats01.html">재난발생통계</a></li>
+          <li><a href="./stats02.html">경보발령통계</a></li>
           <li><a href="#">모바일 사용자통계</a></li>
         </ul>
       </li>
       <li>
-        <a href="#">환경설정</a>
+        <a href="./setting.html">환경설정</a>
       </li>
       <li>
-        <a href="#">시스템관리</a>
+        <a href="./admin.html">시스템관리</a>
       </li>
     </ul>
   </nav>
@@ -276,29 +276,6 @@
     </div>
     <!-- // Contents -->
   </div>
-  <div class="pop_overlay">
-  <div class="pop_wrap p_issue01">
-    <div class="pop_tit">
-      <h1>비밀번호 변경</h1>
-      <button type="button" class="btn_pop_close" closePop></button>
-    </div>
-    <div class="pop_body">
-      <div class="pop_cont">
-        <div class="pop_box flex_wrap">
-          <i class="axi axi-exclamation-triangle"></i>
-          <p>여기에 반려 사유를 보여준다.</p>
-        </div>
-        <div class="btn_wrap alignR">
-          <button type="button" class="btn_cancel btn btn_gray">닫기</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<script>
-
-</script>
   <script src="../plugins/jquery/dist/jquery.min.js"></script>
 <script src="../plugins/jquery-ui/jquery-ui.min.js"></script>
 <script src="../plugins/jquery-ui/ui/i18n/datepicker-ko.js"></script>
@@ -307,19 +284,76 @@
 <script src="../plugins/jqueryui-timepicker-addon/dist/i18n/jquery-ui-timepicker-ko.js"></script>
 <script src="../plugins/jqGrid/js/jquery.jqGrid.min.js"></script>
 <script src="../plugins/jqGrid/js/i18n/grid.locale-kr.js"></script>
-<script src="../plugins/smarteditor2/js/service/HuskyEZCreator.js"></script>
-<script src="../plugins/summernote/js/summernote-lite.js"></script>
-<script src="../plugins/summernote/js/lang/summernote-ko-KR.js"></script>
+<script src="../plugins/echarts/dist/echarts.min.js"></script>
 <script src="../js/ui_common.js"></script>
 <script src="../js/file_attach.js"></script>
+  <div class="pop_overlay">
+  <div class="pop_wrap p_main03_1">
+    <div class="pop_tit">
+      <h1>발령승인</h1>
+      <button type="button" class="btn_pop_close" closePop></button>
+    </div>
+    <div class="pop_body">
+      <div class="pop_cont">
+        <div class="pop_box flex_wrap">
+          <i class="axi axi-ion-android-information"></i>
+          <p>아래 요청건에 대한 승인을 진행하겠습니까?</p>
+        </div>
+        <div class="text_sample">
+          <h3>호우경보 발표</h3>
+          <ul class="dot_list monitoring_detail">
+            <li>
+              <b>발생지역</b>
+              <span>서울 구로구</span>
+            </li>
+            <li>
+              <b>요청시각</b>
+              <span>2021-08-22 10:35:15</span>
+            </li>
+          </ul>
+        </div>
+        <div class="btn_wrap alignR">
+          <button type="button" class="btn btn_blue">확인</button>
+          <button type="button" class="btn_cancel btn btn_gray">취소</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="pop_overlay">
+  <div class="pop_wrap p_main03_2">
+    <div class="pop_tit">
+      <h1>반려</h1>
+      <button type="button" class="btn_pop_close" closePop></button>
+    </div>
+    <div class="pop_body">
+      <div class="pop_cont">
+        <div class="pop_box flex_wrap">
+          <i class="axi axi-exclamation-triangle"></i>
+          <p>
+            <b>해당 요청건을 반려합니다.</b><br>
+            하기 반려사유를 작성해주세요.
+          </p>
+        </div>
+        <div class="text_sample">
+          <label for="reject_reason"><b>반려사유 :</b></label>
+          <input type="text" id="reject_reason">
+        </div>
+        <div class="btn_wrap alignR">
+          <button type="button" class="btn btn_blue">확인</button>
+          <button type="button" class="btn_cancel btn btn_gray">취소</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
   <script>
-    $('.btn_detailsearch').on('click', function () {
-      $(this).toggleClass('on');
-      $(this).prev('.detailsearch_wrap').slideToggle();
+    $(".btn_approval").on('click', function () {
+      $('.p_main03_1').parent('.pop_overlay').fadeIn();
     })
-    $(".btn_reason").on('click', function () {
-      $('.p_issue01').parent('.pop_overlay').fadeIn();
+    $(".btn_reject").on('click', function () {
+      $('.p_main03_2').parent('.pop_overlay').fadeIn();
     })
   </script>
 </body>

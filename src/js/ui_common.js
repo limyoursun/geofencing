@@ -29,6 +29,22 @@ $(function () {
   });
   $('#datetimepicker').datetimepicker();
 
+  // tab
+  var tab_conts = $('.tab_conts'),
+    tab_list = $('.tab_list'),
+    tab_btn = $('.tab_list li');
+
+  tab_conts.find('.tab_cont').hide();
+  tab_conts.find('.tab_cont:first').show();
+  tab_list.find('li:first').find('a').addClass('on');
+  tab_btn.on('click', 'a', function (e) {
+    e.preventDefault();
+    var getId = $(this).prop('href').split('#')[1];
+    $(this).parents('.tab').next('.tab_conts').find('.tab_cont').hide();
+    $(this).parents('.tab_list').find('a').removeClass('on');
+    $(this).addClass('on');
+    $('#' + getId).show();
+  });
 
   // pop
   var popBtn = $('[openpop]');
@@ -72,3 +88,15 @@ $('.toast_alarm li').find('button').on('click', function () {
 })
 setTimeout(() => $('.toast_alarm').fadeIn('slow'), 500);
 setTimeout(() => $('.toast_alarm').fadeOut('slow'), 4500);
+
+// toggle button
+$('.btn_toggle').on('click', function (e) {
+  e.preventDefault();
+  var cur = $(this).attr('datavalue');
+  if ($(this).attr('disabled') == 'disabled') return false;
+  if (cur == 'on') {
+    $(this).attr('datavalue', 'off');
+  } else {
+    $(this).attr('datavalue', 'on');
+  }
+})

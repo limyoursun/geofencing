@@ -42,8 +42,10 @@ textarea{width:100%;min-height:50px;resize:none;}
 .flex_wrap{display:flex;}
 .f_sb{justify-content:space-between;}
 .f_e{justify-content:flex-end;}
+.f_c{justify-content:center;}
 
 /* Btn */
+.btn_wrap{margin:10px 0;}
 .btn{width:75px;height:27px;font-size:16px;color:#f8f8f8;line-height:24px;text-align:center;}
 .btn_s{height:25px;padding:0 13px;border-radius:15px;font-size:13px;color:#f8f8f8;line-height:22px;text-align:center;}
 .btn_m{height:33px;padding:0 10px;font-size:16px;color:#f8f8f8;line-height:30px;text-align:center;}
@@ -61,14 +63,28 @@ textarea{width:100%;min-height:50px;resize:none;}
 .btn_grayline{border:2px solid #aaa;background-color:#fff;color:#777777;}
 .btn_grayline:hover, .btn_grayline:active{background-color:#888;border:2px solid #888; color:#fff;}
 
+/* tab */
+.tab{border-bottom:2px solid #8a93ab;margin-bottom:15px;}
+.tab ul{overflow:hidden;}
+.tab li{float:left;max-width:250px;}
+.tab a{width:100%;text-align:center;border:1px solid #ccc;border-bottom:none;line-height:36px;}
+.tab .on{background-color:#8a93ab;font-weight:600; color:#fff;border-color:transparent;}
+.box_tab ul{display:flex;}
+.box_tab li{flex:1 150px;}
+
+.tab_conts h2{position:relative;margin-bottom:20px;padding-left:10px;font-size:15px;font-weight:bold;color:#000;}
+.stats.tab_conts h2{margin-bottom:0 !important;}
+.tab_conts h2::before{position:absolute;top:0;left:0;content:'';width:5px;height:100%;margin-right:5px;background-color:#284278;}
+.tab_conts h3{position:relative;margin-bottom:10px;padding-left:10px;font-size:13px;font-weight:bold;color:#000;}
+.tab_conts h3::before{position:absolute;top:-16px;left:0;content:'·';margin-right:5px;font-size:30px;}
+
 /* table */
 .tbl_top{margin-bottom:10px;}
-
 .tbl_top>p{align-self:center;font-size:12px;vertical-align:bottom;}
 .tbl_areaT{margin-bottom:3px;}
 .search .btn,
 .tbl_areaT .btn,
-.tbl_areaB .btn{border-radius:0;min-width:63px;height:24px;border:none;}
+.tbl_areaB .btn{border-radius:0;min-width:63px;height:28px;border:none;vertical-align: middle;}
 .tbl_areaT .count b{margin-right:3px;}
 .tbl_areaT .count b::before{content:"·";margin-right:3px;}
 .tbl_hover tr:hover{background-color:#e9f4fb;cursor:pointer;}
@@ -80,6 +96,13 @@ textarea{width:100%;min-height:50px;resize:none;}
 .tbl_default tr.on{background-color: #fffeef;}
 .tbl_default tr:hover{background-color: #e9f4fb;}
 .tbl_body_wrap{background-color:#f8f8f8;}
+.tbl_scroll{overflow-y:scroll;}
+.tbl_scroll tr:first-child th,
+.tbl_scroll tr:first-child td{border-top-width:0;}
+.fix_scroll{width:17px;padding:0!important;}
+
+.tab_conts .tbl_default th,
+.tab_conts .tbl_default td{padding:7px;}
 
 /* icon */
 .btn_axi{height:30px;font-size:14px;padding:4px 10px;border-radius:3px;font-size:14px;font-weight:bold;line-height:1px;}
@@ -92,6 +115,9 @@ textarea{width:100%;min-height:50px;resize:none;}
 .btn_del::before{content:'\e6ad';top:1px;}
 .btn_tree::before{position:relative;display:inline-block;width:14px;height:14px;content:'';margin-right:10px;background:url(../images/ico_tree.png)no-repeat left 1px;background-size:cover;}
 .btn_send::before{content:'\e002';margin-right:10px;}
+.ico_arrow{position:relative;left:-8px;text-align:center;font-size:58px;color:#6a7789;}
+.ico_arrow i{cursor:pointer;}
+.ico_arrow i:hover{color:#444d57;}
 
 /* input */
 .to,
@@ -115,9 +141,9 @@ textarea{width:100%;min-height:50px;resize:none;}
 .required::after{position:relative;content:"\e705";color:#f35857;margin-left:2px;font-family:"axicon";font-size:10px;}
 
 /* search */
-.search_area{position:relative;margin-bottom:55px;padding:10px 0;border:2px solid #284278;border-width:2px 0px;}
+.search_area{position:relative;margin-bottom:55px;padding:10px;border:1px solid #d7d7d7;background-color:#f9fafc;}
 .detailsearch_wrap{display:none;margin:10px 0 0;}
-.search{display:flex;flex-wrap:wrap;align-items:center;min-height:65px;line-height:25px;align-content:space-between;}
+.search{display:flex;flex-wrap:wrap;align-items:center;line-height:25px;align-content:space-between;}
 .search input,.search select,
 .search button{font-size:13px;}
 .search select{padding-right: 45px;}
