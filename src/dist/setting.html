@@ -161,7 +161,7 @@
                               <td>자동 전송</td>
                               <td>Y</td>
                               <td>
-                                <button class="btn">수정</button>
+                                <button class="btn_s btn_skyblueline">수정</button>
                               </td>
                             </tr>
                             <tr>
@@ -172,7 +172,7 @@
                               <td>자동 전송</td>
                               <td>Y</td>
                               <td>
-                                <button class="btn">수정</button>
+                                <button class="btn_s btn_skyblueline">수정</button>
                               </td>
                             </tr>
                             <tr>
@@ -183,7 +183,7 @@
                               <td>자동 전송</td>
                               <td>Y</td>
                               <td>
-                                <button class="btn">수정</button>
+                                <button class="btn_s btn_skyblueline">수정</button>
                               </td>
                             </tr>
                             <tr>
@@ -194,7 +194,7 @@
                               <td>자동 전송</td>
                               <td>Y</td>
                               <td>
-                                <button class="btn">수정</button>
+                                <button class="btn_s btn_skyblueline">수정</button>
                               </td>
                             </tr>
                           </tbody>
@@ -209,11 +209,11 @@
                     <ul class="dot_list monitoring_detail">
                       <li>
                         <b>사용여부</b>
-                      <span datavalue="on" class="btn_toggle"></span>
+                        <span datavalue="on" class="btn_toggle"></span>
                       </li>
                       <li>
                         <b>자동발송</b>
-                      <span datavalue="off" class="btn_toggle"></span>
+                        <span datavalue="off" class="btn_toggle"></span>
                       </li>
                       <li>
                         <b>재난유형</b>
@@ -392,7 +392,7 @@
                       </tr>
                     </thead>
                   </table>
-                  <div class="tbl_body_wrap tbl_scroll" style="height:668px;">
+                  <div class="tbl_body_wrap tbl_scroll" style="height:605px;">
                     <table class="tbl_default">
                       <colgroup>
                         <col width="*">
@@ -488,49 +488,151 @@
             </div>
 
             <div id="tab02" class="tab_cont">
-              <div class="search_area">
-                <ul class="search f_s">
-                  <li>
-                    <select name="" id="">
-                      <option value="전체">전체</option>
-                    </select>
-                  </li>
-                  <li>
-                    <select name="" id="">
-                      <option value="전체">전체</option>
-                    </select>
-                  </li>
-                  <li>
-                    <span class="period period_multi">
-                      <input type="text" class="datepicker from" name="date" placeholder="YYYY-MM-DD" readonly
-                        dataformat="from" title="시작 날짜 선택">
-                      <input type="text" class="datepicker to" name="date" placeholder="YYYY-MM-DD" readonly
-                        dataformat="to" title="종료  날짜 선택">
-                    </span>
-                  </li>
-                  <li>
-                    <select title="전체">
-                      <option value="">전체</option>
-                    </select>
-                    <input type="text" id="location" placeholder="검색어">
-                  </li>
-                  <li>
+              <div>
+                <div class="search_area">
+                  <ul class="search f_s">
+                    <input type="text" name="search" placeholder="검색어를 입력하세요">
                     <button type="button" class="btn btn_blue">검색</button>
-                  </li>
-                </ul>
-              </div>
-              <div style="height:300px;">
-                <h2>최근 30일 재난발생 추이</h2>
-                <div id="chart2" style="width:100%;height:100%"></div>
-              </div>
-              <div class="flex_wrap f_sb">
-                <div style="width:48%;height:250px;">
-                  <h2>연도별 재난발생 추이</h2>
-                  <div id="chart3" style="width:100%;height:100%"></div>
+                  </ul>
                 </div>
-                <div style="width:48%;height:250px;">
-                  <h2>월별 재난발생 추이</h2>
-                  <div id="chart4" style="width:100%;height:100%"></div>
+                <div class="tbl_wrap">
+                  <div class="tbl_top flex_wrap f_sb">
+                    <p>검색결과 : 총 <b class="font_blue">4</b>건</p>
+                    <button type="button" class="btn btn_skyblue">추가
+                    </button>
+                  </div>
+                  <table class="tbl_default">
+                    <colgroup>
+                      <col width="180">
+                      <col width="180">
+                      <col width="180">
+                      <col width="180">
+                      <col width="180">
+                      <col class="fix_scroll">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th scope="col">규약어</th>
+                        <th scope="col">코드명</th>
+                        <th scope="col">설명</th>
+                        <th scope="col">사용여부</th>
+                        <th scope="col">수정</th>
+                        <th class="fix_scroll">&nbsp;</th>
+                      </tr>
+                    </thead>
+                  </table>
+                  <div class="tbl_body_wrap tbl_scroll" style="height:598px;">
+                    <table class="tbl_default">
+                      <colgroup>
+                        <col width="180">
+                        <col width="180">
+                        <col width="180">
+                        <col width="180">
+                        <col width="180">
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td>관리기관명</td>
+                          <td>@AREADESC.en-US</td>
+                          <td>경보</td>
+                          <td>Y</td>
+                          <td>
+                            <button class="btn_s btn_skyblueline">수정</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>관리기관명</td>
+                          <td>@AREADESC.en-US</td>
+                          <td>경보</td>
+                          <td>Y</td>
+                          <td>
+                            <button class="btn_s btn_skyblueline">수정</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>관리기관명</td>
+                          <td>@AREADESC.en-US</td>
+                          <td>경보</td>
+                          <td>Y</td>
+                          <td>
+                            <button class="btn_s btn_skyblueline">수정</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>관리기관명</td>
+                          <td>@AREADESC.en-US</td>
+                          <td>경보</td>
+                          <td>Y</td>
+                          <td>
+                            <button class="btn_s btn_skyblueline">수정</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>관리기관명</td>
+                          <td>@AREADESC.en-US</td>
+                          <td>경보</td>
+                          <td>Y</td>
+                          <td>
+                            <button class="btn_s btn_skyblueline">수정</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>관리기관명</td>
+                          <td>@AREADESC.en-US</td>
+                          <td>경보</td>
+                          <td>Y</td>
+                          <td>
+                            <button class="btn_s btn_skyblueline">수정</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>관리기관명</td>
+                          <td>@AREADESC.en-US</td>
+                          <td>경보</td>
+                          <td>Y</td>
+                          <td>
+                            <button class="btn_s btn_skyblueline">수정</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>관리기관명</td>
+                          <td>@AREADESC.en-US</td>
+                          <td>경보</td>
+                          <td>Y</td>
+                          <td>
+                            <button class="btn_s btn_skyblueline">수정</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>관리기관명</td>
+                          <td>@AREADESC.en-US</td>
+                          <td>경보</td>
+                          <td>Y</td>
+                          <td>
+                            <button class="btn_s btn_skyblueline">수정</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>관리기관명</td>
+                          <td>@AREADESC.en-US</td>
+                          <td>경보</td>
+                          <td>Y</td>
+                          <td>
+                            <button class="btn_s btn_skyblueline">수정</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>관리기관명</td>
+                          <td>@AREADESC.en-US</td>
+                          <td>경보</td>
+                          <td>Y</td>
+                          <td>
+                            <button class="btn_s btn_skyblueline">수정</button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
               </div>
             </div>
