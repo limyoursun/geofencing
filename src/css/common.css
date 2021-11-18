@@ -96,7 +96,7 @@ textarea{width:100%;min-height:50px;resize:none;}
 .tbl_default tr.on{background-color: #fffeef;}
 .tbl_default tr:hover{background-color: #e9f4fb;}
 .tbl_body_wrap{background-color:#f8f8f8;}
-.tbl_scroll{overflow-y:scroll;}
+.tbl_scroll{overflow-y:scroll;background:#f8f8f8;}
 .tbl_scroll tr:first-child th,
 .tbl_scroll tr:first-child td{border-top-width:0;}
 .fix_scroll{width:17px;padding:0!important;}
@@ -139,6 +139,8 @@ textarea{width:100%;min-height:50px;resize:none;}
 .divideL.period_multi::after{margin-left:0;}
 [required]::after,
 .required::after{position:relative;content:"\e705";color:#f35857;margin-left:2px;font-family:"axicon";font-size:10px;}
+.input_calendar{background: #fff url(../images/btn_calendar.png) no-repeat top 5px right 5px;background-size: 15px;
+cursor:pointer;}
 
 /* search */
 .search_area{position:relative;margin-bottom:55px;padding:10px;border:1px solid #d7d7d7;background-color:#f9fafc;}

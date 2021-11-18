@@ -190,8 +190,6 @@ background-position-x:center;}
 .detailsearch_wrap{display:none;}
 .detailsearch_wrap .search{min-height:65px;}
 .tbl_top>button{align-self:flex-end;}
-.datetimepicker_wrap{position:relative;}
-.datetimepicker_wrap::after{position:absolute;top:8px;right:5px;display:inline-block;content:'';width:20px;height:20px;background:url(../images/btn_calendar.png)no-repeat;}
 .selectlocate_wrap{min-height:67px;padding:12px 15px;border:1px solid #d7d7d7;}
 .selectlocate_wrap li{display:inline-block;padding:1px 7px 2px;border:1px solid #82beff;border-radius:50px;font-weight:bold;color:#2287f3;}
 .selectlocate_wrap li i{cursor:pointer;color:#aaa;}
@@ -204,6 +202,18 @@ background-position-x:center;}
 .con h2{margin-bottom:20px;}
 .con .search_area{margin-bottom:20px;}
 .select_map{margin-top:70px;}
+
+
+/* admin */
+.code_wrap .tbl_wrap,
+.code_wrap .section{width:47%;}
+.arrow{position:relative;}
+.arrow::before{content:'';position:absolute;top:45%;left:25px;display:inline-block;content:'\e748';font-family:'axicon';font-size:40px;color: #a4a4a4;}
+.code_wrap .arrow:hover::before{color:#000;}
+.code_wrap .arrow:hover{background-position-y:100%;}
+.code_wrap .section:last-of-type{margin-left:auto;}
+.code_wrap h3{align-self:center;margin-bottom:0;}
+.code_wrap .tit_h3{display:flex;justify-content:space-between;}
 
 /* setting */
 .standard_wrap>div:first-child{width:60%;}

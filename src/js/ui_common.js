@@ -1,33 +1,42 @@
 $(function () {
-  /*calendar*/
-  $.datepicker.setDefaults({
-    buttonImageOnly: true,
-    showOn: "both",
-    buttonImage: "../images/btn_calendar.png",
-    changeMonth: true,
-    changeYear: true,
-    numberOfMonths: 1,
-    regional: ["ko"],
-    dateFormat: "yy-mm-dd"
-  });
-  $("[dataformat='datepic']").datepicker({
-    buttonText: "날짜를 선택해주세요."
-  });
-  var from = $("[dataformat='from']").datepicker({
-    buttonText: "시작날짜를 선택해주세요.",
-    onClose: function (selectedDate) {
-      var getName = $(this).attr('name');
-      $("input[name='" + getName + "'].to").datepicker("option", "minDate", selectedDate);
-    }
-  });
-  var to = $("[dataformat='to']").datepicker({
-    buttonText: "종료날짜를 선택해주세요.",
-    onClose: function (selectedDate) {
-      var getName = $(this).attr('name');
-      $("input[name='" + getName + "'].from").datepicker("option", "maxDate", selectedDate);
-    }
-  });
+
+  $.datetimepicker.setLocale('kr');
   $('#datetimepicker').datetimepicker();
+
+
+
+
+  $("input[id^=date_timepicker_start]").each(function () {
+    var _this = this.id;
+    $('#' + _this).datetimepicker({
+      format: 'Y/m/d',
+      onShow: function (ct) {
+        this.setOptions({
+          maxDate: $(this).next('#date_timepicker_end').val() ? $(this).next('#date_timepicker_end').val() : false
+        })
+      },
+      timepicker: false
+    });
+  })
+
+
+  $("input[id^=date_timepicker_end]").each(function () {
+    var _this = this.id;
+    $('#' + _this).datetimepicker({
+      format: 'Y/m/d',
+      onShow: function (ct) {
+        this.setOptions({
+          minDate: $(this).prev('#date_timepicker_start').val() ? $(this).prev('#date_timepicker_start').val() : false
+        })
+      },
+      timepicker: false
+    });
+
+  })
+
+
+
+
 
   // tab
   var tab_conts = $('.tab_conts'),

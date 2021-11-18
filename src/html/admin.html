@@ -40,100 +40,473 @@
                   <button type="button" class="btn btn_blue">추가</button>
                   <button type="button" class="btn btn_gray">삭제</button>
                 </div>
-                <table class="tbl_default">
-                  <colgroup>
-                    <col width="80">
-                    <col width="250">
-                    <col width="*">
-                    <col width="250">
-                    <col width="250">
-                    <col width="250">
-                    <col width="250">
-                    <col width="250">
-                    <col class="fix_scroll">
-                  </colgroup>
-                  <thead>
-                    <tr>
-                      <th scope="col">순번</th>
-                      <th scope="col">매체코드</th>
-                      <th scope="col">매체명</th>
-                      <th scope="col">기관명</th>
-                      <th scope="col">수신자 ID</th>
-                      <th scope="col">전송시각</th>
-                      <th scope="col">응답시각</th>
-                      <th scope="col">응답결과</th>
-                      <th>&nbsp;</th>
-                    </tr>
-                  </thead>
-                </table>
-                <div class="tbl_body_wrap tbl_scroll" style="height:595px;">
+                <div class="tbl_body_wrap" style="height:560px;">
                   <table class="tbl_default">
                     <colgroup>
                       <col width="80">
                       <col width="250">
-                      <col width="*">
+                      <col width="250">
+                      <col width="250">
                       <col width="250">
                       <col width="250">
                       <col width="250">
                       <col width="250">
                       <col width="250">
                     </colgroup>
+                    <thead>
+                      <tr>
+                        <th scope="col">선택</th>
+                        <th scope="col">권한</th>
+                        <th scope="col">사용자ID</th>
+                        <th scope="col">사용자명</th>
+                        <th scope="col">소속기관</th>
+                        <th scope="col">부서</th>
+                        <th scope="col">직급</th>
+                        <th scope="col">등록일</th>
+                        <th scope="col">수정</th>
+                      </tr>
+                    </thead>
                     <tbody>
                       <tr class="on">
-                        <td>1</td>
-                        <td>I-C-MSP1.0</td>
-                        <td>디지털사이니지</td>
+                        <td>
+                          <input type="checkbox">
+                        </td>
+                        <td>관리자</td>
+                        <td>sysadmin</td>
+                        <td>홍길동</td>
                         <td></td>
-                        <td>Dg001</td>
-                        <td>2020-08-12 12:34:56</td>
-                        <td>2020-08-12 12:34:56</td>
-                        <td>성공</td>
+                        <td></td>
+                        <td></td>
+                        <td>2020-08-12</td>
+                        <td>
+                          <button class="btn_s btn_skyblueline">수정</button>
+                        </td>
                       </tr>
                       <tr>
-                        <td>2</td>
+                        <td>
+                          <input type="checkbox">
+                        </td>
+                        <td>관리자</td>
+                        <td>sysadmin</td>
+                        <td>홍길동</td>
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td>Dg001</td>
-                        <td>2020-08-12 12:34:56</td>
-                        <td>-</td>
-                        <td>실패</td>
+                        <td>2020-08-12</td>
+                        <td>
+                          <button class="btn_s btn_skyblueline">수정</button>
+                        </td>
                       </tr>
                       <tr>
-                        <td>3</td>
+                        <td>
+                          <input type="checkbox">
+                        </td>
+                        <td>관리자</td>
+                        <td>sysadmin</td>
+                        <td>홍길동</td>
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>2020-08-12</td>
+                        <td>
+                          <button class="btn_s btn_skyblueline">수정</button>
+                        </td>
                       </tr>
                       <tr>
-                        <td>4</td>
+                        <td>
+                          <input type="checkbox">
+                        </td>
+                        <td>관리자</td>
+                        <td>sysadmin</td>
+                        <td>홍길동</td>
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>2020-08-12</td>
+                        <td>
+                          <button class="btn_s btn_skyblueline">수정</button>
+                        </td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
               </div>
+              <div class="paginate">
+                <a href="#" class="first" title="처음">〈〈</a>
+                <a href="#" class="pre" title="이전">〈</a>
+                <span>
+                  <a href="#" class="on">1</a>
+                  <a href="#">2</a>
+                  <a href="#">3</a>
+                  <a href="#">4</a>
+                  <a href="#">5</a>
+                  <a href="#">6</a>
+                  <a href="#">7</a>
+                  <a href="#">8</a>
+                  <a href="#">9</a>
+                  <a href="#">10</a>
+                </span>
+                <a href="#" class="next" title="다음">〉</a>
+                <a href="#" class="last" title="마지막">〉〉</a>
+              </div>
             </div>
-
             <div id="tab02" class="tab_cont">
+              <div class="code_wrap flex_wrap f_sb">
+                <div class="section tbl_wrap">
+                  <div class="tit_h3">
+                    <h3>그룹코드</h3>
+                    <div class="btn_wrap btn_wrap_s">
+                      <button type="button" class="btn btn_grayline">추가</button>
+                      <button type="button" class="btn btn_grayline">삭제</button>
+                      <button type="button" class="btn btn_mintline">미사용</button>
+                    </div>
+                  </div>
+                  <div>
+                    <table class="tbl_default">
+                      <caption>사고 발생 정보</caption>
+                      <colgroup>
+                        <col width="100">
+                        <col width="80">
+                        <col width="*">
+                        <col width="100">
+                        <col width="100">
+                        <col class="fix_scroll">
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th>선택</th>
+                          <th>코드</th>
+                          <th>그룹코드</th>
+                          <th>설명</th>
+                          <th>사용여부</th>
+                          <th>&nbsp;</th>
+                        </tr>
+                      </thead>
+                    </table>
+                    <div class="tbl_default tbl_scroll" style="height:635px">
+                      <table>
+                        <caption>훈련결과 내용 테이블</caption>
+                        <colgroup>
+                          <col width="100">
+                          <col width="80">
+                          <col width="*">
+                          <col width="100">
+                          <col width="100">
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <td><input type="checkbox"></td>
+                            <td>사용자</td>
+                            <td>ID NAME</td>
+                            <td>홍길동</td>
+                            <td>
+                              <span datavalue="on" class="btn_toggle"></span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><input type="checkbox"></td>
+                            <td>사용자</td>
+                            <td>ID NAME</td>
+                            <td>홍길동</td>
+                            <td>
+                              <span datavalue="on" class="btn_toggle"></span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><input type="checkbox"></td>
+                            <td>관리자</td>
+                            <td>ID NAME</td>
+                            <td>홍길동</td>
+                            <td>
+                              <span class="btn_toggle"></span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><input type="checkbox"></td>
+                            <td>사용자</td>
+                            <td>ID NAME</td>
+                            <td>홍길동</td>
+                            <td>
+                              <span datavalue="on" class="btn_toggle"></span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><input type="checkbox"></td>
+                            <td>사용자</td>
+                            <td>ID NAME</td>
+                            <td>홍길동</td>
+                            <td>
+                              <span class="btn_toggle"></span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><input type="checkbox"></td>
+                            <td>사용자</td>
+                            <td>ID NAME</td>
+                            <td>홍길동</td>
+                            <td>
+                              <span datavalue="on" class="btn_toggle"></span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><input type="checkbox"></td>
+                            <td>사용자</td>
+                            <td>ID NAME</td>
+                            <td>홍길동</td>
+                            <td>
+                              <span class="btn_toggle"></span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><input type="checkbox"></td>
+                            <td>사용자</td>
+                            <td>ID NAME</td>
+                            <td>홍길동</td>
+                            <td>
+                              <span class="btn_toggle"></span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><input type="checkbox"></td>
+                            <td>관리자</td>
+                            <td>ID NAME</td>
+                            <td>홍길동</td>
+                            <td>
+                              <span datavalue="on" class="btn_toggle"></span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><input type="checkbox"></td>
+                            <td>사용자</td>
+                            <td>ID NAME</td>
+                            <td>홍길동</td>
+                            <td>
+                              <span datavalue="on" class="btn_toggle"></span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><input type="checkbox"></td>
+                            <td>사용자</td>
+                            <td>ID NAME</td>
+                            <td>홍길동</td>
+                            <td>
+                              <span datavalue="on" class="btn_toggle"></span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><input type="checkbox"></td>
+                            <td>사용자</td>
+                            <td>ID NAME</td>
+                            <td>홍길동</td>
+                            <td>
+                              <span datavalue="on" class="btn_toggle"></span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><input type="checkbox"></td>
+                            <td>사용자</td>
+                            <td>ID NAME</td>
+                            <td>홍길동</td>
+                            <td>
+                              <span datavalue="on" class="btn_toggle"></span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><input type="checkbox"></td>
+                            <td>사용자</td>
+                            <td>ID NAME</td>
+                            <td>홍길동</td>
+                            <td>
+                              <span datavalue="on" class="btn_toggle"></span>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="arrow"></div>
+                <div class="section tbl_wrap">
+                  <div class="tit_h3">
+                    <h3>그룹코드</h3>
+                    <div class="btn_wrap btn_wrap_s">
+                      <button type="button" class="btn btn_grayline">추가</button>
+                      <button type="button" class="btn btn_grayline">삭제</button>
+                      <button type="button" class="btn btn_mintline">미사용</button>
+                    </div>
+                  </div>
+                  <div>
+                    <table class="tbl_default">
+                      <caption>사고 발생 정보</caption>
+                      <colgroup>
+                        <col width="100">
+                        <col width="80">
+                        <col width="*">
+                        <col width="100">
+                        <col width="100">
+                        <col class="fix_scroll">
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th>선택</th>
+                          <th>코드</th>
+                          <th>그룹코드</th>
+                          <th>설명</th>
+                          <th>사용여부</th>
+                          <th>&nbsp;</th>
+                        </tr>
+                      </thead>
+                    </table>
+                    <div class="tbl_default tbl_scroll" style="height:635px">
+                      <table>
+                        <caption>훈련결과 내용 테이블</caption>
+                        <colgroup>
+                          <col width="100">
+                          <col width="80">
+                          <col width="*">
+                          <col width="100">
+                          <col width="100">
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <td><input type="checkbox"></td>
+                            <td>사용자</td>
+                            <td>ID NAME</td>
+                            <td>홍길동</td>
+                            <td>
+                              <span datavalue="on" class="btn_toggle"></span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><input type="checkbox"></td>
+                            <td>사용자</td>
+                            <td>ID NAME</td>
+                            <td>홍길동</td>
+                            <td>
+                              <span datavalue="on" class="btn_toggle"></span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><input type="checkbox"></td>
+                            <td>관리자</td>
+                            <td>ID NAME</td>
+                            <td>홍길동</td>
+                            <td>
+                              <span class="btn_toggle"></span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><input type="checkbox"></td>
+                            <td>사용자</td>
+                            <td>ID NAME</td>
+                            <td>홍길동</td>
+                            <td>
+                              <span datavalue="on" class="btn_toggle"></span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><input type="checkbox"></td>
+                            <td>사용자</td>
+                            <td>ID NAME</td>
+                            <td>홍길동</td>
+                            <td>
+                              <span class="btn_toggle"></span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><input type="checkbox"></td>
+                            <td>사용자</td>
+                            <td>ID NAME</td>
+                            <td>홍길동</td>
+                            <td>
+                              <span datavalue="on" class="btn_toggle"></span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><input type="checkbox"></td>
+                            <td>사용자</td>
+                            <td>ID NAME</td>
+                            <td>홍길동</td>
+                            <td>
+                              <span class="btn_toggle"></span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><input type="checkbox"></td>
+                            <td>관리자</td>
+                            <td>ID NAME</td>
+                            <td>홍길동</td>
+                            <td>
+                              <span datavalue="on" class="btn_toggle"></span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><input type="checkbox"></td>
+                            <td>사용자</td>
+                            <td>ID NAME</td>
+                            <td>홍길동</td>
+                            <td>
+                              <span datavalue="on" class="btn_toggle"></span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><input type="checkbox"></td>
+                            <td>사용자</td>
+                            <td>ID NAME</td>
+                            <td>홍길동</td>
+                            <td>
+                              <span datavalue="on" class="btn_toggle"></span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><input type="checkbox"></td>
+                            <td>사용자</td>
+                            <td>ID NAME</td>
+                            <td>홍길동</td>
+                            <td>
+                              <span datavalue="on" class="btn_toggle"></span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><input type="checkbox"></td>
+                            <td>사용자</td>
+                            <td>ID NAME</td>
+                            <td>홍길동</td>
+                            <td>
+                              <span datavalue="on" class="btn_toggle"></span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><input type="checkbox"></td>
+                            <td>사용자</td>
+                            <td>ID NAME</td>
+                            <td>홍길동</td>
+                            <td>
+                              <span datavalue="on" class="btn_toggle"></span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><input type="checkbox"></td>
+                            <td>사용자</td>
+                            <td>ID NAME</td>
+                            <td>홍길동</td>
+                            <td>
+                              <span datavalue="on" class="btn_toggle"></span>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
             </div>
-
-
             <div id="tab03" class="tab_cont">
               <div class="search_area">
                 <ul class="search f_s">
                   <li>
-                    <select name="" id="">
+                    <select title="기관유형">
                       <option value="기관유형">기관유형</option>
                     </select>
                     <select title="검색조건">
@@ -154,26 +527,30 @@
                 <table class="tbl_default">
                   <colgroup>
                     <col width="80">
-                    <col width="250">
+                    <col width="200">
+                    <col width="200">
+                    <col width="200">
                     <col width="*">
-                    <col width="250">
-                    <col width="250">
-                    <col width="250">
-                    <col width="250">
-                    <col width="250">
+                    <col width="200">
+                    <col width="200">
+                    <col width="200">
+                    <col width="200">
+                    <col width="200">
                     <col class="fix_scroll">
                   </colgroup>
                   <thead>
                     <tr>
-                      <th scope="col">순번</th>
-                      <th scope="col">매체코드</th>
-                      <th scope="col">매체명</th>
+                      <th scope="col">선택</th>
                       <th scope="col">기관명</th>
-                      <th scope="col">수신자 ID</th>
-                      <th scope="col">전송시각</th>
-                      <th scope="col">응답시각</th>
-                      <th scope="col">응답결과</th>
-                      <th>&nbsp;</th>
+                      <th scope="col">기관유형</th>
+                      <th scope="col">ID</th>
+                      <th scope="col">IP</th>
+                      <th scope="col">담당자</th>
+                      <th scope="col">연락처</th>
+                      <th scope="col">매체정보</th>
+                      <th scope="col">등록일</th>
+                      <th scope="col">수정</th>
+                      <th scope="col">&nbsp;</th>
                     </tr>
                   </thead>
                 </table>
@@ -181,54 +558,80 @@
                   <table class="tbl_default">
                     <colgroup>
                       <col width="80">
-                      <col width="250">
+                      <col width="200">
+                      <col width="200">
+                      <col width="200">
                       <col width="*">
-                      <col width="250">
-                      <col width="250">
-                      <col width="250">
-                      <col width="250">
-                      <col width="250">
+                      <col width="200">
+                      <col width="200">
+                      <col width="200">
+                      <col width="200">
+                      <col width="200">
                     </colgroup>
                     <tbody>
                       <tr class="on">
-                        <td>1</td>
-                        <td>I-C-MSP1.0</td>
-                        <td>디지털사이니지</td>
+                        <td>
+                          <input type="checkbox">
+                        </td>
                         <td></td>
-                        <td>Dg001</td>
-                        <td>2020-08-12 12:34:56</td>
-                        <td>2020-08-12 12:34:56</td>
-                        <td>성공</td>
+                        <td></td>
+                        <td>경기도청</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>지자체/민간</td>
+                        <td>2020-08-12</td>
+                        <td>
+                          <button class="btn_s btn_skyblueline">수정</button>
+                        </td>
                       </tr>
                       <tr>
-                        <td>2</td>
+                        <td>
+                          <input type="checkbox">
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td>경기도청</td>
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td>Dg001</td>
-                        <td>2020-08-12 12:34:56</td>
-                        <td>-</td>
-                        <td>실패</td>
+                        <td>지자체/민간</td>
+                        <td>2020-08-12</td>
+                        <td>
+                          <button class="btn_s btn_skyblueline">수정</button>
+                        </td>
                       </tr>
                       <tr>
-                        <td>3</td>
+                        <td>
+                          <input type="checkbox">
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td>경기도청</td>
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>지자체/민간</td>
+                        <td>2020-08-12</td>
+                        <td>
+                          <button class="btn_s btn_skyblueline">수정</button>
+                        </td>
                       </tr>
                       <tr>
-                        <td>4</td>
+                        <td>
+                          <input type="checkbox">
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td>경기도청</td>
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>지자체/민간</td>
+                        <td>2020-08-12</td>
+                        <td>
+                          <button class="btn_s btn_skyblueline">수정</button>
+                        </td>
                       </tr>
                     </tbody>
                   </table>
