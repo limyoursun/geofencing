@@ -19,7 +19,13 @@
                 <li>재난경보 내용 편집시 하단의 수정요청 버튼을 누른다.</li>
                 <li>여러건의 재난경보 송출시 현재시각으로부터 5분이내 송출건이 있을 경우 알림을 제공한다.</li>
               </ul>
+              <div class="btn_howtouse"></div>
             </div>
+            <script>
+              $('.btn_howtouse').on('click', function () {
+                $('.how_to_use').removeClass('on');
+              })
+            </script>
           </i>
         </div>
         <div class="live_wrap flex_wrap f_sb">
@@ -85,7 +91,9 @@
               <span>서울특별시 금천구</span>
             </li>
           </ul>
-          <img src="../images/img_main_02.png" alt="호우주의보 임시이미지">
+          <div class="alignC">
+            <img src="../images/img_main_02.png" alt="호우주의보 임시이미지">
+          </div>
 
           <ul class="monitoring_detail monitoring_text">
             <li>

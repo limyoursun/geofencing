@@ -93,7 +93,7 @@
                 <b>발령문안(전광판)</b>
                 <p class="alignR"><span id="nowByte">39</span>/80 bytes</p>
               </div>
-              <textarea disabled id="sms_templete" title="text_example"
+              <textarea id="sms_templete" title="text_example"
                 onkeyup="fn_checkByte(this)">Lorem ipsum dolor sit amet, consectetur</textarea>
             </li>
             <script>
@@ -115,7 +115,7 @@
                   }
                 }
                 if (totalByte > maxByte) {
-                  alert('최대 90Byte까지만 입력가능합니다.');
+                  alert('최대 80Byte까지만 입력가능합니다.');
                   document.getElementById("nowByte").innerText = totalByte;
                   document.getElementById("nowByte").style.color = "red";
                 } else {
@@ -128,51 +128,14 @@
             <li>
               <div class="flex_wrap f_sb">
                 <b>발령문안(버스정보)</b>
-                <p class="alignR"><span id="nowByte">39</span>/180 bytes</p>
+                <p class="alignR"><span id="nowByte2">79</span>/180 bytes</p>
               </div>
-              <textarea disabled id="sms_templete" title="text_example"
-                onkeyup="fn_checkByte(this)">Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur</textarea>
-            </li>
-            <script>
-              function fn_checkByte(obj) {
-                const maxByte = 180; //최대 90바이트
-                const text_val = obj.value; //입력한 문자
-                const text_len = text_val.length; //입력한 문자수
-
-                let totalByte = 0;
-                for (let i = 0; i < text_len; i++) {
-                  const each_char = text_val.charAt(i);
-                  const uni_char = escape(each_char) //유니코드 형식으로 변환
-                  if (uni_char.length > 4) {
-                    // 한글 : 2Byte
-                    totalByte += 2;
-                  } else {
-                    // 영문,숫자,특수문자 : 1Byte
-                    totalByte += 1;
-                  }
-                }
-                if (totalByte > maxByte) {
-                  alert('최대 90Byte까지만 입력가능합니다.');
-                  document.getElementById("nowByte").innerText = totalByte;
-                  document.getElementById("nowByte").style.color = "red";
-                } else {
-                  document.getElementById("nowByte").innerText = totalByte;
-                  document.getElementById("nowByte").style.color = "#3c7ed3";
-                }
-              }
-            </script>
-
-            <li>
-              <div class="flex_wrap f_sb">
-                <b>발령문안(모바일)</b>
-                <p class="alignR"><span id="nowByte2">102</span>/315 bytes</p>
-              </div>
-              <textarea disabled id="sms_templete2" title="text_example2"
-                onkeyup="fn_checkByte2(this)">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat sem a consectetur eleifend.</textarea>
+              <textarea id="sms_templete2" title="text_example"
+                onkeyup="fn_checkByte2(this)">Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur</textarea>
             </li>
             <script>
               function fn_checkByte2(obj) {
-                const maxByte = 315; //최대 90바이트
+                const maxByte = 180; //최대 90바이트
                 const text_val = obj.value; //입력한 문자
                 const text_len = text_val.length; //입력한 문자수
 
@@ -199,6 +162,43 @@
               }
             </script>
 
+            <li>
+              <div class="flex_wrap f_sb">
+                <b>발령문안(모바일)</b>
+                <p class="alignR"><span id="nowByte3">102</span>/315 bytes</p>
+              </div>
+              <textarea id="sms_templete2" title="text_example3"
+                onkeyup="fn_checkByte3(this)">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat sem a consectetur eleifend.</textarea>
+            </li>
+            <script>
+              function fn_checkByte3(obj) {
+                const maxByte = 315; //최대 90바이트
+                const text_val = obj.value; //입력한 문자
+                const text_len = text_val.length; //입력한 문자수
+
+                let totalByte = 0;
+                for (let i = 0; i < text_len; i++) {
+                  const each_char = text_val.charAt(i);
+                  const uni_char = escape(each_char) //유니코드 형식으로 변환
+                  if (uni_char.length > 4) {
+                    // 한글 : 2Byte
+                    totalByte += 2;
+                  } else {
+                    // 영문,숫자,특수문자 : 1Byte
+                    totalByte += 1;
+                  }
+                }
+                if (totalByte > maxByte) {
+                  alert('최대 315Byte까지만 입력가능합니다.');
+                  document.getElementById("nowByte3").innerText = totalByte;
+                  document.getElementById("nowByte3").style.color = "red";
+                } else {
+                  document.getElementById("nowByte3").innerText = totalByte;
+                  document.getElementById("nowByte3").style.color = "#3c7ed3";
+                }
+              }
+            </script>
+
           </ul>
           <div class="alignR">
             <button type="button" class="btn_approval btn_l btn_blue">승인요청</button>
@@ -210,7 +210,8 @@
           <div class="tab box_tab">
             <ul class="tab_list">
               <li><a href="#tab01" class="on">지도에서 선택</a></li>
-              <li><a href="#tab02">그룹지역 선택</a></li>
+              <li><a href="#tab02">목록에서 선택</a></li>
+              <li><a href="#tab03">그룹지역 선택</a></li>
             </ul>
           </div>
           <div class="tab_conts">
@@ -243,6 +244,30 @@
             </div>
 
             <div id="tab02" class="tab_cont">
+              <div>
+                <div>
+                  <h3>선택된 송출지역</h3>
+                </div>
+                <div class="selectlocate_wrap flex_wrap f_sb">
+                  <ul>
+                    <li>
+                      <span>강원영동</span>
+                      <i class="axi axi-close"></i>
+                    </li>
+                    <li>
+                      <span>세종특별자치시</span>
+                      <i class="axi axi-close"></i>
+                    </li>
+                  </ul>
+                  <button class="btn_skyblue">송출지역 적용</button>
+                </div>
+              </div>
+              <div class="select_map">
+
+              </div>
+            </div>
+
+            <div id="tab03" class="tab_cont">
               <div>
                 <div>
                   <h3>선택된 송출지역</h3>

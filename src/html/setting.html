@@ -44,7 +44,7 @@
                     <div class="tbl_wrap">
                       <div class="tbl_top flex_wrap f_sb">
                         <p>검색결과 : 총 <b class="font_blue">4</b>건</p>
-                        <button type="button" class="btn btn_skyblue">추가
+                        <button type="button" class="btn_s btn_axi btn_add btn_skyblueline">추가
                         </button>
                       </div>
                       <table class="tbl_default">
@@ -91,7 +91,7 @@
                               <td>자동 전송</td>
                               <td>Y</td>
                               <td>
-                                <button class="btn_s btn_skyblueline">수정</button>
+                                <button class="ico_edit"></button>
                               </td>
                             </tr>
                             <tr>
@@ -102,7 +102,7 @@
                               <td>자동 전송</td>
                               <td>Y</td>
                               <td>
-                                <button class="btn_s btn_skyblueline">수정</button>
+                                <button class="ico_edit"></button>
                               </td>
                             </tr>
                             <tr>
@@ -113,7 +113,7 @@
                               <td>자동 전송</td>
                               <td>Y</td>
                               <td>
-                                <button class="btn_s btn_skyblueline">수정</button>
+                                <button class="ico_edit"></button>
                               </td>
                             </tr>
                             <tr>
@@ -124,7 +124,7 @@
                               <td>자동 전송</td>
                               <td>Y</td>
                               <td>
-                                <button class="btn_s btn_skyblueline">수정</button>
+                                <button class="ico_edit"></button>
                               </td>
                             </tr>
                           </tbody>
@@ -182,13 +182,13 @@
                       <li>
                         <div class="flex_wrap f_sb">
                           <b>발령문안(전광판)</b>
-                          <p class="alignR"><span id="nowByte1">39</span>/80 bytes</p>
+                          <p class="alignR"><span id="nowByte">39</span>/80 bytes</p>
                         </div>
-                        <textarea id="sms_templete1" title="text_example"
-                          onkeyup="fn_checkByte1(this)">Lorem ipsum dolor sit amet, consectetur</textarea>
+                        <textarea id="sms_templete" title="text_example"
+                          onkeyup="fn_checkByte(this)">Lorem ipsum dolor sit amet, consectetur</textarea>
                       </li>
                       <script>
-                        function fn_checkByte1(obj) {
+                        function fn_checkByte(obj) {
                           const maxByte = 80; //최대 90바이트
                           const text_val = obj.value; //입력한 문자
                           const text_len = text_val.length; //입력한 문자수
@@ -206,12 +206,12 @@
                             }
                           }
                           if (totalByte > maxByte) {
-                            alert('최대 90Byte까지만 입력가능합니다.');
-                            document.getElementById("nowByte1").innerText = totalByte;
-                            document.getElementById("nowByte1").style.color = "red";
+                            alert('최대 80Byte까지만 입력가능합니다.');
+                            document.getElementById("nowByte").innerText = totalByte;
+                            document.getElementById("nowByte").style.color = "red";
                           } else {
-                            document.getElementById("nowByte1").innerText = totalByte;
-                            document.getElementById("nowByte1").style.color = "#3c7ed3";
+                            document.getElementById("nowByte").innerText = totalByte;
+                            document.getElementById("nowByte").style.color = "#3c7ed3";
                           }
                         }
                       </script>
@@ -219,7 +219,7 @@
                       <li>
                         <div class="flex_wrap f_sb">
                           <b>발령문안(버스정보)</b>
-                          <p class="alignR"><span id="nowByte2">39</span>/180 bytes</p>
+                          <p class="alignR"><span id="nowByte2">79</span>/180 bytes</p>
                         </div>
                         <textarea id="sms_templete2" title="text_example"
                           onkeyup="fn_checkByte2(this)">Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur</textarea>
@@ -243,7 +243,7 @@
                             }
                           }
                           if (totalByte > maxByte) {
-                            alert('최대 90Byte까지만 입력가능합니다.');
+                            alert('최대 180Byte까지만 입력가능합니다.');
                             document.getElementById("nowByte2").innerText = totalByte;
                             document.getElementById("nowByte2").style.color = "red";
                           } else {
@@ -258,7 +258,7 @@
                           <b>발령문안(모바일)</b>
                           <p class="alignR"><span id="nowByte3">102</span>/315 bytes</p>
                         </div>
-                        <textarea id="sms_templete3" title="text_example2"
+                        <textarea id="sms_templete2" title="text_example3"
                           onkeyup="fn_checkByte3(this)">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat sem a consectetur eleifend.</textarea>
                       </li>
                       <script>
@@ -280,7 +280,7 @@
                             }
                           }
                           if (totalByte > maxByte) {
-                            alert('최대 180Byte까지만 입력가능합니다.');
+                            alert('최대 315Byte까지만 입력가능합니다.');
                             document.getElementById("nowByte3").innerText = totalByte;
                             document.getElementById("nowByte3").style.color = "red";
                           } else {
@@ -289,6 +289,7 @@
                           }
                         }
                       </script>
+
                     </ul>
 
                     <div class="btn_wrap alignC">
@@ -416,7 +417,6 @@
                 </div>
               </div>
             </div>
-
             <div id="tab02" class="tab_cont">
               <div>
                 <div class="search_area">
@@ -430,7 +430,7 @@
                 <div class="tbl_wrap">
                   <div class="tbl_top flex_wrap f_sb">
                     <p>검색결과 : 총 <b class="font_blue">4</b>건</p>
-                    <button type="button" class="btn btn_skyblue">추가
+                    <button type="button" class="btn_convention btn_axi btn_add btn_s btn_skyblueline">추가
                     </button>
                   </div>
                   <table class="tbl_default">
@@ -469,7 +469,7 @@
                           <td>경보</td>
                           <td>Y</td>
                           <td>
-                            <button class="btn_s btn_skyblueline">수정</button>
+                            <button class="ico_edit"></button>
                           </td>
                         </tr>
                         <tr>
@@ -478,7 +478,7 @@
                           <td>경보</td>
                           <td>Y</td>
                           <td>
-                            <button class="btn_s btn_skyblueline">수정</button>
+                            <button class="ico_edit"></button>
                           </td>
                         </tr>
                         <tr>
@@ -487,7 +487,7 @@
                           <td>경보</td>
                           <td>Y</td>
                           <td>
-                            <button class="btn_s btn_skyblueline">수정</button>
+                            <button class="ico_edit"></button>
                           </td>
                         </tr>
                         <tr>
@@ -496,7 +496,7 @@
                           <td>경보</td>
                           <td>Y</td>
                           <td>
-                            <button class="btn_s btn_skyblueline">수정</button>
+                            <button class="ico_edit"></button>
                           </td>
                         </tr>
                         <tr>
@@ -505,7 +505,7 @@
                           <td>경보</td>
                           <td>Y</td>
                           <td>
-                            <button class="btn_s btn_skyblueline">수정</button>
+                            <button class="ico_edit"></button>
                           </td>
                         </tr>
                         <tr>
@@ -514,7 +514,7 @@
                           <td>경보</td>
                           <td>Y</td>
                           <td>
-                            <button class="btn_s btn_skyblueline">수정</button>
+                            <button class="ico_edit"></button>
                           </td>
                         </tr>
                         <tr>
@@ -523,7 +523,7 @@
                           <td>경보</td>
                           <td>Y</td>
                           <td>
-                            <button class="btn_s btn_skyblueline">수정</button>
+                            <button class="ico_edit"></button>
                           </td>
                         </tr>
                         <tr>
@@ -532,7 +532,7 @@
                           <td>경보</td>
                           <td>Y</td>
                           <td>
-                            <button class="btn_s btn_skyblueline">수정</button>
+                            <button class="ico_edit"></button>
                           </td>
                         </tr>
                         <tr>
@@ -541,7 +541,7 @@
                           <td>경보</td>
                           <td>Y</td>
                           <td>
-                            <button class="btn_s btn_skyblueline">수정</button>
+                            <button class="ico_edit"></button>
                           </td>
                         </tr>
                         <tr>
@@ -550,7 +550,7 @@
                           <td>경보</td>
                           <td>Y</td>
                           <td>
-                            <button class="btn_s btn_skyblueline">수정</button>
+                            <button class="ico_edit"></button>
                           </td>
                         </tr>
                         <tr>
@@ -559,7 +559,7 @@
                           <td>경보</td>
                           <td>Y</td>
                           <td>
-                            <button class="btn_s btn_skyblueline">수정</button>
+                            <button class="ico_edit"></button>
                           </td>
                         </tr>
                       </tbody>
@@ -569,13 +569,13 @@
               </div>
             </div>
             <div id="tab03" class="tab_cont">
-              <div class="flex_wrap f_sb">
+              <div class="localgroup_wrap flex_wrap f_sb">
                 <div class="tbl_wrap">
-                  <h2>규약어</h2>
                   <div class="search_area">
                     <ul class="search f_s">
                       <li>
-                        <input type="text" name="search" placeholder="검색어를 입력하세요">
+                        <label for="search"><b>그룹명</b></label>
+                        <input type="text" id="search" placeholder="검색어를 입력하세요">
                         <button type="button" class="btn btn_blue">검색</button>
                       </li>
                     </ul>
@@ -583,7 +583,7 @@
                   <table class="tbl_default">
                     <div class="tbl_top flex_wrap f_sb">
                       <p>검색결과 : 총 <b class="font_blue">4</b>건</p>
-                      <button type="button" class="btn btn_skyblue">추가
+                      <button type="button" class="btn_s btn_axi btn_add btn_skyblueline">추가
                       </button>
                     </div>
                     <colgroup>
@@ -600,7 +600,7 @@
                       </tr>
                     </thead>
                   </table>
-                  <div class="tbl_body_wrap tbl_scroll" style="height:565px;">
+                  <div class="tbl_body_wrap tbl_scroll" style="height:598px;">
                     <table class="tbl_default">
                       <colgroup>
                         <col width="*">
@@ -693,6 +693,351 @@
                   </div>
                 </div>
                 <div class="arrow"></div>
+                <div class="select_box_wrap">
+                  <div>
+                    <ul class="dot_list monitoring_detail">
+                      <li>
+                        <label for=""><b>그룹명</b></label>
+                        <input type="text" value="서울, 경기남부">
+                      </li>
+                      <li>
+                        <label for=""><b>설명</b></label>
+                        <input type="text">
+                      </li>
+                    </ul>
+                    <div>
+                      <ul class="flex_wrap f_s">
+                        <li>
+                          <input type="radio" name="locationType" id="locationType1">
+                          <label for="locationType1">전국</label>
+                        </li>
+                        <li>
+                          <input type="radio" name="locationType" id="locationType2">
+                          <label for="locationType2">시도</label>
+                        </li>
+                        <li>
+                          <input type="radio" name="locationType" id="locationType3">
+                          <label for="locationType3">시군구</label>
+                        </li>
+                        <li>
+                          <input type="radio" name="locationType" id="locationType4">
+                          <label for="locationType4">읍면동</label>
+                        </li>
+                      </ul>
+                      <div class="select_box flex_wrap f_sb">
+                        <ul>
+                          <li class="on">
+                            <input type="checkbox" id="selectType2_1">
+                            <label for="selectType2_1">
+                              <span>
+                                서울
+                              </span>
+                            </label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="selectType2_2">
+                            <label for="selectType2_2">
+                              경기도
+                            </label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="selectType2_3">
+                            <label for="selectType2_3">
+                              울산광역시
+                            </label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="selectType2_4">
+                            <label for="selectType2_4">
+                              세종특별자치시
+                            </label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="selectType2_5">
+                            <label for="selectType2_5">
+                              경기도
+                            </label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="selectType2_6">
+                            <label for="selectType2_6">
+                              강원도
+                            </label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="selectType2_7">
+                            <label for="selectType2_7">
+                              충청북도
+                            </label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="selectType2_8">
+                            <label for="selectType2_8">
+                              충청남도
+                            </label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="selectType2_9">
+                            <label for="selectType2_9">
+                              전라북도
+                            </label>
+                          </li>
+                        </ul>
+                        <ul>
+                          <li>
+                            <input type="checkbox" id="selectType1_1">
+                            <label for="selectType1_1">
+                              <span>
+                                고양시
+                              </span>
+                            </label>
+                          </li>
+                          <li class="on">
+                            <input type="checkbox" id="selectType1_2">
+                            <label for="selectType1_2">
+                              광명시
+                            </label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="selectType1_3">
+                            <label for="selectType1_3">
+                              과천시
+                            </label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="selectType1_4">
+                            <label for="selectType1_4">
+                              남양주시
+                            </label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="selectType1_5">
+                            <label for="selectType1_5">
+                              성남시
+                            </label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="selectType1_6">
+                            <label for="selectType1_6">
+                              고양시
+                            </label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="selectType1_7">
+                            <label for="selectType1_7">
+                              광명시
+                            </label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="selectType1_8">
+                            <label for="selectType1_8">
+                              과천시
+                            </label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="selectType1_9">
+                            <label for="selectType1_9">
+                              남양주시
+                            </label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="selectType1_10">
+                            <label for="selectType1_10">
+                              성남시
+                            </label>
+                          </li>
+                        </ul>
+                        <ul>
+                          <li>
+                            <input type="checkbox" id="selectType3_1">
+                            <label for="selectType3_1">
+                              <span>
+                                광명동
+                              </span>
+                            </label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="selectType3_2" checked>
+                            <label for="selectType3_2">
+                              <span>
+                                철산동
+                              </span>
+                            </label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="selectType3_3">
+                            <label for="selectType3_3">
+                              <span>
+                                소하동
+                              </span>
+                            </label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="selectType3_4">
+                            <label for="selectType3_4">
+                              <span>
+                                일직동
+                              </span>
+                            </label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="selectType3_5">
+                            <label for="selectType3_5">
+                              <span>
+                                노온사동
+                              </span>
+                            </label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="selectType3_6">
+                            <label for="selectType3_6">
+                              <span>
+                                학온동
+                              </span>
+                            </label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="selectType3_7">
+                            <label for="selectType3_7">
+                              <span>
+                                광명동
+                              </span>
+                            </label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="selectType3_8">
+                            <label for="selectType3_8">
+                              <span>
+                                철산동
+                              </span>
+                            </label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="selectType3_9">
+                            <label for="selectType3_9">
+                              <span>
+                                소하동
+                              </span>
+                            </label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="selectType3_10">
+                            <label for="selectType3_10">
+                              <span>
+                                일직동
+                              </span>
+                            </label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="selectType3_11">
+                            <label for="selectType3_11">
+                              <span>
+                                노온사동
+                              </span>
+                            </label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="selectType3_12">
+                            <label for="selectType3_12">
+                              <span>
+                                학온동
+                              </span>
+                            </label>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="selectlocate_area">
+                        <div class="tit_wrap flex_wrap f_sb">
+                          <h3>선택지역</h3>
+                          <button type="button" class="btn_s btn_skyblueline">
+                            <i class="axi axi-refresh"></i>
+                            <b>초기화</b></button>
+                        </div>
+                        <div>
+                          <div class="selectlocate_wrap">
+                            <h3>서울</h3>
+                            <ul>
+                              <li>
+                                <span>강원도</span>
+                                <i class="axi axi-close"></i>
+                              </li>
+                              <li>
+                                <span>충청북도</span>
+                                <i class="axi axi-close"></i>
+                              </li>
+                              <li>
+                                <span>세종특별자치시</span>
+                                <i class="axi axi-close"></i>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="selectlocate_wrap">
+                            <h3>
+                              <span>경기</span>
+                              <span>광명시</span>
+                            </h3>
+                            <ul>
+                              <li>
+                                <span>강원도</span>
+                                <i class="axi axi-close"></i>
+                              </li>
+                              <li>
+                                <span>충청북도</span>
+                                <i class="axi axi-close"></i>
+                              </li>
+                              <li>
+                                <span>세종특별자치시</span>
+                                <i class="axi axi-close"></i>
+                              </li>
+                            </ul>
+                            <h3>
+                              <span>경기</span>
+                              <span>부천시</span>
+                            </h3>
+                            <ul>
+                              <li>
+                                <span>강원도</span>
+                                <i class="axi axi-close"></i>
+                              </li>
+                              <li>
+                                <span>충청북도</span>
+                                <i class="axi axi-close"></i>
+                              </li>
+                              <li>
+                                <span>세종특별자치시</span>
+                                <i class="axi axi-close"></i>
+                              </li>
+                            </ul>
+                            <h3>
+                              <span>경기</span>
+                              <span>부천시</span>
+                            </h3>
+                            <ul>
+                              <li>
+                                <span>강원도</span>
+                                <i class="axi axi-close"></i>
+                              </li>
+                              <li>
+                                <span>충청북도</span>
+                                <i class="axi axi-close"></i>
+                              </li>
+                              <li>
+                                <span>세종특별자치시</span>
+                                <i class="axi axi-close"></i>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                  </div>
+                  <div class="btn_wrap alignR">
+                    <button type="button" class="btn_approval btn_l btn_blue">저장</button>
+                    <button type="button" class="btn_approval btn_l btn_gray">취소</button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -702,16 +1047,16 @@
     </div>
     <!-- // Contents -->
   </div>
-  @@include('inc/p_issue01.html')
+  @@include('inc/p_setting.html')
   @@include('inc/script.html')
 
   <script>
-    $('.btn_detailsearch').on('click', function () {
-      $(this).toggleClass('on');
-      $(this).prev('.detailsearch_wrap').slideToggle();
+    $(".btn_convention").on('click', function () {
+      $('.p_setting').parent('.pop_overlay').fadeIn();
     })
-    $(".btn_reason").on('click', function () {
-      $('.p_issue01').parent('.pop_overlay').fadeIn();
+
+    $(".select_box ul li").on('click', function () {
+      $(this).children('input').attr(':checked');
     })
   </script>
 </body>

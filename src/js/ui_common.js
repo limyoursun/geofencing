@@ -3,40 +3,61 @@ $(function () {
   $.datetimepicker.setLocale('kr');
   $('#datetimepicker').datetimepicker();
 
+  $('#date_timepicker_start').datetimepicker({
+    format: 'Y/m/d',
+    onShow: function (ct) {
+      this.setOptions({
+        maxDate: $('#date_timepicker_end').val() ? $('#date_timepicker_end').val() : false
+      })
+    },
+    timepicker: false
+  });
+  $('#date_timepicker_start2').datetimepicker({
+    format: 'Y/m/d',
+    onShow: function (ct) {
+      this.setOptions({
+        maxDate: $('#date_timepicker_end2').val() ? $('#date_timepicker_end2').val() : false
+      })
+    },
+    timepicker: false
+  });
+  $('#date_timepicker_start3').datetimepicker({
+    format: 'Y/m/d',
+    onShow: function (ct) {
+      this.setOptions({
+        maxDate: $('#date_timepicker_end3').val() ? $('#date_timepicker_end3').val() : false
+      })
+    },
+    timepicker: false
+  });
 
-
-
-  $("input[id^=date_timepicker_start]").each(function () {
-    var _this = this.id;
-    $('#' + _this).datetimepicker({
-      format: 'Y/m/d',
-      onShow: function (ct) {
-        this.setOptions({
-          maxDate: $(this).next('#date_timepicker_end').val() ? $(this).next('#date_timepicker_end').val() : false
-        })
-      },
-      timepicker: false
-    });
-  })
-
-
-  $("input[id^=date_timepicker_end]").each(function () {
-    var _this = this.id;
-    $('#' + _this).datetimepicker({
-      format: 'Y/m/d',
-      onShow: function (ct) {
-        this.setOptions({
-          minDate: $(this).prev('#date_timepicker_start').val() ? $(this).prev('#date_timepicker_start').val() : false
-        })
-      },
-      timepicker: false
-    });
-
-  })
-
-
-
-
+  $('#date_timepicker_end').datetimepicker({
+    format: 'Y/m/d',
+    onShow: function (ct) {
+      this.setOptions({
+        minDate: $('#date_timepicker_start').val() ? $('#date_timepicker_start').val() : false
+      })
+    },
+    timepicker: false
+  });
+  $('#date_timepicker_end2').datetimepicker({
+    format: 'Y/m/d',
+    onShow: function (ct) {
+      this.setOptions({
+        minDate: $('#date_timepicker_start2').val() ? $('#date_timepicker_start2').val() : false
+      })
+    },
+    timepicker: false
+  });
+  $('#date_timepicker_end3').datetimepicker({
+    format: 'Y/m/d',
+    onShow: function (ct) {
+      this.setOptions({
+        minDate: $('#date_timepicker_start3').val() ? $('#date_timepicker_start3').val() : false
+      })
+    },
+    timepicker: false
+  });
 
   // tab
   var tab_conts = $('.tab_conts'),
@@ -108,4 +129,10 @@ $('.btn_toggle').on('click', function (e) {
   } else {
     $(this).attr('datavalue', 'on');
   }
+})
+$('.slide_tit i').on('click', function () {
+  $(this).children('.how_to_use').toggleClass('on');
+})
+$('.axi-close').on('click', function () {
+  $(this).parent('li').css({ 'display': 'none' });
 })

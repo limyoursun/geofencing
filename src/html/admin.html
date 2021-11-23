@@ -37,8 +37,8 @@
               </div>
               <div class="tbl_wrap">
                 <div class="btn_wrap alignR">
-                  <button type="button" class="btn btn_blue">추가</button>
-                  <button type="button" class="btn btn_gray">삭제</button>
+                  <button type="button" class="btn_axi btn_add btn_skyblueline btn_admin">추가</button>
+                  <button type="button" class="btn_axi btn_minus btn_grayline">삭제</button>
                 </div>
                 <div class="tbl_body_wrap" style="height:560px;">
                   <table class="tbl_default">
@@ -79,7 +79,7 @@
                         <td></td>
                         <td>2020-08-12</td>
                         <td>
-                          <button class="btn_s btn_skyblueline">수정</button>
+                          <button class="ico_edit"></button>
                         </td>
                       </tr>
                       <tr>
@@ -94,7 +94,7 @@
                         <td></td>
                         <td>2020-08-12</td>
                         <td>
-                          <button class="btn_s btn_skyblueline">수정</button>
+                          <button class="ico_edit"></button>
                         </td>
                       </tr>
                       <tr>
@@ -109,7 +109,7 @@
                         <td></td>
                         <td>2020-08-12</td>
                         <td>
-                          <button class="btn_s btn_skyblueline">수정</button>
+                          <button class="ico_edit"></button>
                         </td>
                       </tr>
                       <tr>
@@ -124,7 +124,7 @@
                         <td></td>
                         <td>2020-08-12</td>
                         <td>
-                          <button class="btn_s btn_skyblueline">수정</button>
+                          <button class="ico_edit"></button>
                         </td>
                       </tr>
                     </tbody>
@@ -156,9 +156,9 @@
                   <div class="tit_h3">
                     <h3>그룹코드</h3>
                     <div class="btn_wrap btn_wrap_s">
-                      <button type="button" class="btn btn_grayline">추가</button>
-                      <button type="button" class="btn btn_grayline">삭제</button>
-                      <button type="button" class="btn btn_mintline">미사용</button>
+                      <button type="button" class="btn_axi btn_add btn_skyblueline btn_code">추가</button>
+                      <button type="button" class="btn_axi btn_minus btn_grayline">삭제</button>
+                      <button type="button" class="btn_s btn_mintline"><b>미사용</b></button>
                     </div>
                   </div>
                   <div>
@@ -183,7 +183,7 @@
                         </tr>
                       </thead>
                     </table>
-                    <div class="tbl_default tbl_scroll" style="height:635px">
+                    <div class="tbl_default tbl_scroll" style="height:660px">
                       <table>
                         <caption>훈련결과 내용 테이블</caption>
                         <colgroup>
@@ -328,11 +328,11 @@
                 <div class="arrow"></div>
                 <div class="section tbl_wrap">
                   <div class="tit_h3">
-                    <h3>그룹코드</h3>
+                    <h3>상세코드</h3>
                     <div class="btn_wrap btn_wrap_s">
-                      <button type="button" class="btn btn_grayline">추가</button>
-                      <button type="button" class="btn btn_grayline">삭제</button>
-                      <button type="button" class="btn btn_mintline">미사용</button>
+                      <button type="button" class="btn_axi btn_add btn_skyblueline btn_code_2">추가</button>
+                      <button type="button" class="btn_axi btn_minus btn_grayline">삭제</button>
+                      <button type="button" class="btn_s btn_mintline"><b>미사용</b></button>
                     </div>
                   </div>
                   <div>
@@ -357,7 +357,7 @@
                         </tr>
                       </thead>
                     </table>
-                    <div class="tbl_default tbl_scroll" style="height:635px">
+                    <div class="tbl_default tbl_scroll" style="height:660px">
                       <table>
                         <caption>훈련결과 내용 테이블</caption>
                         <colgroup>
@@ -521,8 +521,8 @@
               </div>
               <div class="tbl_wrap">
                 <div class="btn_wrap alignR">
-                  <button type="button" class="btn btn_blue">추가</button>
-                  <button type="button" class="btn btn_gray">삭제</button>
+                  <button type="button" class="btn_axi btn_add btn_skyblueline btn_receiver">추가</button>
+                  <button type="button" class="btn_axi btn_minus btn_grayline">삭제</button>
                 </div>
                 <table class="tbl_default">
                   <colgroup>
@@ -582,7 +582,7 @@
                         <td>지자체/민간</td>
                         <td>2020-08-12</td>
                         <td>
-                          <button class="btn_s btn_skyblueline">수정</button>
+                          <button class="ico_edit"></button>
                         </td>
                       </tr>
                       <tr>
@@ -598,7 +598,7 @@
                         <td>지자체/민간</td>
                         <td>2020-08-12</td>
                         <td>
-                          <button class="btn_s btn_skyblueline">수정</button>
+                          <button class="ico_edit"></button>
                         </td>
                       </tr>
                       <tr>
@@ -614,7 +614,7 @@
                         <td>지자체/민간</td>
                         <td>2020-08-12</td>
                         <td>
-                          <button class="btn_s btn_skyblueline">수정</button>
+                          <button class="ico_edit"></button>
                         </td>
                       </tr>
                       <tr>
@@ -630,7 +630,7 @@
                         <td>지자체/민간</td>
                         <td>2020-08-12</td>
                         <td>
-                          <button class="btn_s btn_skyblueline">수정</button>
+                          <button class="ico_edit"></button>
                         </td>
                       </tr>
                     </tbody>
@@ -645,16 +645,24 @@
     </div>
     <!-- // Contents -->
   </div>
-  @@include('inc/p_issue01.html')
+  @@include('inc/p_admin01.html')
+  @@include('inc/p_code.html')
+  @@include('inc/p_code_2.html')
+  @@include('inc/p_receiver.html')
   @@include('inc/script.html')
 
   <script>
-    $('.btn_detailsearch').on('click', function () {
-      $(this).toggleClass('on');
-      $(this).prev('.detailsearch_wrap').slideToggle();
+    $(".btn_admin").on('click', function () {
+      $('.p_admin01').parent('.pop_overlay').fadeIn();
     })
-    $(".btn_reason").on('click', function () {
-      $('.p_issue01').parent('.pop_overlay').fadeIn();
+    $(".btn_code").on('click', function () {
+      $('.p_code').parent('.pop_overlay').fadeIn();
+    })
+    $(".btn_code_2").on('click', function () {
+      $('.p_code_2').parent('.pop_overlay').fadeIn();
+    })
+     $(".btn_receiver").on('click', function () {
+      $('.p_receiver').parent('.pop_overlay').fadeIn();
     })
   </script>
 
