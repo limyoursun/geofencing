@@ -59,9 +59,9 @@ textarea{width:100%;min-height:35px;resize:none;line-height:24px;}
 .btn_skyblue:hover{background-color:#2b6abf;border:1px solid #2b6abf;color:#fff;}
 .btn_skyblueline{border:1px solid #2287f3;background-color:#fff;color:#2287f3;}
 .btn_skyblueline:hover{background-color:#2287f3;color:#fff;}
-.btn_mintline{border:2px solid #3ca7d3;background-color:#fff;color:#3ca7d3;}
+.btn_mintline{border:1px solid #3ca7d3;background-color:#fff;color:#3ca7d3;}
 .btn_mintline:hover{border:2px solid #3ca7d3;background-color:#3ca7d3;color:#fff;}
-.btn_grayline{border:2px solid #aaa;background-color:#fff;color:#777777;}
+.btn_grayline{border:1px solid #aaa;background-color:#fff;color:#777777;}
 .btn_grayline:hover, .btn_grayline:active{background-color:#888;border:2px solid #888; color:#fff;}
 .btn_green{border:1px solid #098703;background-color:#fff;color:#098703;}
 .btn_green:hover{border:1px solid #098703;background-color:#098703;color:#fff;}
