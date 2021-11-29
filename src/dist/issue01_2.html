@@ -73,6 +73,160 @@
     </ul>
   </nav>
 </header>
+  <div class="pop_overlay">
+  <div class="pop_wrap p_alert">
+    <div class="pop_tit">
+      <h1>알림 리스트</h1>
+      <button type="button" class="btn_pop_close"></button>
+    </div>
+    <div class="pop_body">
+      <div class="pop_cont">
+        <div>
+          <div class="search_area">
+            <ul class="search f_s">
+              <li>
+                <label for="di_info"><b>재난정보</b></label>
+                <select id="di_info">
+                  <option value="전체">전체</option>
+                  <option value="호우경보발표">호우경보발표</option>
+                </select>
+              </li>
+              <li>
+                <label for="date_timepicker_start0"><b>조회대상기간</b></label>
+                <span class="period period_multi">
+                  <input type="text" id="date_timepicker_start0" class="input_calendar" value="YYYY/MM/DD"
+                    placeholder="기간 시작일 선택" title="기간 시작일 선택">
+                  <input type="text" id="date_timepicker_end0" class="input_calendar" value="YYYY/MM/DD"
+                    placeholder="기간 종료일 선택" title="기간 종료일 선택">
+                </span>
+              </li>
+              <li>
+                <label for="searchvalue"><b>검색어</b></label>
+                <input type="text" id="searchvalue" placeholder="검색어">
+                <button type="button" class="btn_skyblue">검색</button>
+              </li>
+            </ul>
+          </div>
+          <div class="tbl_wrap">
+            <table class="tbl_default">
+              <caption>알림 리스트</caption>
+              <colgroup>
+                <col style="width:40px">
+                <col style="width:140px">
+                <col style="width:220px">
+                <col style="width:140px">
+                <col style="width:140px">
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope="col">No.</th>
+                  <th scope="col">재난정보</th>
+                  <th scope="col">발생지역</th>
+                  <th scope="col">처리상태</th>
+                  <th scope="col">알림시간</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="on">
+                  <td></td>
+                  <td>호우경보발표</td>
+                  <td>서울 구로구</td>
+                  <td>승인</td>
+                  <td>2020-08-12 12:34:56</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>호우경보발표</td>
+                  <td>서울 구로구</td>
+                  <td>승인</td>
+                  <td>2020-08-12 12:34:56</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>호우경보발표</td>
+                  <td>서울 구로구</td>
+                  <td>승인</td>
+                  <td>2020-08-12 12:34:56</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>호우경보발표</td>
+                  <td>서울 구로구</td>
+                  <td>승인</td>
+                  <td>2020-08-12 12:34:56</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>호우경보발표</td>
+                  <td>서울 구로구</td>
+                  <td>승인</td>
+                  <td>2020-08-12 12:34:56</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>호우경보발표</td>
+                  <td>서울 구로구</td>
+                  <td>승인</td>
+                  <td>2020-08-12 12:34:56</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>호우경보발표</td>
+                  <td>서울 구로구</td>
+                  <td>승인</td>
+                  <td>2020-08-12 12:34:56</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>호우경보발표</td>
+                  <td>서울 구로구</td>
+                  <td>승인</td>
+                  <td>2020-08-12 12:34:56</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>호우경보발표</td>
+                  <td>서울 구로구</td>
+                  <td>승인</td>
+                  <td>2020-08-12 12:34:56</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>호우경보발표</td>
+                  <td>서울 구로구</td>
+                  <td>승인</td>
+                  <td>2020-08-12 12:34:56</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>호우경보발표</td>
+                  <td>서울 구로구</td>
+                  <td>승인</td>
+                  <td>2020-08-12 12:34:56</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="paginate">
+              <a href="#" class="first" title="처음">〈〈</a>
+              <a href="#" class="pre" title="이전">〈</a>
+              <span>
+                <a href="#" class="on">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+              </span>
+              <a href="#" class="next" title="다음">〉</a>
+              <a href="#" class="last" title="마지막">〉〉</a>
+            </div>
+          </div>
+        </div>
+        <div class="btn_wrap alignC">
+          <button type="button" class="btn_l btn_gray">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
     <!-- Contents -->
     <div class="con_wrap">
       <div class="con_l">
@@ -81,7 +235,7 @@
         </div>
         <div class="slide_main">
           <div class="alignR">
-            <a href="./issue01.html"><button type="button" class="btn_s btn_grayline">목록보기</button></a>
+            <a href="./issue01.html" class="btn_s btn_grayline">목록보기</a>
           </div>
           <div class="disaster_type flex_wrap">
             <h3 class="heavy_rain">호우경보 발표</h3>
@@ -92,14 +246,12 @@
           <ul class="dot_list monitoring_detail">
             <li>
               <b>승인요청</b>
-              <span>
-                <ul class="breadcrumb">
-                  <li>자연재난</li>
-                  <li>호우</li>
-                  <li>경보</li>
-                  <li>발표</li>
-                </ul>
-              </span>
+              <ul class="breadcrumb">
+                <li>자연재난</li>
+                <li>호우</li>
+                <li>경보</li>
+                <li>발표</li>
+              </ul>
             </li>
             <li>
               <b>발령매체</b>
@@ -293,13 +445,13 @@
   <div class="pop_wrap p_main03_1">
     <div class="pop_tit">
       <h1>발령승인</h1>
-      <button type="button" class="btn_pop_close" closePop></button>
+      <button type="button" class="btn_pop_close"></button>
     </div>
     <div class="pop_body">
       <div class="pop_cont">
-        <div class="pop_box flex_wrap">
-          <i class="axi axi-ion-android-information"></i>
-          <p>아래 요청건에 대한 승인을 진행하겠습니까?</p>
+        <div class="pop_box">
+          <span class="alert">경고 아이콘</span>
+          <p><b>아래 요청건에 대한 승인을 진행하겠습니까?</b></p>
         </div>
         <div class="text_sample">
           <h3>호우경보 발표</h3>
@@ -314,9 +466,9 @@
             </li>
           </ul>
         </div>
-        <div class="btn_wrap alignR">
-          <button type="button" class="btn btn_blue">확인</button>
-          <button type="button" class="btn_cancel btn btn_gray">취소</button>
+        <div class="btn_wrap alignC">
+          <button type="button" class="btn_l btn_blue">확인</button>
+          <button type="button" class="btn_cancel btn_l btn_gray">취소</button>
         </div>
       </div>
     </div>
@@ -326,12 +478,12 @@
   <div class="pop_wrap p_main03_2">
     <div class="pop_tit">
       <h1>반려</h1>
-      <button type="button" class="btn_pop_close" closePop></button>
+      <button type="button" class="btn_pop_close"></button>
     </div>
     <div class="pop_body">
       <div class="pop_cont">
-        <div class="pop_box flex_wrap">
-          <i class="axi axi-exclamation-triangle"></i>
+        <div class="pop_box">
+          <span class="alert">경고 아이콘</span>
           <p>
             <b>해당 요청건을 반려합니다.</b><br>
             하기 반려사유를 작성해주세요.
@@ -341,9 +493,9 @@
           <label for="reject_reason"><b>반려사유 :</b></label>
           <input type="text" id="reject_reason">
         </div>
-        <div class="btn_wrap alignR">
-          <button type="button" class="btn btn_blue">확인</button>
-          <button type="button" class="btn_cancel btn btn_gray">취소</button>
+        <div class="btn_wrap alignC">
+          <button type="button" class="btn_l btn_blue">확인</button>
+          <button type="button" class="btn_cancel btn_l btn_gray">취소</button>
         </div>
       </div>
     </div>

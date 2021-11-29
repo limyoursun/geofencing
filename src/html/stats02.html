@@ -22,31 +22,29 @@
               <div class="search_area">
                 <ul class="search f_s">
                   <li>
-                    <select name="" id="">
+                    <select title="type">
                       <option value="전체">전체</option>
                     </select>
                   </li>
                   <li>
-                    <select name="" id="">
+                    <select title="type">
                       <option value="전체">전체</option>
                     </select>
                   </li>
                   <li>
                     <span class="period period_multi">
-                      <input type="text" class="datepicker from" name="date" placeholder="YYYY-MM-DD" readonly
-                        dataformat="from" title="시작 날짜 선택">
-                      <input type="text" class="datepicker to" name="date" placeholder="YYYY-MM-DD" readonly
-                        dataformat="to" title="종료  날짜 선택">
-                    </span>
+                    <input type="text" id="date_timepicker_start" class="input_calendar" value="YYYY/MM/DD" placeholder="기간 종료일 선택"
+                      title="기간 종료일 선택">
+                    <input type="text" id="date_timepicker_end" class="input_calendar" value="YYYY/MM/DD" placeholder="기간 종료일 선택"
+                      title="기간 종료일 선택">
+                  </span>
                   </li>
                   <li>
                     <select title="전체">
-                      <option value="">전체</option>
+                      <option value="전체">전체</option>
                     </select>
-                    <input type="text" id="location" placeholder="검색어">
-                  </li>
-                  <li>
-                    <button type="button" class="btn btn_blue">검색</button>
+                    <input type="text" title="location" placeholder="검색어">
+                    <button type="button" class="btn_skyblue">검색</button>
                   </li>
                 </ul>
               </div>
@@ -55,22 +53,21 @@
                   <h2>재난별 경보발령 통계</h2>
                   <div id="chart1" style="width:100%;height:100%"></div>
                 </div>
-                <div class="tbl_wrap">
+                <div class="tbl_wrap" style="width:55%;">
                   <table class="tbl_default">
                     <colgroup>
-                      <col width="*">
-                      <col width="150">
-                      <col width="150">
-                      <col width="150">
-                      <col width="150">
-                      <col width="150">
-                      <col class="fix_scroll">
+                      <col style="width:160px">
+                      <col style="width:160px">
+                      <col style="width:160px">
+                      <col style="width:160px">
+                      <col style="width:160px">
+                      <col style="width:auto">
                     </colgroup>
                     <thead>
                       <tr>
                         <th scope="col" rowspan="2">재난구분</th>
                         <th scope="col" rowspan="2">재난명</th>
-                        <th scope="col" colspan="4">발생건수</th>
+                        <th scope="col" rowspan="1" colspan="4">발생건수</th>
                       </tr>
                       <tr>
                         <th scope="col">소계</th>
@@ -83,19 +80,17 @@
                   <div class="tbl_body_wrap tbl_scroll" style="height:590px;">
                     <table class="tbl_default">
                       <colgroup>
-                        <col width="*">
-                        <col width="150">
-                        <col width="150">
-                        <col width="150">
-                        <col width="150">
-                        <col width="150">
-                        <col width="150">
+                        <col style="width:160px">
+                        <col style="width:160px">
+                        <col style="width:160px">
+                        <col style="width:160px">
+                        <col style="width:160px">
+                        <col style="width:auto">
                       </colgroup>
                       <tbody>
                         <tr>
                           <td>전체</td>
                           <td>합계</td>
-                          <td>000</td>
                           <td>000</td>
                           <td>000</td>
                           <td>000</td>
@@ -108,6 +103,53 @@
                           <td>000</td>
                           <td>000</td>
                           <td>000</td>
+                        </tr>
+                        <tr>
+                          <td>자연재난</td>
+                          <td>호우</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                        </tr>
+                        <tr>
+                          <td>자연재난</td>
+                          <td>호우</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                        </tr>
+                        <tr>
+                          <td>자연재난</td>
+                          <td>호우</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                        </tr>
+                        <tr>
+                          <td>자연재난</td>
+                          <td>호우</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                        </tr>
+                        <tr>
+                          <td>자연재난</td>
+                          <td>호우</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                        </tr>
+                        <tr>
+                          <td>자연재난</td>
+                          <td>호우</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
                           <td>000</td>
                         </tr>
                         <tr>
@@ -117,21 +159,10 @@
                           <td>000</td>
                           <td>000</td>
                           <td>000</td>
-                          <td>000</td>
                         </tr>
                         <tr>
                           <td>자연재난</td>
                           <td>산사태</td>
-                          <td>000</td>
-                          <td>000</td>
-                          <td>000</td>
-                          <td>000</td>
-                          <td>000</td>
-                        </tr>
-                        <tr>
-                          <td>자연재난</td>
-                          <td>산사태</td>
-                          <td>000</td>
                           <td>000</td>
                           <td>000</td>
                           <td>000</td>
@@ -144,21 +175,10 @@
                           <td>000</td>
                           <td>000</td>
                           <td>000</td>
-                          <td>000</td>
                         </tr>
                         <tr>
                           <td>자연재난</td>
                           <td>산사태</td>
-                          <td>000</td>
-                          <td>000</td>
-                          <td>000</td>
-                          <td>000</td>
-                          <td>000</td>
-                        </tr>
-                        <tr>
-                          <td>자연재난</td>
-                          <td>산사태</td>
-                          <td>000</td>
                           <td>000</td>
                           <td>000</td>
                           <td>000</td>
@@ -171,21 +191,10 @@
                           <td>000</td>
                           <td>000</td>
                           <td>000</td>
-                          <td>000</td>
                         </tr>
                         <tr>
                           <td>자연재난</td>
                           <td>산사태</td>
-                          <td>000</td>
-                          <td>000</td>
-                          <td>000</td>
-                          <td>000</td>
-                          <td>000</td>
-                        </tr>
-                        <tr>
-                          <td>자연재난</td>
-                          <td>산사태</td>
-                          <td>000</td>
                           <td>000</td>
                           <td>000</td>
                           <td>000</td>
@@ -198,21 +207,10 @@
                           <td>000</td>
                           <td>000</td>
                           <td>000</td>
-                          <td>000</td>
                         </tr>
                         <tr>
                           <td>자연재난</td>
                           <td>산사태</td>
-                          <td>000</td>
-                          <td>000</td>
-                          <td>000</td>
-                          <td>000</td>
-                          <td>000</td>
-                        </tr>
-                        <tr>
-                          <td>자연재난</td>
-                          <td>산사태</td>
-                          <td>000</td>
                           <td>000</td>
                           <td>000</td>
                           <td>000</td>
@@ -225,6 +223,13 @@
                           <td>000</td>
                           <td>000</td>
                           <td>000</td>
+                        </tr>
+                        <tr>
+                          <td>자연재난</td>
+                          <td>산사태</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
                           <td>000</td>
                         </tr>
                         <tr>
@@ -234,12 +239,34 @@
                           <td>000</td>
                           <td>000</td>
                           <td>000</td>
+                        </tr>
+                        <tr>
+                          <td>자연재난</td>
+                          <td>산사태</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
                           <td>000</td>
                         </tr>
                         <tr>
                           <td>자연재난</td>
                           <td>산사태</td>
                           <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                        </tr>
+                        <tr>
+                          <td>자연재난</td>
+                          <td>산사태</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                          <td>000</td>
+                        </tr>
+                        <tr>
+                          <td>자연재난</td>
+                          <td>산사태</td>
                           <td>000</td>
                           <td>000</td>
                           <td>000</td>
@@ -256,31 +283,29 @@
               <div class="search_area">
                 <ul class="search f_s">
                   <li>
-                    <select name="" id="">
+                    <select title="type">
                       <option value="전체">전체</option>
                     </select>
                   </li>
                   <li>
-                    <select name="" id="">
+                    <select title="type">
                       <option value="전체">전체</option>
                     </select>
                   </li>
                   <li>
                     <span class="period period_multi">
-                      <input type="text" class="datepicker from" name="date" placeholder="YYYY-MM-DD" readonly
-                        dataformat="from" title="시작 날짜 선택">
-                      <input type="text" class="datepicker to" name="date" placeholder="YYYY-MM-DD" readonly
-                        dataformat="to" title="종료  날짜 선택">
-                    </span>
+                    <input type="text" id="date_timepicker_start2" class="input_calendar" value="YYYY/MM/DD" placeholder="기간 종료일 선택"
+                      title="기간 종료일 선택">
+                    <input type="text" id="date_timepicker_end2" class="input_calendar" value="YYYY/MM/DD" placeholder="기간 종료일 선택"
+                      title="기간 종료일 선택">
+                  </span>
                   </li>
                   <li>
                     <select title="전체">
-                      <option value="">전체</option>
+                      <option value="전체">전체</option>
                     </select>
-                    <input type="text" id="location" placeholder="검색어">
-                  </li>
-                  <li>
-                    <button type="button" class="btn btn_blue">검색</button>
+                    <input type="text" title="location" placeholder="검색어">
+                    <button type="button" class="btn_skyblue">검색</button>
                   </li>
                 </ul>
               </div>
@@ -299,39 +324,33 @@
                 </div>
               </div>
             </div>
-
-
-
-
             <div id="tab03" class="tab_cont">
               <div class="search_area">
                 <ul class="search f_s">
                   <li>
-                    <select name="" id="">
+                    <select title="type">
                       <option value="전체">전체</option>
                     </select>
                   </li>
                   <li>
-                    <select name="" id="">
+                    <select title="type">
                       <option value="전체">전체</option>
                     </select>
                   </li>
                   <li>
                     <span class="period period_multi">
-                      <input type="text" class="datepicker from" name="date" placeholder="YYYY-MM-DD" readonly
-                        dataformat="from" title="시작 날짜 선택">
-                      <input type="text" class="datepicker to" name="date" placeholder="YYYY-MM-DD" readonly
-                        dataformat="to" title="종료  날짜 선택">
-                    </span>
+                    <input type="text" id="date_timepicker_start3" class="input_calendar" value="YYYY/MM/DD" placeholder="기간 종료일 선택"
+                      title="기간 종료일 선택">
+                    <input type="text" id="date_timepicker_end3" class="input_calendar" value="YYYY/MM/DD" placeholder="기간 종료일 선택"
+                      title="기간 종료일 선택">
+                  </span>
                   </li>
                   <li>
                     <select title="전체">
-                      <option value="">전체</option>
+                      <option value="전체">전체</option>
                     </select>
-                    <input type="text" id="location" placeholder="검색어">
-                  </li>
-                  <li>
-                    <button type="button" class="btn btn_blue">검색</button>
+                    <input type="text" title="location" placeholder="검색어">
+                    <button type="button" class="btn_skyblue">검색</button>
                   </li>
                 </ul>
               </div>
@@ -366,7 +385,7 @@
     })
   </script>
 
-  <script type="text/javascript">
+  <script>
     var dom = document.getElementById("chart1");
     var myChart = echarts.init(dom);
     var app = {};

@@ -73,6 +73,160 @@
     </ul>
   </nav>
 </header>
+  <div class="pop_overlay">
+  <div class="pop_wrap p_alert">
+    <div class="pop_tit">
+      <h1>알림 리스트</h1>
+      <button type="button" class="btn_pop_close"></button>
+    </div>
+    <div class="pop_body">
+      <div class="pop_cont">
+        <div>
+          <div class="search_area">
+            <ul class="search f_s">
+              <li>
+                <label for="di_info"><b>재난정보</b></label>
+                <select id="di_info">
+                  <option value="전체">전체</option>
+                  <option value="호우경보발표">호우경보발표</option>
+                </select>
+              </li>
+              <li>
+                <label for="date_timepicker_start0"><b>조회대상기간</b></label>
+                <span class="period period_multi">
+                  <input type="text" id="date_timepicker_start0" class="input_calendar" value="YYYY/MM/DD"
+                    placeholder="기간 시작일 선택" title="기간 시작일 선택">
+                  <input type="text" id="date_timepicker_end0" class="input_calendar" value="YYYY/MM/DD"
+                    placeholder="기간 종료일 선택" title="기간 종료일 선택">
+                </span>
+              </li>
+              <li>
+                <label for="searchvalue"><b>검색어</b></label>
+                <input type="text" id="searchvalue" placeholder="검색어">
+                <button type="button" class="btn_skyblue">검색</button>
+              </li>
+            </ul>
+          </div>
+          <div class="tbl_wrap">
+            <table class="tbl_default">
+              <caption>알림 리스트</caption>
+              <colgroup>
+                <col style="width:40px">
+                <col style="width:140px">
+                <col style="width:220px">
+                <col style="width:140px">
+                <col style="width:140px">
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope="col">No.</th>
+                  <th scope="col">재난정보</th>
+                  <th scope="col">발생지역</th>
+                  <th scope="col">처리상태</th>
+                  <th scope="col">알림시간</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="on">
+                  <td></td>
+                  <td>호우경보발표</td>
+                  <td>서울 구로구</td>
+                  <td>승인</td>
+                  <td>2020-08-12 12:34:56</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>호우경보발표</td>
+                  <td>서울 구로구</td>
+                  <td>승인</td>
+                  <td>2020-08-12 12:34:56</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>호우경보발표</td>
+                  <td>서울 구로구</td>
+                  <td>승인</td>
+                  <td>2020-08-12 12:34:56</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>호우경보발표</td>
+                  <td>서울 구로구</td>
+                  <td>승인</td>
+                  <td>2020-08-12 12:34:56</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>호우경보발표</td>
+                  <td>서울 구로구</td>
+                  <td>승인</td>
+                  <td>2020-08-12 12:34:56</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>호우경보발표</td>
+                  <td>서울 구로구</td>
+                  <td>승인</td>
+                  <td>2020-08-12 12:34:56</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>호우경보발표</td>
+                  <td>서울 구로구</td>
+                  <td>승인</td>
+                  <td>2020-08-12 12:34:56</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>호우경보발표</td>
+                  <td>서울 구로구</td>
+                  <td>승인</td>
+                  <td>2020-08-12 12:34:56</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>호우경보발표</td>
+                  <td>서울 구로구</td>
+                  <td>승인</td>
+                  <td>2020-08-12 12:34:56</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>호우경보발표</td>
+                  <td>서울 구로구</td>
+                  <td>승인</td>
+                  <td>2020-08-12 12:34:56</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>호우경보발표</td>
+                  <td>서울 구로구</td>
+                  <td>승인</td>
+                  <td>2020-08-12 12:34:56</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="paginate">
+              <a href="#" class="first" title="처음">〈〈</a>
+              <a href="#" class="pre" title="이전">〈</a>
+              <span>
+                <a href="#" class="on">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+              </span>
+              <a href="#" class="next" title="다음">〉</a>
+              <a href="#" class="last" title="마지막">〉〉</a>
+            </div>
+          </div>
+        </div>
+        <div class="btn_wrap alignC">
+          <button type="button" class="btn_l btn_gray">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
     <!-- Contents -->
     <div class="con_wrap">
       <div class="only_con_wrap">
@@ -92,16 +246,14 @@
               <div class="search_area">
                 <ul class="search f_s">
                   <li>
-                    <select name="" id="">
+                    <select title="type">
                       <option value="부서선택">부서선택</option>
                     </select>
                     <select title="검색조건">
                       <option value="">검색조건</option>
                     </select>
-                    <input type="text" id="location" placeholder="검색어">
-                  </li>
-                  <li>
-                    <button type="button" class="btn btn_blue">검색</button>
+                    <input type="text" title="location1" placeholder="검색어">
+                    <button type="button" class="btn_skyblue">검색</button>
                   </li>
                 </ul>
               </div>
@@ -112,16 +264,17 @@
                 </div>
                 <div class="tbl_body_wrap" style="height:560px;">
                   <table class="tbl_default">
+                    <caption>사용자관리</caption>
                     <colgroup>
-                      <col width="80">
-                      <col width="250">
-                      <col width="250">
-                      <col width="250">
-                      <col width="250">
-                      <col width="250">
-                      <col width="250">
-                      <col width="250">
-                      <col width="250">
+                      <col style="width:80px">
+                      <col style="width:250px">
+                      <col style="width:250px">
+                      <col style="width:250px">
+                      <col style="width:250px">
+                      <col style="width:250px">
+                      <col style="width:250px">
+                      <col style="width:250px">
+                      <col style="width:250px">
                     </colgroup>
                     <thead>
                       <tr>
@@ -139,7 +292,7 @@
                     <tbody>
                       <tr class="on">
                         <td>
-                          <input type="checkbox">
+                          <input type="checkbox" title="checkbox">
                         </td>
                         <td>관리자</td>
                         <td>sysadmin</td>
@@ -154,7 +307,7 @@
                       </tr>
                       <tr>
                         <td>
-                          <input type="checkbox">
+                          <input type="checkbox" title="checkbox">
                         </td>
                         <td>관리자</td>
                         <td>sysadmin</td>
@@ -169,7 +322,7 @@
                       </tr>
                       <tr>
                         <td>
-                          <input type="checkbox">
+                          <input type="checkbox" title="checkbox">
                         </td>
                         <td>관리자</td>
                         <td>sysadmin</td>
@@ -184,7 +337,7 @@
                       </tr>
                       <tr>
                         <td>
-                          <input type="checkbox">
+                          <input type="checkbox" title="checkbox">
                         </td>
                         <td>관리자</td>
                         <td>sysadmin</td>
@@ -233,13 +386,13 @@
                   </div>
                   <div>
                     <table class="tbl_default">
-                      <caption>사고 발생 정보</caption>
+                      <caption>코드관리 제목</caption>
                       <colgroup>
-                        <col width="100">
-                        <col width="80">
-                        <col width="*">
-                        <col width="100">
-                        <col width="100">
+                        <col style="width:80px">
+                        <col style="width:180px">
+                        <col style="width:180px">
+                        <col style="width:180px">
+                        <col style="width:auto">
                         <col class="fix_scroll">
                       </colgroup>
                       <thead>
@@ -249,23 +402,23 @@
                           <th>그룹코드</th>
                           <th>설명</th>
                           <th>사용여부</th>
-                          <th>&nbsp;</th>
+                          <th></th>
                         </tr>
                       </thead>
                     </table>
                     <div class="tbl_default tbl_scroll" style="height:660px">
                       <table>
-                        <caption>훈련결과 내용 테이블</caption>
+                        <caption>코드관리 내용</caption>
                         <colgroup>
-                          <col width="100">
-                          <col width="80">
-                          <col width="*">
-                          <col width="100">
-                          <col width="100">
+                          <col style="width:80px">
+                          <col style="width:180px">
+                          <col style="width:180px">
+                          <col style="width:180px">
+                          <col style="width:auto">
                         </colgroup>
                         <tbody>
                           <tr>
-                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox" title="check"></td>
                             <td>사용자</td>
                             <td>ID NAME</td>
                             <td>홍길동</td>
@@ -274,7 +427,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox" title="check"></td>
                             <td>사용자</td>
                             <td>ID NAME</td>
                             <td>홍길동</td>
@@ -283,7 +436,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox" title="check"></td>
                             <td>관리자</td>
                             <td>ID NAME</td>
                             <td>홍길동</td>
@@ -292,7 +445,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox" title="check"></td>
                             <td>사용자</td>
                             <td>ID NAME</td>
                             <td>홍길동</td>
@@ -301,7 +454,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox" title="check"></td>
                             <td>사용자</td>
                             <td>ID NAME</td>
                             <td>홍길동</td>
@@ -310,7 +463,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox" title="check"></td>
                             <td>사용자</td>
                             <td>ID NAME</td>
                             <td>홍길동</td>
@@ -319,7 +472,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox" title="check"></td>
                             <td>사용자</td>
                             <td>ID NAME</td>
                             <td>홍길동</td>
@@ -328,7 +481,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox" title="check"></td>
                             <td>사용자</td>
                             <td>ID NAME</td>
                             <td>홍길동</td>
@@ -337,7 +490,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox" title="check"></td>
                             <td>관리자</td>
                             <td>ID NAME</td>
                             <td>홍길동</td>
@@ -346,7 +499,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox" title="check"></td>
                             <td>사용자</td>
                             <td>ID NAME</td>
                             <td>홍길동</td>
@@ -355,7 +508,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox" title="check"></td>
                             <td>사용자</td>
                             <td>ID NAME</td>
                             <td>홍길동</td>
@@ -364,7 +517,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox" title="check"></td>
                             <td>사용자</td>
                             <td>ID NAME</td>
                             <td>홍길동</td>
@@ -373,7 +526,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox" title="check"></td>
                             <td>사용자</td>
                             <td>ID NAME</td>
                             <td>홍길동</td>
@@ -382,7 +535,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox" title="check"></td>
                             <td>사용자</td>
                             <td>ID NAME</td>
                             <td>홍길동</td>
@@ -407,13 +560,13 @@
                   </div>
                   <div>
                     <table class="tbl_default">
-                      <caption>사고 발생 정보</caption>
+                      <caption>상세코드 제목</caption>
                       <colgroup>
-                        <col width="100">
-                        <col width="80">
-                        <col width="*">
-                        <col width="100">
-                        <col width="100">
+                        <col style="width:80px">
+                        <col style="width:180px">
+                        <col style="width:180px">
+                        <col style="width:180px">
+                        <col style="width:auto">
                         <col class="fix_scroll">
                       </colgroup>
                       <thead>
@@ -423,23 +576,23 @@
                           <th>그룹코드</th>
                           <th>설명</th>
                           <th>사용여부</th>
-                          <th>&nbsp;</th>
+                          <th></th>
                         </tr>
                       </thead>
                     </table>
                     <div class="tbl_default tbl_scroll" style="height:660px">
                       <table>
-                        <caption>훈련결과 내용 테이블</caption>
+                        <caption>상세코드 제목</caption>
                         <colgroup>
-                          <col width="100">
-                          <col width="80">
-                          <col width="*">
-                          <col width="100">
-                          <col width="100">
+                          <col style="width:80px">
+                          <col style="width:180px">
+                          <col style="width:180px">
+                          <col style="width:180px">
+                          <col style="width:auto">
                         </colgroup>
                         <tbody>
                           <tr>
-                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox" title="check"></td>
                             <td>사용자</td>
                             <td>ID NAME</td>
                             <td>홍길동</td>
@@ -448,7 +601,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox" title="check"></td>
                             <td>사용자</td>
                             <td>ID NAME</td>
                             <td>홍길동</td>
@@ -457,7 +610,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox" title="check"></td>
                             <td>관리자</td>
                             <td>ID NAME</td>
                             <td>홍길동</td>
@@ -466,7 +619,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox" title="check"></td>
                             <td>사용자</td>
                             <td>ID NAME</td>
                             <td>홍길동</td>
@@ -475,7 +628,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox" title="check"></td>
                             <td>사용자</td>
                             <td>ID NAME</td>
                             <td>홍길동</td>
@@ -484,7 +637,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox" title="check"></td>
                             <td>사용자</td>
                             <td>ID NAME</td>
                             <td>홍길동</td>
@@ -493,7 +646,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox" title="check"></td>
                             <td>사용자</td>
                             <td>ID NAME</td>
                             <td>홍길동</td>
@@ -502,7 +655,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox" title="check"></td>
                             <td>관리자</td>
                             <td>ID NAME</td>
                             <td>홍길동</td>
@@ -511,7 +664,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox" title="check"></td>
                             <td>사용자</td>
                             <td>ID NAME</td>
                             <td>홍길동</td>
@@ -520,7 +673,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox" title="check"></td>
                             <td>사용자</td>
                             <td>ID NAME</td>
                             <td>홍길동</td>
@@ -529,7 +682,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox" title="check"></td>
                             <td>사용자</td>
                             <td>ID NAME</td>
                             <td>홍길동</td>
@@ -538,7 +691,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox" title="check"></td>
                             <td>사용자</td>
                             <td>ID NAME</td>
                             <td>홍길동</td>
@@ -547,7 +700,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox" title="check"></td>
                             <td>사용자</td>
                             <td>ID NAME</td>
                             <td>홍길동</td>
@@ -556,7 +709,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td><input type="checkbox"></td>
+                            <td><input type="checkbox" title="check"></td>
                             <td>사용자</td>
                             <td>ID NAME</td>
                             <td>홍길동</td>
@@ -569,7 +722,6 @@
                     </div>
                   </div>
                 </div>
-
               </div>
             </div>
             <div id="tab03" class="tab_cont">
@@ -580,12 +732,10 @@
                       <option value="기관유형">기관유형</option>
                     </select>
                     <select title="검색조건">
-                      <option value="">검색조건</option>
+                      <option value="검색조건">검색조건</option>
                     </select>
-                    <input type="text" id="location" placeholder="검색어">
-                  </li>
-                  <li>
-                    <button type="button" class="btn btn_blue">검색</button>
+                    <input type="text" title="location" placeholder="검색어">
+                    <button type="button" class="btn_skyblue">검색</button>
                   </li>
                 </ul>
               </div>
@@ -595,17 +745,18 @@
                   <button type="button" class="btn_axi btn_minus btn_grayline">삭제</button>
                 </div>
                 <table class="tbl_default">
+                  <caption>수신처관리 제목</caption>
                   <colgroup>
-                    <col width="80">
-                    <col width="200">
-                    <col width="200">
-                    <col width="200">
-                    <col width="*">
-                    <col width="200">
-                    <col width="200">
-                    <col width="200">
-                    <col width="200">
-                    <col width="200">
+                    <col style="width:80px">
+                    <col style="width:200px">
+                    <col style="width:200px">
+                    <col style="width:200px">
+                    <col style="width:200px">
+                    <col style="width:200px">
+                    <col style="width:200px">
+                    <col style="width:200px">
+                    <col style="width:200px">
+                    <col style="width:auto">
                     <col class="fix_scroll">
                   </colgroup>
                   <thead>
@@ -620,28 +771,29 @@
                       <th scope="col">매체정보</th>
                       <th scope="col">등록일</th>
                       <th scope="col">수정</th>
-                      <th scope="col">&nbsp;</th>
+                      <th scope="col"></th>
                     </tr>
                   </thead>
                 </table>
                 <div class="tbl_body_wrap tbl_scroll" style="height:595px;">
                   <table class="tbl_default">
+                    <caption>수신처관리 내용</caption>
                     <colgroup>
-                      <col width="80">
-                      <col width="200">
-                      <col width="200">
-                      <col width="200">
-                      <col width="*">
-                      <col width="200">
-                      <col width="200">
-                      <col width="200">
-                      <col width="200">
-                      <col width="200">
+                      <col style="width:80px">
+                      <col style="width:200px">
+                      <col style="width:200px">
+                      <col style="width:200px">
+                      <col style="width:200px">
+                      <col style="width:200px">
+                      <col style="width:200px">
+                      <col style="width:200px">
+                      <col style="width:200px">
+                      <col style="width:auto">
                     </colgroup>
                     <tbody>
                       <tr class="on">
                         <td>
-                          <input type="checkbox">
+                          <input type="checkbox" title="checkbox">
                         </td>
                         <td></td>
                         <td></td>
@@ -657,7 +809,7 @@
                       </tr>
                       <tr>
                         <td>
-                          <input type="checkbox">
+                          <input type="checkbox" title="checkbox">
                         </td>
                         <td></td>
                         <td></td>
@@ -673,7 +825,7 @@
                       </tr>
                       <tr>
                         <td>
-                          <input type="checkbox">
+                          <input type="checkbox" title="checkbox">
                         </td>
                         <td></td>
                         <td></td>
@@ -689,7 +841,7 @@
                       </tr>
                       <tr>
                         <td>
-                          <input type="checkbox">
+                          <input type="checkbox" title="checkbox">
                         </td>
                         <td></td>
                         <td></td>
@@ -746,7 +898,7 @@
   <div class="pop_wrap p_admin01">
     <div class="pop_tit">
       <h1>사용자 추가 / 수정</h1>
-      <button type="button" class="btn_pop_close" closePop></button>
+      <button type="button" class="btn_pop_close"></button>
     </div>
     <div class="pop_body">
       <div class="pop_cont">
@@ -754,62 +906,62 @@
         <table class="tbl_info">
           <caption>사용자 추가 / 수정</caption>
           <tr>
-            <th scope="row"><label for="id" class="required">ID</label></th>
+            <th scope="row"><label for="id1" class="required">ID</label></th>
             <td>
-              <input type="text" id="id">
+              <input type="text" id="id1">
               <!-- <p class="validity">이미 사용중인 아이디입니다.</p> -->
             </td>
             <td><button type="button" class="btn btn_gray">중복</button></td>
           </tr>
           <tr>
-            <th><label for="name" class="required">이름</label></th>
-            <td colspan="2"><input type="text" id="name"></td>
+            <th><label for="name1" class="required">이름</label></th>
+            <td colspan="2"><input type="text" id="name1"></td>
           </tr>
           <tr>
-            <th><label for="pw" class="required">비밀번호</label></th>
-            <td colspan="2"><input type="password" id="pw"></td>
+            <th><label for="pw1" class="required">비밀번호</label></th>
+            <td colspan="2"><input type="password" id="pw1"></td>
           </tr>
           <tr>
-            <th><label for="pwcheck" class="required">비밀번호 확인</label></th>
+            <th><label for="pwcheck1" class="required">비밀번호 확인</label></th>
             <td colspan="2">
-              <input type="password" id="pwcheck">
+              <input type="password" id="pwcheck1">
               <p class="validity">비밀번호가 일치하지 않습니다.</p>
             </td>
           </tr>
           <tr>
-            <th><label for="division" class="required">소속기관</label></th>
-            <td colspan="2"><input type="text" id="division"></td>
+            <th><label for="division1" class="required">소속기관</label></th>
+            <td colspan="2"><input type="text" id="division1"></td>
           </tr>
           <tr>
-            <th><label for="team" class="required">부서</label></th>
+            <th><label for="team1" class="required">부서</label></th>
             <td colspan="2">
-              <input type="text" id="team">
+              <input type="text" id="team1">
               <p class="validity">올바른 부서를 입력하세요</p>
             </td>
           </tr>
           <tr>
-            <th><label for="position">직급</label></th>
-            <td colspan="2"><input type="text" id="position"></td>
+            <th><label for="position1">직급</label></th>
+            <td colspan="2"><input type="text" id="position1"></td>
           </tr>
           <tr>
-            <th><label for="number">연락처</label></th>
-            <td colspan="2"><input type="text" id="number"></td>
+            <th><label for="number1">연락처</label></th>
+            <td colspan="2"><input type="text" id="number1"></td>
           </tr>
           <tr>
-            <th><label for="phonenumber" class="required">핸드폰</label></th>
+            <th><label for="phonenumber1" class="required">핸드폰</label></th>
             <td colspan="2">
-              <input type="text" id="phonenumber">
+              <input type="text" id="phonenumber1">
               <p class="validity">올바른 핸드폰 번호를 입력하세요.</p>
             </td>
           </tr>
           <tr>
-            <th><label for="email">이메일</label></th>
-            <td colspan="2"><input type="text" id="email"></td>
+            <th><label for="email1">이메일</label></th>
+            <td colspan="2"><input type="text" id="email1"></td>
           </tr>
           <tr>
-            <th><label for="authority" class="required">권한</label></th>
+            <th><label for="authority1" class="required">권한</label></th>
             <td colspan="2">
-              <select name="authority" title="authority">
+              <select id="authority1">
                 <option value="권한선택">권한선택</option>
               </select>
               <p class="validity">사용자 권한을 선택하세요.</p>
@@ -827,22 +979,22 @@
   <div class="pop_wrap p_code">
     <div class="pop_tit">
       <h1>그룹코드</h1>
-      <button type="button" class="btn_pop_close" closePop></button>
+      <button type="button" class="btn_pop_close"></button>
     </div>
     <div class="pop_body">
       <div class="pop_cont">
         <table class="tbl_row">
           <caption>그룹코드</caption>
           <tr>
-            <th scope="row"><label for="code">코드명</label></th>
-            <td><input type="text" id="code"></td>
+            <th scope="row"><label for="code2">코드명</label></th>
+            <td><input type="text" id="code2"></td>
           </tr>
           <tr>
-            <th scope="row"><label for="explanation">설명</label></th>
-            <td><input type="text" id="explanation"></td>
+            <th scope="row"><label for="explanation2">설명</label></th>
+            <td><input type="text" id="explanation2"></td>
           </tr>
           <tr>
-            <th scope="row"><label for="use">사용여부</label></th>
+            <th scope="row"><label title="use2">사용여부</label></th>
             <td class="alignL"><div class="btn_toggle"></div></td>
           </tr>
         </table>
@@ -858,26 +1010,26 @@
   <div class="pop_wrap p_code_2">
     <div class="pop_tit">
       <h1>상세코드</h1>
-      <button type="button" class="btn_pop_close" closePop></button>
+      <button type="button" class="btn_pop_close"></button>
     </div>
     <div class="pop_body">
       <div class="pop_cont">
         <table class="tbl_row">
           <caption>상세코드</caption>
           <tr>
-            <th scope="row"><label for="code">그룹코드</label></th>
-            <td><input type="text" id="code" disabled value="L001"></td>
+            <th scope="row"><label for="code3">그룹코드</label></th>
+            <td><input type="text" id="code3" disabled value="L001"></td>
           </tr>
           <tr>
-            <th scope="row"><label for="code">코드명</label></th>
-            <td><input type="text" id="code"></td>
+            <th scope="row"><label for="codename3">코드명</label></th>
+            <td><input type="text" id="codename3"></td>
           </tr>
           <tr>
-            <th scope="row"><label for="explanation">설명</label></th>
-            <td><input type="text" id="explanation"></td>
+            <th scope="row"><label for="explanation3">설명</label></th>
+            <td><input type="text" id="explanation3"></td>
           </tr>
           <tr>
-            <th scope="row"><label for="use">사용여부</label></th>
+            <th scope="row"><label title="use3">사용여부</label></th>
             <td class="alignL"><div class="btn_toggle"></div></td>
           </tr>
         </table>
@@ -890,44 +1042,44 @@
   </div>
 </div>
   <div class="pop_overlay">
-  <div class="pop_wrap p_receiver">
+  <div class="pop_wrap p_receiver_1">
     <div class="pop_tit">
       <h1>수신처 추가</h1>
-      <button type="button" class="btn_pop_close" closePop></button>
+      <button type="button" class="btn_pop_close"></button>
     </div>
     <div class="pop_body">
       <div class="pop_cont">
         <table class="tbl_row">
           <caption>수신처 추가</caption>
           <tr>
-            <th scope="row"><label for="code">ID</label></th>
-            <td><input type="text" id="code" disabled value="L001"></td>
-            <th scope="row"><label for="code">기관명</label></th>
-            <td><input type="text" id="code"></td>
+            <th scope="row"><label for="id4">ID</label></th>
+            <td><input type="text" id="id4" disabled value="L001"></td>
+            <th scope="row"><label for="name">기관명</label></th>
+            <td><input type="text" id="name"></td>
           </tr>
           <tr>
-            <th scope="row"><label for="explanation">비밀번호</label></th>
-            <td><input type="text" id="explanation"></td>
-            <th scope="row"><label for="use">담당자</label></th>
-            <td><input type="text" id="explanation"></td>
+            <th scope="row"><label for="pw4">비밀번호</label></th>
+            <td><input type="text" id="pw4"></td>
+            <th scope="row"><label for="name2">담당자</label></th>
+            <td><input type="text" id="name2"></td>
           </tr>
           <tr>
-            <th scope="row"><label for="explanation">비밀번호 확인</label></th>
-            <td><input type="text" id="explanation"></td>
-            <th scope="row"><label for="use">연락처</label></th>
-            <td><input type="text" id="explanation"></td>
+            <th scope="row"><label for="pwcheck4">비밀번호 확인</label></th>
+            <td><input type="text" id="pwcheck4"></td>
+            <th scope="row"><label for="number4">연락처</label></th>
+            <td><input type="text" id="number4"></td>
           </tr>
           <tr>
-            <th scope="row"><label for="explanation">기관유형</label></th>
-            <td><select name="type">
+            <th scope="row"><label for="type4">기관유형</label></th>
+            <td><select title="type4">
                 <option value="선택">선택</option>
                 <option value="지자체">지자체</option>
               </select></td>
-            <th scope="row"><label for="use">IP</label></th>
-            <td><input type="text" id="explanation"></td>
+            <th scope="row"><label for="ip4">IP</label></th>
+            <td><input type="text" id="ip4"></td>
           </tr>
           <tr>
-            <th scope="row"><label for="explanation">매체</label></th>
+            <th scope="row"><label title="media4">매체</label></th>
             <td colspan="3" class="monitoring_detail">
               <ul class="flex_wrap f_s media_select">
                 <li>
@@ -950,19 +1102,20 @@
             </td>
           </tr>
           <tr>
-            <th scope="row" style="vertical-align:top;"><label for="explanation">대상지역</label></th>
+            <th scope="row"><label title="location4">대상지역</label></th>
             <td colspan="3" class="monitoring_detail">
-              <div class="alignL">
-                <button type="button" class="btn_s btn_blue">변경</button>
-              </div>
-              <div style="padding:10px;">
+              <div>
+                <div class="alignL">
+                  <button type="button" class="btn_receiver2 btn_s btn_blue">변경</button>
+                </div>
                 <table class="tbl_default">
+                  <caption>대상지역 제목</caption>
                   <colgroup>
-                    <col width="15%">
-                    <col width="20%">
-                    <col width="15%">
-                    <col width="15%">
-                    <col width="15%">
+                    <col style="width:100px">
+                    <col style="width:100px">
+                    <col style="width:100px">
+                    <col style="width:100px">
+                    <col style="width:auto">
                     <col class="fix_scroll">
                   </colgroup>
                   <thead>
@@ -972,18 +1125,19 @@
                       <th scope="col">시도</th>
                       <th scope="col">시군구</th>
                       <th scope="col">읍면동</th>
-                      <th scope="col">&nbsp;</th>
+                      <th></th>
                     </tr>
                   </thead>
                 </table>
                 <div class="tbl_body_wrap tbl_scroll" style="height:300px;">
                   <table class="tbl_default">
+                    <caption>대상지역 내용</caption>
                     <colgroup>
-                      <col width="15%">
-                      <col width="20%">
-                      <col width="15%">
-                      <col width="15%">
-                      <col width="15%">
+                      <col style="width:100px">
+                      <col style="width:100px">
+                      <col style="width:100px">
+                      <col style="width:100px">
+                      <col style="width:auto">
                     </colgroup>
                     <tbody>
                       <tr>
@@ -1113,6 +1267,334 @@
     </div>
   </div>
 </div>
+  <div class="pop_overlay">
+  <div class="pop_wrap p_receiver_2">
+    <div class="pop_tit">
+      <h1>수신처 대상지역 관리</h1>
+      <button type="button" class="btn_pop_close"></button>
+    </div>
+    <div class="pop_body">
+      <div class="pop_cont">
+        <div class="select_wrap">
+          <ul class="select_range flex_wrap f_s">
+            <li>
+              <input type="radio" name="locationType" id="locationType1">
+              <label for="locationType1">전국</label>
+            </li>
+            <li>
+              <input type="radio" name="locationType" id="locationType2">
+              <label for="locationType2">시도</label>
+            </li>
+            <li>
+              <input type="radio" name="locationType" id="locationType3">
+              <label for="locationType3">시군구</label>
+            </li>
+            <li>
+              <input type="radio" name="locationType" id="locationType4">
+              <label for="locationType4">읍면동</label>
+            </li>
+          </ul>
+          <div class="select_box_wrap flex_wrap f_sb" style="height: 220px;">
+            <ul class="select_box select_box_1">
+              <li>
+                <input type="checkbox" id="selectType2_1">
+                <label for="selectType2_1">
+                  <span>
+                    서울
+                  </span>
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" id="selectType2_2" checked>
+                <label for="selectType2_2">
+                  <span>경기도</span>
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" id="selectType2_3">
+                <label for="selectType2_3">
+                  <span>울산광역시</span>
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" id="selectType2_4">
+                <label for="selectType2_4">
+                  <span>세종특별자치시</span>
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" id="selectType2_5">
+                <label for="selectType2_5">
+                  <span>경기도</span>
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" id="selectType2_6">
+                <label for="selectType2_6">
+                  <span>강원도</span>
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" id="selectType2_7">
+                <label for="selectType2_7">
+                  <span>충청북도</span>
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" id="selectType2_8">
+                <label for="selectType2_8">
+                  <span>충청남도</span>
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" id="selectType2_9">
+                <label for="selectType2_9">
+                  <span>전라북도</span>
+                </label>
+              </li>
+            </ul>
+            <ul class="select_box select_box_2">
+              <li>
+                <input type="checkbox" id="selectType1_1">
+                <label for="selectType1_1">
+                  <span>고양시</span>
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" id="selectType1_2" checked>
+                <label for="selectType1_2">
+                  <span>광명시</span>
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" id="selectType1_3">
+                <label for="selectType1_3">
+                  <span>과천시</span>
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" id="selectType1_4">
+                <label for="selectType1_4">
+                  <span>남양주시</span>
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" id="selectType1_5">
+                <label for="selectType1_5">
+                  <span>성남시</span>
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" id="selectType1_6">
+                <label for="selectType1_6">
+                  <span>고양시</span>
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" id="selectType1_7">
+                <label for="selectType1_7">
+                  <span>광명시</span>
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" id="selectType1_8">
+                <label for="selectType1_8">
+                  <span>과천시</span>
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" id="selectType1_9">
+                <label for="selectType1_9">
+                  <span>남양주시</span>
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" id="selectType1_10">
+                <label for="selectType1_10">
+                  <span>성남시</span>
+                </label>
+              </li>
+            </ul>
+            <ul class="select_box select_box_3">
+              <li>
+                <input type="checkbox" id="selectType3_1">
+                <label for="selectType3_1">
+                  <span>
+                    광명동
+                  </span>
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" id="selectType3_2" checked>
+                <label for="selectType3_2">
+                  <span>
+                    철산동
+                  </span>
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" id="selectType3_3">
+                <label for="selectType3_3">
+                  <span>
+                    소하동
+                  </span>
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" id="selectType3_4">
+                <label for="selectType3_4">
+                  <span>
+                    일직동
+                  </span>
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" id="selectType3_5">
+                <label for="selectType3_5">
+                  <span>
+                    노온사동
+                  </span>
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" id="selectType3_6">
+                <label for="selectType3_6">
+                  <span>
+                    학온동
+                  </span>
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" id="selectType3_7">
+                <label for="selectType3_7">
+                  <span>
+                    광명동
+                  </span>
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" id="selectType3_8">
+                <label for="selectType3_8">
+                  <span>
+                    철산동
+                  </span>
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" id="selectType3_9">
+                <label for="selectType3_9">
+                  <span>
+                    소하동
+                  </span>
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" id="selectType3_10">
+                <label for="selectType3_10">
+                  <span>
+                    일직동
+                  </span>
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" id="selectType3_11">
+                <label for="selectType3_11">
+                  <span>
+                    노온사동
+                  </span>
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" id="selectType3_12">
+                <label for="selectType3_12">
+                  <span>
+                    학온동
+                  </span>
+                </label>
+              </li>
+            </ul>
+          </div>
+          <div class="selectlocate_area">
+            <div class="tit_wrap flex_wrap f_sb">
+              <h3>선택지역</h3>
+              <button type="button" class="btn_reset btn_s btn_skyblueline">
+                <i class="axi axi-refresh"></i>
+                <b>초기화</b></button>
+            </div>
+            <div>
+              <div>
+                <div class="selectlocate_wrap">
+                  <div class="selectlocate_box_wrap">
+                    <h3>지역 1</h3>
+                    <ul class="selectlocate_box">
+                      <li>
+                        <span>지역 1-1</span>
+                        <i class="axi axi-close"></i>
+                      </li>
+                      <li>
+                        <span>지역 1-2</span>
+                        <i class="axi axi-close"></i>
+                      </li>
+                      <li>
+                        <span>지역 1-3</span>
+                        <i class="axi axi-close"></i>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="selectlocate_wrap">
+                  <div class="selectlocate_box_wrap">
+                    <h3>
+                      <span>지역 2</span>
+                      <span>지역 2-1</span>
+                    </h3>
+                    <ul class="selectlocate_box">
+                      <li>
+                        <span>지역 2-1-1</span>
+                        <i class="axi axi-close"></i>
+                      </li>
+                      <li>
+                        <span>지역 2-1-2</span>
+                        <i class="axi axi-close"></i>
+                      </li>
+                      <li>
+                        <span>지역 2-1-3</span>
+                        <i class="axi axi-close"></i>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="selectlocate_wrap">
+                  <div class="selectlocate_box_wrap">
+                    <h3>지역 1</h3>
+                    <ul class="selectlocate_box">
+                      <li>
+                        <span>지역 1-1</span>
+                        <i class="axi axi-close"></i>
+                      </li>
+                      <li>
+                        <span>지역 1-2</span>
+                        <i class="axi axi-close"></i>
+                      </li>
+                      <li>
+                        <span>지역 1-3</span>
+                        <i class="axi axi-close"></i>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn_wrap alignR">
+          <button type="button" class="btn btn_blue">저장</button>
+          <button type="button" class="btn btn_blue">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
   <script src="../plugins/jquery/dist/jquery.min.js"></script>
 <script src="../plugins/jquery-ui/jquery-ui.min.js"></script>
 <script src="../plugins/jquery-ui/ui/i18n/datepicker-ko.js"></script>
@@ -1135,8 +1617,11 @@
     $(".btn_code_2").on('click', function () {
       $('.p_code_2').parent('.pop_overlay').fadeIn();
     })
-     $(".btn_receiver").on('click', function () {
-      $('.p_receiver').parent('.pop_overlay').fadeIn();
+    $(".btn_receiver").on('click', function () {
+      $('.p_receiver_1').parent('.pop_overlay').fadeIn();
+    })
+    $(".btn_receiver2").on('click', function () {
+      $('.p_receiver_2').parent('.pop_overlay').fadeIn();
     })
   </script>
 

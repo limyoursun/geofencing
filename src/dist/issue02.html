@@ -73,6 +73,160 @@
     </ul>
   </nav>
 </header>
+  <div class="pop_overlay">
+  <div class="pop_wrap p_alert">
+    <div class="pop_tit">
+      <h1>알림 리스트</h1>
+      <button type="button" class="btn_pop_close"></button>
+    </div>
+    <div class="pop_body">
+      <div class="pop_cont">
+        <div>
+          <div class="search_area">
+            <ul class="search f_s">
+              <li>
+                <label for="di_info"><b>재난정보</b></label>
+                <select id="di_info">
+                  <option value="전체">전체</option>
+                  <option value="호우경보발표">호우경보발표</option>
+                </select>
+              </li>
+              <li>
+                <label for="date_timepicker_start0"><b>조회대상기간</b></label>
+                <span class="period period_multi">
+                  <input type="text" id="date_timepicker_start0" class="input_calendar" value="YYYY/MM/DD"
+                    placeholder="기간 시작일 선택" title="기간 시작일 선택">
+                  <input type="text" id="date_timepicker_end0" class="input_calendar" value="YYYY/MM/DD"
+                    placeholder="기간 종료일 선택" title="기간 종료일 선택">
+                </span>
+              </li>
+              <li>
+                <label for="searchvalue"><b>검색어</b></label>
+                <input type="text" id="searchvalue" placeholder="검색어">
+                <button type="button" class="btn_skyblue">검색</button>
+              </li>
+            </ul>
+          </div>
+          <div class="tbl_wrap">
+            <table class="tbl_default">
+              <caption>알림 리스트</caption>
+              <colgroup>
+                <col style="width:40px">
+                <col style="width:140px">
+                <col style="width:220px">
+                <col style="width:140px">
+                <col style="width:140px">
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope="col">No.</th>
+                  <th scope="col">재난정보</th>
+                  <th scope="col">발생지역</th>
+                  <th scope="col">처리상태</th>
+                  <th scope="col">알림시간</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="on">
+                  <td></td>
+                  <td>호우경보발표</td>
+                  <td>서울 구로구</td>
+                  <td>승인</td>
+                  <td>2020-08-12 12:34:56</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>호우경보발표</td>
+                  <td>서울 구로구</td>
+                  <td>승인</td>
+                  <td>2020-08-12 12:34:56</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>호우경보발표</td>
+                  <td>서울 구로구</td>
+                  <td>승인</td>
+                  <td>2020-08-12 12:34:56</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>호우경보발표</td>
+                  <td>서울 구로구</td>
+                  <td>승인</td>
+                  <td>2020-08-12 12:34:56</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>호우경보발표</td>
+                  <td>서울 구로구</td>
+                  <td>승인</td>
+                  <td>2020-08-12 12:34:56</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>호우경보발표</td>
+                  <td>서울 구로구</td>
+                  <td>승인</td>
+                  <td>2020-08-12 12:34:56</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>호우경보발표</td>
+                  <td>서울 구로구</td>
+                  <td>승인</td>
+                  <td>2020-08-12 12:34:56</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>호우경보발표</td>
+                  <td>서울 구로구</td>
+                  <td>승인</td>
+                  <td>2020-08-12 12:34:56</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>호우경보발표</td>
+                  <td>서울 구로구</td>
+                  <td>승인</td>
+                  <td>2020-08-12 12:34:56</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>호우경보발표</td>
+                  <td>서울 구로구</td>
+                  <td>승인</td>
+                  <td>2020-08-12 12:34:56</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>호우경보발표</td>
+                  <td>서울 구로구</td>
+                  <td>승인</td>
+                  <td>2020-08-12 12:34:56</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="paginate">
+              <a href="#" class="first" title="처음">〈〈</a>
+              <a href="#" class="pre" title="이전">〈</a>
+              <span>
+                <a href="#" class="on">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+              </span>
+              <a href="#" class="next" title="다음">〉</a>
+              <a href="#" class="last" title="마지막">〉〉</a>
+            </div>
+          </div>
+        </div>
+        <div class="btn_wrap alignC">
+          <button type="button" class="btn_l btn_gray">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
     <!-- Contents -->
     <div class="con_wrap">
       <div class="con_l">
@@ -82,27 +236,23 @@
         <div class="slide_main none_scroll">
           <ul class="dot_list monitoring_detail">
             <li>
-              <b><label for="type">승인요청</label></b>
-              <select name="type">
+              <b><label for="type">재난유형</label></b>
+              <select id="type">
                 <option value="선택">선택</option>
                 <option value="자연재난">자연재난</option>
               </select>
-              <select name="type">
+              <select title="type">
                 <option value="선택">선택</option>
                 <option value="호우">호우</option>
               </select>
-              <select name="type">
+              <select title="type">
                 <option value="선택">선택</option>
                 <option value="경보">경보</option>
               </select>
-              <select name="type">
+              <select title="type">
                 <option value="선택">선택</option>
                 <option value="발표">발표</option>
               </select>
-            </li>
-            <li>
-              <b><label for="title">제&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;목</label></b>
-              <input type="text" id="title" placeholder="제목을 입력하세요">
             </li>
             <li>
               <b><label for="situation1">재난상황</label></b>
@@ -120,6 +270,10 @@
                   <label for="situation3">테스트</label>
                 </li>
               </ul>
+            </li>
+            <li>
+              <b><label for="title">제&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;목</label></b>
+              <input type="text" id="title" placeholder="제목을 입력하세요">
             </li>
             <li>
               <b><label for="type1">발령매체</label></b>
@@ -145,22 +299,22 @@
             <li>
               <b>발생시각</b>
               <span class="datetimepicker_wrap">
-                <input type="text" id="datetimepicker" class="input_calendar" value="발생시각 선택">
+                <input type="text" id="datetimepicker" title="date" class="input_calendar" value="발생시각 선택">
               </span>
-              <button type="button" class="btn_s btn_blue" style="vertical-align:middle;">현재시각</button>
+              <button type="button" class="btn_m btn_skyblue" style="vertical-align:middle;">현재시각</button>
             </li>
             <li>
               <b><label for="locate">송출지역</label></b>
-              <textarea name="locate" disabled placeholder="우측에서 선택해 주세요"></textarea>
+              <textarea id="locate" disabled placeholder="우측에서 선택해 주세요"></textarea>
               <div class="btn_wrap alignR">
-                <button type="button" class="btn_m btn_blue">문안생성</button>
+                <button type="button" class="btn_m btn_skyblue">문안생성</button>
               </div>
             </li>
           </ul>
           <ul class="monitoring_detail monitoring_text">
             <li>
               <div class="flex_wrap f_sb">
-                <b>발령문안(전광판)</b>
+                <b>· 발령문안(전광판)</b>
                 <p class="alignR"><span id="nowByte">39</span>/80 bytes</p>
               </div>
               <textarea id="sms_templete" title="text_example"
@@ -197,7 +351,7 @@
 
             <li>
               <div class="flex_wrap f_sb">
-                <b>발령문안(버스정보)</b>
+                <b>· 발령문안(버스정보)</b>
                 <p class="alignR"><span id="nowByte2">79</span>/180 bytes</p>
               </div>
               <textarea id="sms_templete2" title="text_example"
@@ -234,10 +388,10 @@
 
             <li>
               <div class="flex_wrap f_sb">
-                <b>발령문안(모바일)</b>
+                <b>· 발령문안(모바일)</b>
                 <p class="alignR"><span id="nowByte3">102</span>/315 bytes</p>
               </div>
-              <textarea id="sms_templete2" title="text_example3"
+              <textarea id="sms_templete3" title="text_example3"
                 onkeyup="fn_checkByte3(this)">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat sem a consectetur eleifend.</textarea>
             </li>
             <script>
@@ -293,15 +447,15 @@
                 <div class="selectlocate_wrap flex_wrap f_sb">
                   <ul>
                     <li>
-                      <span>강원도</span>
+                      <span>광주광역시 전체</span>
                       <i class="axi axi-close"></i>
                     </li>
                     <li>
-                      <span>충청북도</span>
+                      <span>경상남도 전체</span>
                       <i class="axi axi-close"></i>
                     </li>
                     <li>
-                      <span>세종특별자치시</span>
+                      <span>전라남도 전체</span>
                       <i class="axi axi-close"></i>
                     </li>
                   </ul>
@@ -309,10 +463,36 @@
                 </div>
               </div>
               <div class="select_map">
-
+                <div class="img_map_wrap">
+                  <img src="../images/img_map.png" alt="임시 지도 이미지" class="on">
+                  <img src="../images/img_map_jeonlanamdo.png" alt="임시 전라남도 지도 이미지" class="on">
+                  <img src="../images/img_map_gyeongsangnamdo.png" alt="임시 경상남도 지도 이미지" class="on">
+                  <img src="../images/img_map_gwangju.png" alt="임시 광주광역시 지도 이미지" class="on">
+                </div>
+                <ul class="map_calculation flex_wrap">
+                  <li class="alignC">
+                    <p><i class="axi axi-circle-thin"></i></p>
+                    <span>반경</span>
+                  </li>
+                  <li class="alignC">
+                    <p><i class="axi axi-star-o"></i></p>
+                    <span>다각형</span>
+                  </li>
+                  <li class="alignC">
+                    <p><i class="axi axi-refresh"></i></p>
+                    <span>초기화</span>
+                  </li>
+                </ul>
+                <ul class="map_expansionshrink">
+                  <li class="alignC btn_expansion">
+                    <p><i class="axi axi-plus"></i></p>
+                  </li>
+                  <li class="alignC btn_shrink">
+                    <p><i class="axi axi-minus"></i></p>
+                  </li>
+                </ul>
               </div>
             </div>
-
             <div id="tab02" class="tab_cont">
               <div>
                 <div>
@@ -321,11 +501,11 @@
                 <div class="selectlocate_wrap flex_wrap f_sb">
                   <ul>
                     <li>
-                      <span>강원영동</span>
+                      <span>서울특별시 전체</span>
                       <i class="axi axi-close"></i>
                     </li>
                     <li>
-                      <span>세종특별자치시</span>
+                      <span>경기도 전체</span>
                       <i class="axi axi-close"></i>
                     </li>
                   </ul>
@@ -333,10 +513,278 @@
                 </div>
               </div>
               <div class="select_map">
-
+                <div class="img_map_wrap">
+                  <img src="../images/img_map.png" alt="임시 지도 이미지" class="on">
+                  <img src="../images/img_map_seoul.png" alt="임시 서울 지도 이미지" class="on">
+                  <img src="../images/img_map_gyeonggido.png" alt="임시 서울 지도 이미지" class="on">
+                  <img src="../images/img_map_chungcheongbukdo.png" alt="임시 서울 지도 이미지" class="on">
+                </div>
+                <div class="list_select_map_box select_box_2">
+                  <!--<h3><b>※ 대상 범위</b></h3>
+                  <ul class="select_range flex_wrap f_s">
+                    <li>
+                      <input type="radio" name="locationType" id="locationType1">
+                      <label for="locationType1">전국</label>
+                    </li>
+                    <li>
+                      <input type="radio" name="locationType" id="locationType2">
+                      <label for="locationType2">시도</label>
+                    </li>
+                    <li>
+                      <input type="radio" name="locationType" id="locationType3">
+                      <label for="locationType3">시군구</label>
+                    </li>
+                    <li>
+                      <input type="radio" name="locationType" id="locationType4">
+                      <label for="locationType4">읍면동</label>
+                    </li>
+                  </ul>-->
+                  <div>
+                    <h3><b>대상 지역</b></h3>
+                    <div class="select_box_wrap flex_wrap f_sb" style="height: 150px;">
+                      <ul class="select_box select_box_1">
+                        <li>
+                          <input type="checkbox" id="selectType2_0" name="checkAll">
+                          <label for="selectType2_0">
+                            <span>
+                              전체
+                            </span>
+                          </label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="selectType2_1" checked>
+                          <label for="selectType2_1">
+                            <span>서울</span>
+                          </label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="selectType2_2">
+                          <label for="selectType2_2">
+                            <span>경상북도</span>
+                          </label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="selectType2_3">
+                          <label for="selectType2_3">
+                            <span>울산광역시</span>
+                          </label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="selectType2_4">
+                          <label for="selectType2_4">
+                            <span>세종특별자치시</span>
+                          </label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="selectType2_5" checked>
+                          <label for="selectType2_5">
+                            <span>경기도</span>
+                          </label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="selectType2_6">
+                          <label for="selectType2_6">
+                            <span>강원도</span>
+                          </label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="selectType2_7" checked>
+                          <label for="selectType2_7">
+                            <span>충청북도</span>
+                          </label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="selectType2_8">
+                          <label for="selectType2_8">
+                            <span>충청남도</span>
+                          </label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="selectType2_9">
+                          <label for="selectType2_9">
+                            <span>전라북도</span>
+                          </label>
+                        </li>
+                      </ul>
+                      <ul class="select_box select_box_2">
+                        <li>
+                          <input type="checkbox" id="selectType1_0" name="checkAll">
+                          <label for="selectType1_0">
+                            <span>전체</span>
+                          </label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="selectType1_1">
+                          <label for="selectType1_1">
+                            <span>고양시</span>
+                          </label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="selectType1_2" checked>
+                          <label for="selectType1_2">
+                            <span>광명시</span>
+                          </label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="selectType1_3">
+                          <label for="selectType1_3">
+                            <span>과천시</span>
+                          </label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="selectType1_4">
+                          <label for="selectType1_4">
+                            <span>남양주시</span>
+                          </label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="selectType1_5">
+                          <label for="selectType1_5">
+                            <span>성남시</span>
+                          </label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="selectType1_6">
+                          <label for="selectType1_6">
+                            <span>고양시</span>
+                          </label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="selectType1_7">
+                          <label for="selectType1_7">
+                            <span>광명시</span>
+                          </label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="selectType1_8">
+                          <label for="selectType1_8">
+                            <span>과천시</span>
+                          </label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="selectType1_9">
+                          <label for="selectType1_9">
+                            <span>남양주시</span>
+                          </label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="selectType1_10">
+                          <label for="selectType1_10">
+                            <span>성남시</span>
+                          </label>
+                        </li>
+                      </ul>
+                      <ul class="select_box select_box_3">
+                        <li>
+                          <input type="checkbox" id="selectType3_0" name="checkAll">
+                          <label for="selectType3_0">
+                            <span>
+                              전체
+                            </span>
+                          </label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="selectType3_1">
+                          <label for="selectType3_1">
+                            <span>
+                              광명동
+                            </span>
+                          </label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="selectType3_2" checked>
+                          <label for="selectType3_2">
+                            <span>
+                              철산동
+                            </span>
+                          </label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="selectType3_3">
+                          <label for="selectType3_3">
+                            <span>
+                              소하동
+                            </span>
+                          </label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="selectType3_4">
+                          <label for="selectType3_4">
+                            <span>
+                              일직동
+                            </span>
+                          </label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="selectType3_5">
+                          <label for="selectType3_5">
+                            <span>
+                              노온사동
+                            </span>
+                          </label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="selectType3_6">
+                          <label for="selectType3_6">
+                            <span>
+                              학온동
+                            </span>
+                          </label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="selectType3_7">
+                          <label for="selectType3_7">
+                            <span>
+                              광명동
+                            </span>
+                          </label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="selectType3_8">
+                          <label for="selectType3_8">
+                            <span>
+                              철산동
+                            </span>
+                          </label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="selectType3_9">
+                          <label for="selectType3_9">
+                            <span>
+                              소하동
+                            </span>
+                          </label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="selectType3_10">
+                          <label for="selectType3_10">
+                            <span>
+                              일직동
+                            </span>
+                          </label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="selectType3_11">
+                          <label for="selectType3_11">
+                            <span>
+                              노온사동
+                            </span>
+                          </label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="selectType3_12">
+                          <label for="selectType3_12">
+                            <span>
+                              학온동
+                            </span>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-
             <div id="tab03" class="tab_cont">
               <div>
                 <div>
@@ -345,19 +793,244 @@
                 <div class="selectlocate_wrap flex_wrap f_sb">
                   <ul>
                     <li>
-                      <span>강원영동</span>
+                      <span>경상북도 전체</span>
                       <i class="axi axi-close"></i>
                     </li>
                     <li>
-                      <span>세종특별자치시</span>
+                      <span>충청북도 전체</span>
                       <i class="axi axi-close"></i>
                     </li>
                   </ul>
                   <button class="btn_skyblue">송출지역 적용</button>
                 </div>
               </div>
-              <div class="select_map">
-
+              <div class="select_map select_box">
+                <div class="img_map_wrap">
+                  <img src="../images/img_map.png" alt="임시 지도 이미지" class="on">
+                  <img src="../images/img_map_gyeongsangbugdo.png" alt="임시 경상북도 지도 이미지" class="on">
+                  <img src="../images/img_map_chungcheongbukdo.png" alt="임시 충청북도 지도 이미지" class="on">
+                </div>
+                <div class="group_select_map_box select_box_3">
+                  <h4>그룹지역 선택</h4>
+                  <ul class="group_select_wrap" style="height:610px;">
+                    <li>
+                      <input type="checkbox" id="selectType7_1" checked>
+                      <label for="selectType7_1">
+                        <span>
+                          인천 · 전라남도
+                        </span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="selectType7_2">
+                      <label for="selectType7_2">
+                        <span>
+                          강원영동
+                        </span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="selectType7_3">
+                      <label for="selectType7_3">
+                        <span>
+                          경상남도 전체
+                        </span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="selectType7_4">
+                      <label for="selectType7_4">
+                        <span>
+                          전라북도 전체
+                        </span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="selectType7_5">
+                      <label for="selectType7_5">
+                        <span>
+                          대전광역시 전체
+                        </span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="selectType7_6">
+                      <label for="selectType7_6">
+                        <span>
+                          대구광역시 전체
+                        </span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="selectType7_7">
+                      <label for="selectType7_7">
+                        <span>
+                          서해 중부
+                        </span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="selectType7_8">
+                      <label for="selectType7_8">
+                        <span>
+                          대구 · 경북
+                        </span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="selectType7_9">
+                      <label for="selectType7_9">
+                        <span>
+                          세종특별자치시
+                        </span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="selectType7_10">
+                      <label for="selectType7_10">
+                        <span>
+                          남해동부
+                        </span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="selectType7_11">
+                      <label for="selectType7_11">
+                        <span>
+                          경기북부
+                        </span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="selectType7_12">
+                      <label for="selectType7_12">
+                        <span>
+                          대전 · 충북 · 충남
+                        </span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="selectType7_13">
+                      <label for="selectType7_13">
+                        <span>
+                          동해중부
+                        </span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="selectType7_14">
+                      <label for="selectType7_14">
+                        <span>
+                          경기북부
+                        </span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="selectType7_15">
+                      <label for="selectType7_15">
+                        <span>
+                          중부지방
+                        </span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="selectType7_16">
+                      <label for="selectType7_16">
+                        <span>
+                          경상남도 1-1
+                        </span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="selectType7_17">
+                      <label for="selectType7_17">
+                        <span>
+                          전라북도 1-1
+                        </span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="selectType7_18">
+                      <label for="selectType7_18">
+                        <span>
+                          대전광역시 1-1
+                        </span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="selectType7_19">
+                      <label for="selectType7_19">
+                        <span>
+                          대구광역시 1-1
+                        </span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="selectType7_20">
+                      <label for="selectType7_20">
+                        <span>
+                          경상남도 1-2
+                        </span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="selectType7_21">
+                      <label for="selectType7_21">
+                        <span>
+                          전라북도 1-2
+                        </span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="selectType7_22">
+                      <label for="selectType7_22">
+                        <span>
+                          대전광역시 1-2
+                        </span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="selectType7_23">
+                      <label for="selectType7_23">
+                        <span>
+                          대구광역시 1-2
+                        </span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="selectType7_24">
+                      <label for="selectType7_24">
+                        <span>
+                          서울-2
+                        </span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="selectType7_25">
+                      <label for="selectType7_25">
+                        <span>
+                          강원도
+                        </span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="selectType7_26">
+                      <label for="selectType7_26">
+                        <span>
+                          부산· 경남· 울산
+                        </span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="selectType7_27">
+                      <label for="selectType7_27">
+                        <span>
+                          경기북부
+                        </span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -398,16 +1071,16 @@
   <div class="pop_wrap p_issue01">
     <div class="pop_tit">
       <h1>반려 사유</h1>
-      <button type="button" class="btn_pop_close" closePop></button>
+      <button type="button" class="btn_pop_close"></button>
     </div>
     <div class="pop_body">
       <div class="pop_cont">
-        <div class="pop_box flex_wrap">
-          <i class="axi axi-exclamation-triangle"></i>
-          <p>여기에 반려 사유를 보여준다.</p>
+        <div class="pop_box alignC">
+          <span class="alert">경고 아이콘</span>
+          <p>해당 요청건이 <b>어떠한 사유</b>로 <b>반려</b> 처리되었습니다.<br>다시 확인하시기 바랍니다.</p>
         </div>
-        <div class="btn_wrap alignR">
-          <button type="button" class="btn_cancel btn btn_gray">닫기</button>
+        <div class="btn_wrap alignC">
+          <button type="button" class="btn_cancel btn_l btn_gray">닫기</button>
         </div>
       </div>
     </div>
@@ -436,6 +1109,10 @@
     })
     $(".btn_reason").on('click', function () {
       $('.p_issue01').parent('.pop_overlay').fadeIn();
+    })
+    $(".map_calculation li").on('click', function () {
+      $(".map_calculation li").removeClass('on');
+      $(this).addClass('on');
     })
   </script>
 </body>

@@ -40,7 +40,7 @@
         </div>
         <div class="slide_sub monitoring">
           <div class="alignR">
-            <a href="./main.html"><button type="button" class="btn_s btn_grayline">목록보기</button></a>
+            <a href="./main.html"  class="btn_s btn_grayline">목록보기</a>
           </div>
           <div class="disaster_type flex_wrap">
             <h3 class="heavy_rain">호우경보 발표</h3>
@@ -51,14 +51,12 @@
           <ul class="dot_list monitoring_detail">
             <li>
               <b>승인요청</b>
-              <span>
                 <ul class="breadcrumb">
                   <li>자연재난</li>
                   <li>호우</li>
                   <li>경보</li>
                   <li>발표</li>
                 </ul>
-              </span>
             </li>
             <li>
               <b>발령매체</b>
@@ -94,7 +92,6 @@
           <div class="alignC">
             <img src="../images/img_main_02.png" alt="호우주의보 임시이미지">
           </div>
-
           <ul class="monitoring_detail monitoring_text">
             <li>
               <div class="flex_wrap f_sb">
@@ -104,13 +101,11 @@
               <textarea disabled id="sms_templete" title="text_example"
                 onkeyup="fn_checkByte(this)">Lorem ipsum dolor sit amet, consectetur</textarea>
             </li>
-
             <script>
               function fn_checkByte(obj) {
                 const maxByte = 90; //최대 90바이트
                 const text_val = obj.value; //입력한 문자
                 const text_len = text_val.length; //입력한 문자수
-
                 let totalByte = 0;
                 for (let i = 0; i < text_len; i++) {
                   const each_char = text_val.charAt(i);
@@ -133,7 +128,6 @@
                 }
               }
             </script>
-
             <li>
               <div class="flex_wrap f_sb">
                 <b>발령문안(버스정보)</b>
@@ -142,7 +136,6 @@
               <textarea disabled id="sms_templete2" title="text_example2"
                 onkeyup="fn_checkByte2(this)">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat sem a consectetur eleifend.</textarea>
             </li>
-
             <script>
               function fn_checkByte2(obj) {
                 const maxByte = 180; //최대 90바이트
@@ -173,7 +166,7 @@
             </script>
 
           </ul>
-          <div>
+          <div class="flex_wrap f_sb">
             <button type="button" class="btn_approval btn_l btn_blue">발령승인</button>
             <button type="button" class="btn_reject btn_l btn_skyblue">반려</button>
             <button type="button" class="btn_l btn_gray">수정요청</button>

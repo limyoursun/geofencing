@@ -22,12 +22,12 @@
               <div class="search_area">
                 <ul class="search f_s">
                   <li>
-                    <select name="" id="">
+                    <select title="type">
                       <option value="전체">전체</option>
                     </select>
                   </li>
                   <li>
-                    <select name="" id="">
+                    <select title="type2">
                       <option value="전체">전체</option>
                     </select>
                   </li>
@@ -41,12 +41,10 @@
                   </li>
                   <li>
                     <select title="전체">
-                      <option value="">전체</option>
+                      <option value="전체">전체</option>
                     </select>
-                    <input type="text" id="location" placeholder="검색어">
-                  </li>
-                  <li>
-                    <button type="button" class="btn btn_blue">검색</button>
+                    <input type="text" title="location3" placeholder="검색어">
+                    <button type="button" class="btn_skyblue">검색</button>
                   </li>
                 </ul>
               </div>
@@ -55,194 +53,131 @@
                   <h2>재난별 재난발생 통계</h2>
                   <div id="chart1" style="width:100%;height:100%"></div>
                 </div>
-                <div class="tbl_wrap">
+                <div class="tbl_wrap" style="width:55%;">
                   <table class="tbl_default">
+                    <caption>재난별 재난발생 통계 제목</caption>
                     <colgroup>
-                      <col width="*">
-                      <col width="150">
-                      <col width="150">
-                      <col width="150">
-                      <col width="150">
-                      <col width="150">
+                      <col style="width:250px">
+                      <col style="width:250px">
+                      <col style="width:auto">
                       <col class="fix_scroll">
                     </colgroup>
                     <thead>
                       <tr>
-                        <th scope="col" rowspan="2">재난구분</th>
-                        <th scope="col" rowspan="2">재난명</th>
-                        <th scope="col" colspan="4">발생건수</th>
-                      </tr>
-                      <tr>
-                        <th scope="col">소계</th>
-                        <th scope="col">지자체</th>
-                        <th scope="col">민간</th>
-                        <th scope="col">모바일</th>
+                        <th scope="col">재난구분</th>
+                        <th scope="col">재난명</th>
+                        <th scope="col">발생건수</th>
+                        <th></th>
                       </tr>
                     </thead>
                   </table>
-                  <div class="tbl_body_wrap tbl_scroll" style="height:590px;">
+                  <div class="tbl_body_wrap tbl_scroll" style="height:630px;">
                     <table class="tbl_default">
+                      <caption>재난별 재난발생 통계 내용</caption>
                       <colgroup>
-                        <col width="*">
-                        <col width="150">
-                        <col width="150">
-                        <col width="150">
-                        <col width="150">
-                        <col width="150">
-                        <col width="150">
+                        <col style="width:250px">
+                        <col style="width:250px">
+                        <col style="width:auto">
                       </colgroup>
                       <tbody>
                         <tr>
                           <td>전체</td>
                           <td>합계</td>
                           <td>000</td>
-                          <td>000</td>
-                          <td>000</td>
-                          <td>000</td>
-                          <td>000</td>
                         </tr>
                         <tr>
                           <td>자연재난</td>
                           <td>호우</td>
-                          <td>000</td>
-                          <td>000</td>
-                          <td>000</td>
-                          <td>000</td>
                           <td>000</td>
                         </tr>
                         <tr>
                           <td>사회재난</td>
                           <td>화재</td>
                           <td>000</td>
-                          <td>000</td>
-                          <td>000</td>
-                          <td>000</td>
+                        </tr>
+                        <tr>
+                          <td>자연재난</td>
+                          <td>산사태</td>
                           <td>000</td>
                         </tr>
                         <tr>
                           <td>자연재난</td>
                           <td>산사태</td>
                           <td>000</td>
-                          <td>000</td>
-                          <td>000</td>
-                          <td>000</td>
+                        </tr>
+                        <tr>
+                          <td>자연재난</td>
+                          <td>산사태</td>
                           <td>000</td>
                         </tr>
                         <tr>
                           <td>자연재난</td>
                           <td>산사태</td>
                           <td>000</td>
-                          <td>000</td>
-                          <td>000</td>
-                          <td>000</td>
+                        </tr>
+                        <tr>
+                          <td>자연재난</td>
+                          <td>산사태</td>
                           <td>000</td>
                         </tr>
                         <tr>
                           <td>자연재난</td>
                           <td>산사태</td>
                           <td>000</td>
-                          <td>000</td>
-                          <td>000</td>
-                          <td>000</td>
+                        </tr>
+                        <tr>
+                          <td>자연재난</td>
+                          <td>산사태</td>
                           <td>000</td>
                         </tr>
                         <tr>
                           <td>자연재난</td>
                           <td>산사태</td>
                           <td>000</td>
-                          <td>000</td>
-                          <td>000</td>
-                          <td>000</td>
+                        </tr>
+                        <tr>
+                          <td>자연재난</td>
+                          <td>산사태</td>
                           <td>000</td>
                         </tr>
                         <tr>
                           <td>자연재난</td>
                           <td>산사태</td>
                           <td>000</td>
-                          <td>000</td>
-                          <td>000</td>
-                          <td>000</td>
+                        </tr>
+                        <tr>
+                          <td>자연재난</td>
+                          <td>산사태</td>
                           <td>000</td>
                         </tr>
                         <tr>
                           <td>자연재난</td>
                           <td>산사태</td>
                           <td>000</td>
-                          <td>000</td>
-                          <td>000</td>
-                          <td>000</td>
+                        </tr>
+                        <tr>
+                          <td>자연재난</td>
+                          <td>산사태</td>
                           <td>000</td>
                         </tr>
                         <tr>
                           <td>자연재난</td>
                           <td>산사태</td>
                           <td>000</td>
-                          <td>000</td>
-                          <td>000</td>
-                          <td>000</td>
+                        </tr>
+                        <tr>
+                          <td>자연재난</td>
+                          <td>산사태</td>
                           <td>000</td>
                         </tr>
                         <tr>
                           <td>자연재난</td>
                           <td>산사태</td>
                           <td>000</td>
-                          <td>000</td>
-                          <td>000</td>
-                          <td>000</td>
-                          <td>000</td>
                         </tr>
                         <tr>
                           <td>자연재난</td>
                           <td>산사태</td>
-                          <td>000</td>
-                          <td>000</td>
-                          <td>000</td>
-                          <td>000</td>
-                          <td>000</td>
-                        </tr>
-                        <tr>
-                          <td>자연재난</td>
-                          <td>산사태</td>
-                          <td>000</td>
-                          <td>000</td>
-                          <td>000</td>
-                          <td>000</td>
-                          <td>000</td>
-                        </tr>
-                        <tr>
-                          <td>자연재난</td>
-                          <td>산사태</td>
-                          <td>000</td>
-                          <td>000</td>
-                          <td>000</td>
-                          <td>000</td>
-                          <td>000</td>
-                        </tr>
-                        <tr>
-                          <td>자연재난</td>
-                          <td>산사태</td>
-                          <td>000</td>
-                          <td>000</td>
-                          <td>000</td>
-                          <td>000</td>
-                          <td>000</td>
-                        </tr>
-                        <tr>
-                          <td>자연재난</td>
-                          <td>산사태</td>
-                          <td>000</td>
-                          <td>000</td>
-                          <td>000</td>
-                          <td>000</td>
-                          <td>000</td>
-                        </tr>
-                        <tr>
-                          <td>자연재난</td>
-                          <td>산사태</td>
-                          <td>000</td>
-                          <td>000</td>
-                          <td>000</td>
-                          <td>000</td>
                           <td>000</td>
                         </tr>
                       </tbody>
@@ -251,17 +186,16 @@
                 </div>
               </div>
             </div>
-
             <div id="tab02" class="tab_cont">
               <div class="search_area">
                 <ul class="search f_s">
                   <li>
-                    <select name="" id="">
+                    <select title="type">
                       <option value="전체">전체</option>
                     </select>
                   </li>
                   <li>
-                    <select name="" id="">
+                    <select title="type2">
                       <option value="전체">전체</option>
                     </select>
                   </li>
@@ -275,12 +209,10 @@
                   </li>
                   <li>
                     <select title="전체">
-                      <option value="">전체</option>
+                      <option value="전체">전체</option>
                     </select>
-                    <input type="text" id="location" placeholder="검색어">
-                  </li>
-                  <li>
-                    <button type="button" class="btn btn_blue">검색</button>
+                    <input type="text" title="location" placeholder="검색어">
+                    <button type="button" class="btn_skyblue">검색</button>
                   </li>
                 </ul>
               </div>
@@ -299,20 +231,16 @@
                 </div>
               </div>
             </div>
-
-
-
-
             <div id="tab03" class="tab_cont">
               <div class="search_area">
                 <ul class="search f_s">
                   <li>
-                    <select name="" id="">
+                    <select title="type">
                       <option value="전체">전체</option>
                     </select>
                   </li>
                   <li>
-                    <select name="" id="">
+                    <select title="type2">
                       <option value="전체">전체</option>
                     </select>
                   </li>
@@ -326,12 +254,10 @@
                   </li>
                   <li>
                     <select title="전체">
-                      <option value="">전체</option>
+                      <option value="전체">전체</option>
                     </select>
-                    <input type="text" id="location" placeholder="검색어">
-                  </li>
-                  <li>
-                    <button type="button" class="btn btn_blue">검색</button>
+                    <input type="text" title="location2" placeholder="검색어">
+                    <button type="button" class="btn_skyblue">검색</button>
                   </li>
                 </ul>
               </div>
@@ -343,7 +269,7 @@
                 <div style="width:60%;height:660px;">
                   <div class="flex_wrap">
                     <h2>시군구별 재난발생 통계</h2>
-                    <select name="statement">
+                    <select title="statement">
                       <option value="서울특별시">서울특별시</option>
                     </select>
                   </div>
@@ -371,7 +297,7 @@
     })
   </script>
 
-  <script type="text/javascript">
+  <script>
     var dom = document.getElementById("chart1");
     var myChart = echarts.init(dom);
     var app = {};

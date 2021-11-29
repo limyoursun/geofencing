@@ -73,12 +73,166 @@
     </ul>
   </nav>
 </header>
+  <div class="pop_overlay">
+  <div class="pop_wrap p_alert">
+    <div class="pop_tit">
+      <h1>알림 리스트</h1>
+      <button type="button" class="btn_pop_close"></button>
+    </div>
+    <div class="pop_body">
+      <div class="pop_cont">
+        <div>
+          <div class="search_area">
+            <ul class="search f_s">
+              <li>
+                <label for="di_info"><b>재난정보</b></label>
+                <select id="di_info">
+                  <option value="전체">전체</option>
+                  <option value="호우경보발표">호우경보발표</option>
+                </select>
+              </li>
+              <li>
+                <label for="date_timepicker_start0"><b>조회대상기간</b></label>
+                <span class="period period_multi">
+                  <input type="text" id="date_timepicker_start0" class="input_calendar" value="YYYY/MM/DD"
+                    placeholder="기간 시작일 선택" title="기간 시작일 선택">
+                  <input type="text" id="date_timepicker_end0" class="input_calendar" value="YYYY/MM/DD"
+                    placeholder="기간 종료일 선택" title="기간 종료일 선택">
+                </span>
+              </li>
+              <li>
+                <label for="searchvalue"><b>검색어</b></label>
+                <input type="text" id="searchvalue" placeholder="검색어">
+                <button type="button" class="btn_skyblue">검색</button>
+              </li>
+            </ul>
+          </div>
+          <div class="tbl_wrap">
+            <table class="tbl_default">
+              <caption>알림 리스트</caption>
+              <colgroup>
+                <col style="width:40px">
+                <col style="width:140px">
+                <col style="width:220px">
+                <col style="width:140px">
+                <col style="width:140px">
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope="col">No.</th>
+                  <th scope="col">재난정보</th>
+                  <th scope="col">발생지역</th>
+                  <th scope="col">처리상태</th>
+                  <th scope="col">알림시간</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="on">
+                  <td></td>
+                  <td>호우경보발표</td>
+                  <td>서울 구로구</td>
+                  <td>승인</td>
+                  <td>2020-08-12 12:34:56</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>호우경보발표</td>
+                  <td>서울 구로구</td>
+                  <td>승인</td>
+                  <td>2020-08-12 12:34:56</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>호우경보발표</td>
+                  <td>서울 구로구</td>
+                  <td>승인</td>
+                  <td>2020-08-12 12:34:56</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>호우경보발표</td>
+                  <td>서울 구로구</td>
+                  <td>승인</td>
+                  <td>2020-08-12 12:34:56</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>호우경보발표</td>
+                  <td>서울 구로구</td>
+                  <td>승인</td>
+                  <td>2020-08-12 12:34:56</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>호우경보발표</td>
+                  <td>서울 구로구</td>
+                  <td>승인</td>
+                  <td>2020-08-12 12:34:56</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>호우경보발표</td>
+                  <td>서울 구로구</td>
+                  <td>승인</td>
+                  <td>2020-08-12 12:34:56</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>호우경보발표</td>
+                  <td>서울 구로구</td>
+                  <td>승인</td>
+                  <td>2020-08-12 12:34:56</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>호우경보발표</td>
+                  <td>서울 구로구</td>
+                  <td>승인</td>
+                  <td>2020-08-12 12:34:56</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>호우경보발표</td>
+                  <td>서울 구로구</td>
+                  <td>승인</td>
+                  <td>2020-08-12 12:34:56</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>호우경보발표</td>
+                  <td>서울 구로구</td>
+                  <td>승인</td>
+                  <td>2020-08-12 12:34:56</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="paginate">
+              <a href="#" class="first" title="처음">〈〈</a>
+              <a href="#" class="pre" title="이전">〈</a>
+              <span>
+                <a href="#" class="on">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+              </span>
+              <a href="#" class="next" title="다음">〉</a>
+              <a href="#" class="last" title="마지막">〉〉</a>
+            </div>
+          </div>
+        </div>
+        <div class="btn_wrap alignC">
+          <button type="button" class="btn_l btn_gray">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
     <!-- Contents -->
     <div class="pop_overlay">
   <div class="pop_wrap p_cmmn02_1_1">
     <div class="pop_tit">
       <h1>내정보</h1>
-      <button type="button" class="btn_pop_close" closePop></button>
+      <button type="button" class="btn_pop_close"></button>
     </div>
     <div class="pop_body">
       <div class="pop_cont">
@@ -138,7 +292,7 @@
   <div class="pop_wrap p_cmmn02_1_2">
     <div class="pop_tit">
       <h1>내정보</h1>
-      <button type="button" class="btn_pop_close" closePop></button>
+      <button type="button" class="btn_pop_close"></button>
     </div>
     <div class="pop_body">
       <div class="pop_cont">
@@ -204,7 +358,7 @@
   <div class="pop_wrap p_cmmn02_1_3">
     <div class="pop_tit">
       <h1>비밀번호 변경</h1>
-      <button type="button" class="btn_pop_close" closePop></button>
+      <button type="button" class="btn_pop_close"></button>
     </div>
     <div class="pop_body">
       <div class="pop_cont">
@@ -235,7 +389,7 @@
   <div class="pop_wrap p_setting">
     <div class="pop_tit">
       <h1>규약어 추가</h1>
-      <button type="button" class="btn_pop_close" closePop></button>
+      <button type="button" class="btn_pop_close"></button>
     </div>
     <div class="pop_body">
       <div class="pop_cont">
@@ -250,11 +404,11 @@
             <td><input type="text" id="code"></td>
           </tr>
           <tr>
-            <th scope="row"><label for="explanation">설명</label></th>
-            <td><input type="text" id="explanation"></td>
+            <th scope="row"><label for="explanation2">설명</label></th>
+            <td><input type="text" id="explanation2"></td>
           </tr>
           <tr>
-            <th scope="row"><label for="use">사용여부</label></th>
+            <th scope="row"><label title="use">사용여부</label></th>
             <td class="alignL"><div class="btn_toggle"></div></td>
           </tr>
         </table>

@@ -3,6 +3,15 @@ $(function () {
   $.datetimepicker.setLocale('kr');
   $('#datetimepicker').datetimepicker();
 
+$('#date_timepicker_start0').datetimepicker({
+    format: 'Y/m/d',
+    onShow: function (ct) {
+      this.setOptions({
+        maxDate: $('#date_timepicker_end0').val() ? $('#date_timepicker_end0').val() : false
+      })
+    },
+    timepicker: false
+  });
   $('#date_timepicker_start').datetimepicker({
     format: 'Y/m/d',
     onShow: function (ct) {
@@ -31,6 +40,15 @@ $(function () {
     timepicker: false
   });
 
+$('#date_timepicker_end0').datetimepicker({
+    format: 'Y/m/d',
+    onShow: function (ct) {
+      this.setOptions({
+        minDate: $('#date_timepicker_start0').val() ? $('#date_timepicker_start0').val() : false
+      })
+    },
+    timepicker: false
+  });
   $('#date_timepicker_end').datetimepicker({
     format: 'Y/m/d',
     onShow: function (ct) {
@@ -111,9 +129,12 @@ $('.btn_weather_close').on('click', function () {
   $('.con_weather').fadeToggle();
 })
 
+// alert
+$('.alert').on('click',function(){
+  $('.p_alert').parents('.pop_overlay').show();
+})
 // toast alert
 $('.toast_alarm li').find('button').on('click', function () {
-  console.log('didi');
   $(this).parents('li').fadeToggle();
 })
 setTimeout(() => $('.toast_alarm').fadeIn('slow'), 500);
@@ -134,5 +155,34 @@ $('.slide_tit i').on('click', function () {
   $(this).children('.how_to_use').toggleClass('on');
 })
 $('.axi-close').on('click', function () {
-  $(this).parent('li').css({ 'display': 'none' });
+  $(this).parent('li').remove();
 })
+
+$('.btn_reset').on('click', function () {
+  $('.selectlocate_wrap').remove();
+})
+
+// 선택지역
+$('.selectlocate_wrap').on('click', function () {
+  var parentUl = $(this).find('.selectlocate_box').children().length;
+  if (parentUl < 1) {
+    $(this).find('.selectlocate_box').remove();
+  }
+})
+$('.selectlocate_wrap').on('click', function () {
+  var parentUlAll = $(this).find('.selectlocate_box_wrap').children().length;
+  console.log(parentUlAll);
+  if (parentUlAll == 1) {
+    $(this).remove();
+  }
+})
+
+  //case eqtabs
+  $('ul.eqtabs li, .eq_map_list li').on('click',function(){
+    var tab_id = $(this).attr('data_tab');
+		$('ul.eqtabs li, .eqtab_content, .eq_map_list li').removeClass('current');
+		$(this).addClass('current');
+    $()
+		$("."+tab_id).addClass('current');
+    return false;
+  });

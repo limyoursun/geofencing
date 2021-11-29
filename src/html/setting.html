@@ -25,19 +25,19 @@
                     <div class="search_area">
                       <ul class="search f_s">
                         <li>
-                          <select name="재난유형1">
+                          <select title="type">
                             <option value="전체">전체</option>
                             <option selected value="자연재난">자연재난</option>
                             <option value="사회재난">사회재난</option>
                           </select>
-                          <select name="재난유형2">
+                          <select title="type">
                             <option value="전체">전체</option>
                             <option selected value="호우">호우</option>
                             <option value="산사태">산사태</option>
                             <option value="황사">황사</option>
                             <option value="화재">화재</option>
                           </select>
-                          <button type="button" class="btn btn_blue">검색</button>
+                          <button type="button" class="btn_skyblue">검색</button>
                         </li>
                       </ul>
                     </div>
@@ -48,14 +48,15 @@
                         </button>
                       </div>
                       <table class="tbl_default">
+                        <caption>표준문안관리 검색 결과 제목</caption>
                         <colgroup>
-                          <col width="180">
-                          <col width="180">
-                          <col width="180">
-                          <col width="250">
-                          <col width="180">
-                          <col width="180">
-                          <col width="180">
+                          <col style="width:120px">
+                          <col style="width:120px">
+                          <col style="width:120px">
+                          <col style="width:200px">
+                          <col style="width:200px">
+                          <col style="width:200px">
+                          <col style="width:auto">
                           <col class="fix_scroll">
                         </colgroup>
                         <thead>
@@ -67,20 +68,21 @@
                             <th scope="col">자동발송</th>
                             <th scope="col">사용여부</th>
                             <th scope="col">수정</th>
-                            <th>&nbsp;</th>
+                            <th></th>
                           </tr>
                         </thead>
                       </table>
-                      <div class="tbl_body_wrap tbl_scroll" style="height:128px;">
+                      <div class="tbl_body_wrap tbl_scroll" style="height:94px;">
                         <table class="tbl_default">
+                          <caption>표준문안관리 검색 결과 내용</caption>
                           <colgroup>
-                            <col width="180">
-                            <col width="180">
-                            <col width="180">
-                            <col width="250">
-                            <col width="180">
-                            <col width="180">
-                            <col width="180">
+                            <col style="width:120px">
+                            <col style="width:120px">
+                            <col style="width:120px">
+                            <col style="width:200px">
+                            <col style="width:200px">
+                            <col style="width:200px">
+                            <col style="width:auto">
                           </colgroup>
                           <tbody>
                             <tr>
@@ -132,9 +134,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="ico_arrow">
-                    <i class="axi axi-arrow-drop-down"></i>
-                  </div>
+                  <div class="ico_arrow horizontal"></div>
                   <div class="standard_detail">
                     <ul class="dot_list monitoring_detail">
                       <li>
@@ -147,14 +147,12 @@
                       </li>
                       <li>
                         <b>재난유형</b>
-                        <span>
-                          <ul class="breadcrumb">
-                            <li>자연재난</li>
-                            <li>호우</li>
-                            <li>경보</li>
-                            <li>발표</li>
-                          </ul>
-                        </span>
+                        <ul class="breadcrumb">
+                          <li>자연재난</li>
+                          <li>호우</li>
+                          <li>경보</li>
+                          <li>발표</li>
+                        </ul>
                       </li>
                       <li>
                         <b>발령매체</b>
@@ -258,7 +256,7 @@
                           <b>발령문안(모바일)</b>
                           <p class="alignR"><span id="nowByte3">102</span>/315 bytes</p>
                         </div>
-                        <textarea id="sms_templete2" title="text_example3"
+                        <textarea id="sms_templete3" title="text_example3"
                           onkeyup="fn_checkByte3(this)">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat sem a consectetur eleifend.</textarea>
                       </li>
                       <script>
@@ -303,16 +301,17 @@
                   <div class="search_area">
                     <ul class="search f_s">
                       <li>
-                        <input type="text" name="search" placeholder="검색어를 입력하세요">
-                        <button type="button" class="btn btn_blue">검색</button>
+                        <input type="text" title="search" placeholder="검색어를 입력하세요">
+                        <button type="button" class="btn_skyblue">검색</button>
                       </li>
                     </ul>
                   </div>
                   <table class="tbl_default">
+                    <caption>규약어 제목</caption>
                     <colgroup>
-                      <col width="*">
-                      <col width="150">
-                      <col width="150">
+                      <col style="width:350px">
+                      <col style="width:150px">
+                      <col style="width:auto">
                       <col class="fix_scroll">
                     </colgroup>
                     <thead>
@@ -320,15 +319,17 @@
                         <th scope="col">소계</th>
                         <th scope="col">지자체</th>
                         <th scope="col">민간</th>
+                        <th></th>
                       </tr>
                     </thead>
                   </table>
                   <div class="tbl_body_wrap tbl_scroll" style="height:605px;">
                     <table class="tbl_default">
+                      <caption>규약어 내용</caption>
                       <colgroup>
-                        <col width="*">
-                        <col width="150">
-                        <col width="150">
+                        <col style="width:350px">
+                        <col style="width:150px">
+                        <col style="width:auto">
                       </colgroup>
                       <tbody>
                         <tr>
@@ -422,8 +423,8 @@
                 <div class="search_area">
                   <ul class="search f_s">
                     <li>
-                      <input type="text" name="search" placeholder="검색어를 입력하세요">
-                      <button type="button" class="btn btn_blue">검색</button>
+                      <input type="text" title="search" placeholder="검색어를 입력하세요">
+                      <button type="button" class="btn_skyblue">검색</button>
                     </li>
                   </ul>
                 </div>
@@ -434,12 +435,13 @@
                     </button>
                   </div>
                   <table class="tbl_default">
+                    <caption>규약어 검색 결과 제목</caption>
                     <colgroup>
-                      <col width="280">
-                      <col width="280">
-                      <col width="280">
-                      <col width="280">
-                      <col width="280">
+                      <col style="width:380px">
+                      <col style="width:380px">
+                      <col style="width:380px">
+                      <col style="width:380px">
+                      <col style="width:auto;">
                       <col class="fix_scroll">
                     </colgroup>
                     <thead>
@@ -449,18 +451,19 @@
                         <th scope="col">설명</th>
                         <th scope="col">사용여부</th>
                         <th scope="col">수정</th>
-                        <th class="fix_scroll">&nbsp;</th>
+                        <th></th>
                       </tr>
                     </thead>
                   </table>
                   <div class="tbl_body_wrap tbl_scroll" style="height:598px;">
                     <table class="tbl_default">
+                      <caption>규약어 검색 결과 내용</caption>
                       <colgroup>
-                        <col width="280">
-                        <col width="280">
-                        <col width="280">
-                        <col width="280">
-                        <col width="280">
+                        <col style="width:380px">
+                        <col style="width:380px">
+                        <col style="width:380px">
+                        <col style="width:380px">
+                        <col style="width:auto;">
                       </colgroup>
                       <tbody>
                         <tr>
@@ -576,36 +579,41 @@
                       <li>
                         <label for="search"><b>그룹명</b></label>
                         <input type="text" id="search" placeholder="검색어를 입력하세요">
-                        <button type="button" class="btn btn_blue">검색</button>
+                        <button type="button" class="btn_skyblue">검색</button>
                       </li>
                     </ul>
                   </div>
-                  <table class="tbl_default">
+                  <div class="tbl_default">
                     <div class="tbl_top flex_wrap f_sb">
                       <p>검색결과 : 총 <b class="font_blue">4</b>건</p>
                       <button type="button" class="btn_s btn_axi btn_add btn_skyblueline">추가
                       </button>
                     </div>
-                    <colgroup>
-                      <col width="*">
-                      <col width="150">
-                      <col width="150">
-                      <col class="fix_scroll">
-                    </colgroup>
-                    <thead>
-                      <tr>
-                        <th scope="col">소계</th>
-                        <th scope="col">지자체</th>
-                        <th scope="col">민간</th>
-                      </tr>
-                    </thead>
-                  </table>
+                    <table>
+                    <caption>지역그룹관리 검색 결과 제목</caption>
+                      <colgroup>
+                        <col style="width:250px">
+                        <col style="width:250px">
+                        <col style="width:auto">
+                        <col class="fix_scroll">
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th scope="col">소계</th>
+                          <th scope="col">지자체</th>
+                          <th scope="col">민간</th>
+                          <th></th>
+                        </tr>
+                      </thead>
+                    </table>
+                  </div>
                   <div class="tbl_body_wrap tbl_scroll" style="height:598px;">
                     <table class="tbl_default">
+                      <caption>지역그룹관리 검색 결과 내용</caption>
                       <colgroup>
-                        <col width="*">
-                        <col width="150">
-                        <col width="150">
+                        <col style="width:250px">
+                        <col style="width:250px">
+                        <col style="width:auto">
                       </colgroup>
                       <tbody>
                         <tr>
@@ -693,20 +701,20 @@
                   </div>
                 </div>
                 <div class="arrow"></div>
-                <div class="select_box_wrap">
+                <div class="select_wrap">
                   <div>
                     <ul class="dot_list monitoring_detail">
                       <li>
-                        <label for=""><b>그룹명</b></label>
-                        <input type="text" value="서울, 경기남부">
+                        <label for="groupName"><b>그룹명</b></label>
+                        <input type="text" id="groupName" value="서울, 경기남부">
                       </li>
                       <li>
-                        <label for=""><b>설명</b></label>
-                        <input type="text">
+                        <label for="explanation"><b>설명</b></label>
+                        <input type="text" id="explanation">
                       </li>
                     </ul>
                     <div>
-                      <ul class="flex_wrap f_s">
+                      <ul class="select_range flex_wrap f_s">
                         <li>
                           <input type="radio" name="locationType" id="locationType1">
                           <label for="locationType1">전국</label>
@@ -724,9 +732,17 @@
                           <label for="locationType4">읍면동</label>
                         </li>
                       </ul>
-                      <div class="select_box flex_wrap f_sb">
-                        <ul>
-                          <li class="on">
+                      <div class="select_box_wrap flex_wrap f_sb" style="height: 220px;">
+                        <ul class="select_box select_box_1">
+                          <li>
+                            <input type="checkbox" id="selectType2_0" name="checkAll">
+                            <label for="selectType2_0">
+                              <span>
+                                전체
+                              </span>
+                            </label>
+                          </li>
+                          <li>
                             <input type="checkbox" id="selectType2_1">
                             <label for="selectType2_1">
                               <span>
@@ -735,119 +751,131 @@
                             </label>
                           </li>
                           <li>
-                            <input type="checkbox" id="selectType2_2">
+                            <input type="checkbox" id="selectType2_2" checked>
                             <label for="selectType2_2">
-                              경기도
+                              <span>경기도</span>
                             </label>
                           </li>
                           <li>
                             <input type="checkbox" id="selectType2_3">
                             <label for="selectType2_3">
-                              울산광역시
+                              <span>울산광역시</span>
                             </label>
                           </li>
                           <li>
                             <input type="checkbox" id="selectType2_4">
                             <label for="selectType2_4">
-                              세종특별자치시
+                              <span>세종특별자치시</span>
                             </label>
                           </li>
                           <li>
                             <input type="checkbox" id="selectType2_5">
                             <label for="selectType2_5">
-                              경기도
+                              <span>경기도</span>
                             </label>
                           </li>
                           <li>
                             <input type="checkbox" id="selectType2_6">
                             <label for="selectType2_6">
-                              강원도
+                              <span>강원도</span>
                             </label>
                           </li>
                           <li>
                             <input type="checkbox" id="selectType2_7">
                             <label for="selectType2_7">
-                              충청북도
+                              <span>충청북도</span>
                             </label>
                           </li>
                           <li>
                             <input type="checkbox" id="selectType2_8">
                             <label for="selectType2_8">
-                              충청남도
+                              <span>충청남도</span>
                             </label>
                           </li>
                           <li>
                             <input type="checkbox" id="selectType2_9">
                             <label for="selectType2_9">
-                              전라북도
+                              <span>전라북도</span>
                             </label>
                           </li>
                         </ul>
-                        <ul>
+                        <ul class="select_box select_box_2">
+                          <li>
+                            <input type="checkbox" id="selectType1_0" name="checkAll">
+                            <label for="selectType1_0">
+                              <span>전체</span>
+                            </label>
+                          </li>
                           <li>
                             <input type="checkbox" id="selectType1_1">
                             <label for="selectType1_1">
-                              <span>
-                                고양시
-                              </span>
+                              <span>고양시</span>
                             </label>
                           </li>
-                          <li class="on">
-                            <input type="checkbox" id="selectType1_2">
+                          <li>
+                            <input type="checkbox" id="selectType1_2" checked>
                             <label for="selectType1_2">
-                              광명시
+                              <span>광명시</span>
                             </label>
                           </li>
                           <li>
                             <input type="checkbox" id="selectType1_3">
                             <label for="selectType1_3">
-                              과천시
+                              <span>과천시</span>
                             </label>
                           </li>
                           <li>
                             <input type="checkbox" id="selectType1_4">
                             <label for="selectType1_4">
-                              남양주시
+                              <span>남양주시</span>
                             </label>
                           </li>
                           <li>
                             <input type="checkbox" id="selectType1_5">
                             <label for="selectType1_5">
-                              성남시
+                              <span>성남시</span>
                             </label>
                           </li>
                           <li>
                             <input type="checkbox" id="selectType1_6">
                             <label for="selectType1_6">
-                              고양시
+                              <span>고양시</span>
                             </label>
                           </li>
                           <li>
                             <input type="checkbox" id="selectType1_7">
                             <label for="selectType1_7">
-                              광명시
+                              <span>광명시</span>
                             </label>
                           </li>
                           <li>
                             <input type="checkbox" id="selectType1_8">
                             <label for="selectType1_8">
-                              과천시
+                              <span>과천시</span>
                             </label>
                           </li>
                           <li>
                             <input type="checkbox" id="selectType1_9">
                             <label for="selectType1_9">
-                              남양주시
+                              <span>남양주시</span>
                             </label>
                           </li>
                           <li>
                             <input type="checkbox" id="selectType1_10">
                             <label for="selectType1_10">
-                              성남시
+                              <span>성남시</span>
                             </label>
                           </li>
                         </ul>
-                        <ul>
+                        <ul class="select_box select_box_3">
+                          <li>
+                            <input type="checkbox" id="selectType3_0" name="checkAll">
+                            <label for="selectType3_0">
+                              <span>
+                                전체
+                              </span>
+                            </label>
+                          </li>
                           <li>
                             <input type="checkbox" id="selectType3_1">
                             <label for="selectType3_1">
@@ -949,83 +977,72 @@
                       <div class="selectlocate_area">
                         <div class="tit_wrap flex_wrap f_sb">
                           <h3>선택지역</h3>
-                          <button type="button" class="btn_s btn_skyblueline">
+                          <button type="button" class="btn_reset btn_s btn_skyblueline">
                             <i class="axi axi-refresh"></i>
                             <b>초기화</b></button>
                         </div>
                         <div>
-                          <div class="selectlocate_wrap">
-                            <h3>서울</h3>
-                            <ul>
-                              <li>
-                                <span>강원도</span>
-                                <i class="axi axi-close"></i>
-                              </li>
-                              <li>
-                                <span>충청북도</span>
-                                <i class="axi axi-close"></i>
-                              </li>
-                              <li>
-                                <span>세종특별자치시</span>
-                                <i class="axi axi-close"></i>
-                              </li>
-                            </ul>
-                          </div>
-                          <div class="selectlocate_wrap">
-                            <h3>
-                              <span>경기</span>
-                              <span>광명시</span>
-                            </h3>
-                            <ul>
-                              <li>
-                                <span>강원도</span>
-                                <i class="axi axi-close"></i>
-                              </li>
-                              <li>
-                                <span>충청북도</span>
-                                <i class="axi axi-close"></i>
-                              </li>
-                              <li>
-                                <span>세종특별자치시</span>
-                                <i class="axi axi-close"></i>
-                              </li>
-                            </ul>
-                            <h3>
-                              <span>경기</span>
-                              <span>부천시</span>
-                            </h3>
-                            <ul>
-                              <li>
-                                <span>강원도</span>
-                                <i class="axi axi-close"></i>
-                              </li>
-                              <li>
-                                <span>충청북도</span>
-                                <i class="axi axi-close"></i>
-                              </li>
-                              <li>
-                                <span>세종특별자치시</span>
-                                <i class="axi axi-close"></i>
-                              </li>
-                            </ul>
-                            <h3>
-                              <span>경기</span>
-                              <span>부천시</span>
-                            </h3>
-                            <ul>
-                              <li>
-                                <span>강원도</span>
-                                <i class="axi axi-close"></i>
-                              </li>
-                              <li>
-                                <span>충청북도</span>
-                                <i class="axi axi-close"></i>
-                              </li>
-                              <li>
-                                <span>세종특별자치시</span>
-                                <i class="axi axi-close"></i>
-                              </li>
-                            </ul>
+                          <div>
+                            <div class="selectlocate_wrap">
+                              <div class="selectlocate_box_wrap">
+                                <h3>지역 1</h3>
+                                <ul class="selectlocate_box">
+                                  <li>
+                                    <span>지역 1-1</span>
+                                    <i class="axi axi-close"></i>
+                                  </li>
+                                  <li>
+                                    <span>지역 1-2</span>
+                                    <i class="axi axi-close"></i>
+                                  </li>
+                                  <li>
+                                    <span>지역 1-3</span>
+                                    <i class="axi axi-close"></i>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="selectlocate_wrap">
+                              <div class="selectlocate_box_wrap">
+                                <h3>
+                                  <span>지역 2</span>
+                                  <span>지역 2-1</span>
+                                </h3>
+                                <ul class="selectlocate_box">
+                                  <li>
+                                    <span>지역 2-1-1</span>
+                                    <i class="axi axi-close"></i>
+                                  </li>
+                                  <li>
+                                    <span>지역 2-1-2</span>
+                                    <i class="axi axi-close"></i>
+                                  </li>
+                                  <li>
+                                    <span>지역 2-1-3</span>
+                                    <i class="axi axi-close"></i>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="selectlocate_wrap">
+                              <div class="selectlocate_box_wrap">
+                                <h3>지역 1</h3>
+                                <ul class="selectlocate_box">
+                                  <li>
+                                    <span>지역 1-1</span>
+                                    <i class="axi axi-close"></i>
+                                  </li>
+                                  <li>
+                                    <span>지역 1-2</span>
+                                    <i class="axi axi-close"></i>
+                                  </li>
+                                  <li>
+                                    <span>지역 1-3</span>
+                                    <i class="axi axi-close"></i>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
