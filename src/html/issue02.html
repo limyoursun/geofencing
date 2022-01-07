@@ -211,7 +211,8 @@
             <ul class="tab_list">
               <li><a href="#tab01" class="on">지도에서 선택</a></li>
               <li><a href="#tab02">목록에서 선택</a></li>
-              <li><a href="#tab03">그룹지역 선택</a></li>
+              <li><a href="#tab03">지역그룹 선택</a></li>
+              <li><a href="#tab04">좌표에서 선택</a></li>
             </ul>
           </div>
           <div class="tab_conts">
@@ -235,7 +236,368 @@
                       <i class="axi axi-close"></i>
                     </li>
                   </ul>
-                  <button class="btn_skyblue">송출지역 적용</button>
+                </div>
+              </div>
+              <div class="select_map">
+                <div class="img_map_wrap">
+                  <img src="../images/img_map.png" alt="임시 지도 이미지" class="on">
+                  <img src="../images/img_map_jeonlanamdo.png" alt="임시 전라남도 지도 이미지" class="on">
+                  <img src="../images/img_map_gyeongsangnamdo.png" alt="임시 경상남도 지도 이미지" class="on">
+                  <img src="../images/img_map_gwangju.png" alt="임시 광주광역시 지도 이미지" class="on">
+                </div>
+                <div class="btn_submit_wrap">
+                  <button class="btn_skyblue">적용</button>
+                </div>
+              </div>
+            </div>
+            <div id="tab02" class="tab_cont">
+              <div>
+                <div>
+                  <h3>선택된 송출지역</h3>
+                </div>
+                <div class="selectlocate_wrap flex_wrap f_sb">
+                  <ul>
+                    <li>
+                      <span>서울특별시 전체</span>
+                      <i class="axi axi-close"></i>
+                    </li>
+                    <li>
+                      <span>경기도 전체</span>
+                      <i class="axi axi-close"></i>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="select_map">
+                <div class="list_select_map_box select_box_2">
+                    <div class="select_box_wrap flex_wrap f_sb">
+                      <div>
+                        <h4>시도 선택</h4>
+                        <ul class="select_box">
+                          <li>
+                            <input type="checkbox" id="selectType1_0" class="checkAll">
+                            <label for="selectType1_0">전체</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="selectType1_1">
+                            <label for="selectType1_1">서울</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="selectType1_2">
+                            <label for="selectType1_2">경북</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="selectType1_3">
+                            <label for="selectType1_3">울산</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="selectType1_4">
+                            <label for="selectType1_4">세종</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="selectType1_5">
+                            <label for="selectType1_5">경기</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="selectType1_6">
+                            <label for="selectType1_6">강원</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="selectType1_7">
+                            <label for="selectType1_7">충북</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="selectType1_8">
+                            <label for="selectType1_8">충남</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="selectType1_9">
+                            <label for="selectType1_9">전북</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="selectType1_9">
+                            <label for="selectType1_9">전남</label>
+                          </li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h4>시군구 선택</h4>
+                        <ul class="select_box">
+                          <li>
+                            <input type="checkbox" id="selectType2_0" class="checkAll">
+                            <label for="selectType2_0">
+                              전체
+                            </label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="selectType2_1">
+                            <label for="selectType2_1">고양시</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="selectType2_2">
+                            <label for="selectType2_2">광명시</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="selectType2_3">
+                            <label for="selectType2_3">과천시</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="selectType2_4">
+                            <label for="selectType2_4">남양주시</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="selectType2_5">
+                            <label for="selectType2_5">성남시</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="selectType2_6">
+                            <label for="selectType2_6">고양시</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="selectType2_7">
+                            <label for="selectType2_7">광명시</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="selectType2_8">
+                            <label for="selectType2_8">과천시</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="selectType2_9">
+                            <label for="selectType2_9">남양주시</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="selectType2_10">
+                            <label for="selectType2_10">성남시</label>
+                          </li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h4>읍면동 선택</h4>
+                        <ul class="select_box">
+                          <li>
+                            <input type="checkbox" id="selectType3_0" class="checkAll">
+                            <label for="selectType3_0">전체</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="selectType3_1">
+                            <label for="selectType3_1">광명동</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="selectType3_2">
+                            <label for="selectType3_2">철산동</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="selectType3_3">
+                            <label for="selectType3_3">소하동</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="selectType3_4">
+                            <label for="selectType3_4">일직동</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="selectType3_5">
+                            <label for="selectType3_5">노온사동</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="selectType3_6">
+                            <label for="selectType3_6">학온동</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="selectType3_7">
+                            <label for="selectType3_7">광명동</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="selectType3_8">
+                            <label for="selectType3_8">철산동</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="selectType3_9">
+                            <label for="selectType3_9">소하동</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="selectType3_10">
+                            <label for="selectType3_10">일직동</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="selectType3_11">
+                            <label for="selectType3_11">노온사동</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="selectType3_12">
+                            <label for="selectType3_12">학온동</label>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+                <div class="btn_submit_wrap">
+                  <button class="btn btn_skyblue">적용</button>
+                </div>
+              </div>
+            </div>
+            <div id="tab03" class="tab_cont">
+              <div>
+                <div>
+                  <h3>선택된 송출지역</h3>
+                </div>
+                <div class="selectlocate_wrap flex_wrap f_sb">
+                  <ul>
+                    <li>
+                      <span>경상북도 전체</span>
+                      <i class="axi axi-close"></i>
+                    </li>
+                    <li>
+                      <span>충청북도 전체</span>
+                      <i class="axi axi-close"></i>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="select_map select_box">
+                <div class="img_map_wrap">
+                  <img src="../images/img_map.png" alt="임시 지도 이미지" class="on">
+                  <img src="../images/img_map_gyeongsangbugdo.png" alt="임시 경상북도 지도 이미지" class="on">
+                  <img src="../images/img_map_chungcheongbukdo.png" alt="임시 충청북도 지도 이미지" class="on">
+                </div>
+                <div class="btn_submit_wrap">
+                    <button class="btn_skyblue">적용</button>
+                  </div>
+                <div class="group_select_map_box select_box_3">
+                  <h4>지역그룹 선택</h4>
+                  <ul class="group_select_wrap">
+                    <li>
+                      <input type="checkbox" id="selectType4_1">
+                      <label for="selectType4_1">인천 · 전남</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="selectType4_2">
+                      <label for="selectType4_2">강원영동</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="selectType4_3">
+                      <label for="selectType4_3">경남 전체</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="selectType4_4">
+                      <label for="selectType4_4">전라북도 전체</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="selectType4_5">
+                      <label for="selectType4_5">대전 전체</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="selectType4_6">
+                      <label for="selectType4_6">대구 전체</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="selectType4_7">
+                      <label for="selectType4_7">서해 중부</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="selectType4_8">
+                      <label for="selectType4_8">대구 · 경북</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="selectType4_9">
+                      <label for="selectType4_9">세종</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="selectType4_10">
+                      <label for="selectType4_10">남해동부</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="selectType4_11">
+                      <label for="selectType4_11">경기북부</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="selectType4_12">
+                      <label for="selectType4_12">대전 · 충북 · 충남</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="selectType4_13">
+                      <label for="selectType4_13">동해중부</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="selectType4_14">
+                      <label for="selectType4_14">경기북부</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="selectType4_15">
+                      <label for="selectType4_15">중부지방</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="selectType4_16">
+                      <label for="selectType4_16">경남 1-1</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="selectType4_17">
+                      <label for="selectType4_17">전북 1-1</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="selectType4_18">
+                      <label for="selectType4_18">대전 1-1</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="selectType4_19">
+                      <label for="selectType4_19">대구 1-1</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="selectType4_20">
+                      <label for="selectType4_20">경남 1-2</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="selectType4_21">
+                      <label for="selectType4_21">전북 1-2</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="selectType4_22">
+                      <label for="selectType4_22">대전 1-2</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="selectType4_23">
+                      <label for="selectType4_23">대구 1-2</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="selectType4_24">
+                      <label for="selectType4_24">서울-2</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="selectType4_25">
+                      <label for="selectType4_25">강원</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="selectType4_26">
+                      <label for="selectType4_26">부산· 경남· 울산</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="selectType4_27">
+                      <label for="selectType4_27">경기북부</label>
+                    </li>
+                  </ul>
+                  
+                </div>
+              </div>
+            </div>
+            <div id="tab04" class="tab_cont">
+              <div>
+                <div>
+                  <h3>선택된 송출지역</h3>
+                </div>
+                <div class="selectlocate_wrap flex_wrap f_sb">
+                  <ul>
+                    <li>
+                      <span>광주광역시 전체</span>
+                      <i class="axi axi-close"></i>
+                    </li>
+                    <li>
+                      <span>경상남도 전체</span>
+                      <i class="axi axi-close"></i>
+                    </li>
+                    <li>
+                      <span>전라남도 전체</span>
+                      <i class="axi axi-close"></i>
+                    </li>
+                  </ul>
                 </div>
               </div>
               <div class="select_map">
@@ -259,6 +621,10 @@
                     <span>초기화</span>
                   </li>
                 </ul>
+                <div class="coordinates">
+                  <p><b>Circle</b> 36.48,128.64 125</p>
+                  <p><b>Polygon</b> 36.48,128.64 35.34,127.24</p>
+                </div>
                 <ul class="map_expansionshrink">
                   <li class="alignC btn_expansion">
                     <p><i class="axi axi-plus"></i></p>
@@ -267,545 +633,8 @@
                     <p><i class="axi axi-minus"></i></p>
                   </li>
                 </ul>
-              </div>
-            </div>
-            <div id="tab02" class="tab_cont">
-              <div>
-                <div>
-                  <h3>선택된 송출지역</h3>
-                </div>
-                <div class="selectlocate_wrap flex_wrap f_sb">
-                  <ul>
-                    <li>
-                      <span>서울특별시 전체</span>
-                      <i class="axi axi-close"></i>
-                    </li>
-                    <li>
-                      <span>경기도 전체</span>
-                      <i class="axi axi-close"></i>
-                    </li>
-                  </ul>
-                  <button class="btn_skyblue">송출지역 적용</button>
-                </div>
-              </div>
-              <div class="select_map">
-                <div class="img_map_wrap">
-                  <img src="../images/img_map.png" alt="임시 지도 이미지" class="on">
-                  <img src="../images/img_map_seoul.png" alt="임시 서울 지도 이미지" class="on">
-                  <img src="../images/img_map_gyeonggido.png" alt="임시 서울 지도 이미지" class="on">
-                  <img src="../images/img_map_chungcheongbukdo.png" alt="임시 서울 지도 이미지" class="on">
-                </div>
-                <div class="list_select_map_box select_box_2">
-                  <!--<h3><b>※ 대상 범위</b></h3>
-                  <ul class="select_range flex_wrap f_s">
-                    <li>
-                      <input type="radio" name="locationType" id="locationType1">
-                      <label for="locationType1">전국</label>
-                    </li>
-                    <li>
-                      <input type="radio" name="locationType" id="locationType2">
-                      <label for="locationType2">시도</label>
-                    </li>
-                    <li>
-                      <input type="radio" name="locationType" id="locationType3">
-                      <label for="locationType3">시군구</label>
-                    </li>
-                    <li>
-                      <input type="radio" name="locationType" id="locationType4">
-                      <label for="locationType4">읍면동</label>
-                    </li>
-                  </ul>-->
-                  <div>
-                    <h3><b>대상 지역</b></h3>
-                    <div class="select_box_wrap flex_wrap f_sb" style="height: 150px;">
-                      <ul class="select_box select_box_1">
-                        <li>
-                          <input type="checkbox" id="selectType2_0" name="checkAll">
-                          <label for="selectType2_0">
-                            <span>
-                              전체
-                            </span>
-                          </label>
-                        </li>
-                        <li>
-                          <input type="checkbox" id="selectType2_1" checked>
-                          <label for="selectType2_1">
-                            <span>서울</span>
-                          </label>
-                        </li>
-                        <li>
-                          <input type="checkbox" id="selectType2_2">
-                          <label for="selectType2_2">
-                            <span>경상북도</span>
-                          </label>
-                        </li>
-                        <li>
-                          <input type="checkbox" id="selectType2_3">
-                          <label for="selectType2_3">
-                            <span>울산광역시</span>
-                          </label>
-                        </li>
-                        <li>
-                          <input type="checkbox" id="selectType2_4">
-                          <label for="selectType2_4">
-                            <span>세종특별자치시</span>
-                          </label>
-                        </li>
-                        <li>
-                          <input type="checkbox" id="selectType2_5" checked>
-                          <label for="selectType2_5">
-                            <span>경기도</span>
-                          </label>
-                        </li>
-                        <li>
-                          <input type="checkbox" id="selectType2_6">
-                          <label for="selectType2_6">
-                            <span>강원도</span>
-                          </label>
-                        </li>
-                        <li>
-                          <input type="checkbox" id="selectType2_7" checked>
-                          <label for="selectType2_7">
-                            <span>충청북도</span>
-                          </label>
-                        </li>
-                        <li>
-                          <input type="checkbox" id="selectType2_8">
-                          <label for="selectType2_8">
-                            <span>충청남도</span>
-                          </label>
-                        </li>
-                        <li>
-                          <input type="checkbox" id="selectType2_9">
-                          <label for="selectType2_9">
-                            <span>전라북도</span>
-                          </label>
-                        </li>
-                      </ul>
-                      <ul class="select_box select_box_2">
-                        <li>
-                          <input type="checkbox" id="selectType1_0" name="checkAll">
-                          <label for="selectType1_0">
-                            <span>전체</span>
-                          </label>
-                        </li>
-                        <li>
-                          <input type="checkbox" id="selectType1_1">
-                          <label for="selectType1_1">
-                            <span>고양시</span>
-                          </label>
-                        </li>
-                        <li>
-                          <input type="checkbox" id="selectType1_2" checked>
-                          <label for="selectType1_2">
-                            <span>광명시</span>
-                          </label>
-                        </li>
-                        <li>
-                          <input type="checkbox" id="selectType1_3">
-                          <label for="selectType1_3">
-                            <span>과천시</span>
-                          </label>
-                        </li>
-                        <li>
-                          <input type="checkbox" id="selectType1_4">
-                          <label for="selectType1_4">
-                            <span>남양주시</span>
-                          </label>
-                        </li>
-                        <li>
-                          <input type="checkbox" id="selectType1_5">
-                          <label for="selectType1_5">
-                            <span>성남시</span>
-                          </label>
-                        </li>
-                        <li>
-                          <input type="checkbox" id="selectType1_6">
-                          <label for="selectType1_6">
-                            <span>고양시</span>
-                          </label>
-                        </li>
-                        <li>
-                          <input type="checkbox" id="selectType1_7">
-                          <label for="selectType1_7">
-                            <span>광명시</span>
-                          </label>
-                        </li>
-                        <li>
-                          <input type="checkbox" id="selectType1_8">
-                          <label for="selectType1_8">
-                            <span>과천시</span>
-                          </label>
-                        </li>
-                        <li>
-                          <input type="checkbox" id="selectType1_9">
-                          <label for="selectType1_9">
-                            <span>남양주시</span>
-                          </label>
-                        </li>
-                        <li>
-                          <input type="checkbox" id="selectType1_10">
-                          <label for="selectType1_10">
-                            <span>성남시</span>
-                          </label>
-                        </li>
-                      </ul>
-                      <ul class="select_box select_box_3">
-                        <li>
-                          <input type="checkbox" id="selectType3_0" name="checkAll">
-                          <label for="selectType3_0">
-                            <span>
-                              전체
-                            </span>
-                          </label>
-                        </li>
-                        <li>
-                          <input type="checkbox" id="selectType3_1">
-                          <label for="selectType3_1">
-                            <span>
-                              광명동
-                            </span>
-                          </label>
-                        </li>
-                        <li>
-                          <input type="checkbox" id="selectType3_2" checked>
-                          <label for="selectType3_2">
-                            <span>
-                              철산동
-                            </span>
-                          </label>
-                        </li>
-                        <li>
-                          <input type="checkbox" id="selectType3_3">
-                          <label for="selectType3_3">
-                            <span>
-                              소하동
-                            </span>
-                          </label>
-                        </li>
-                        <li>
-                          <input type="checkbox" id="selectType3_4">
-                          <label for="selectType3_4">
-                            <span>
-                              일직동
-                            </span>
-                          </label>
-                        </li>
-                        <li>
-                          <input type="checkbox" id="selectType3_5">
-                          <label for="selectType3_5">
-                            <span>
-                              노온사동
-                            </span>
-                          </label>
-                        </li>
-                        <li>
-                          <input type="checkbox" id="selectType3_6">
-                          <label for="selectType3_6">
-                            <span>
-                              학온동
-                            </span>
-                          </label>
-                        </li>
-                        <li>
-                          <input type="checkbox" id="selectType3_7">
-                          <label for="selectType3_7">
-                            <span>
-                              광명동
-                            </span>
-                          </label>
-                        </li>
-                        <li>
-                          <input type="checkbox" id="selectType3_8">
-                          <label for="selectType3_8">
-                            <span>
-                              철산동
-                            </span>
-                          </label>
-                        </li>
-                        <li>
-                          <input type="checkbox" id="selectType3_9">
-                          <label for="selectType3_9">
-                            <span>
-                              소하동
-                            </span>
-                          </label>
-                        </li>
-                        <li>
-                          <input type="checkbox" id="selectType3_10">
-                          <label for="selectType3_10">
-                            <span>
-                              일직동
-                            </span>
-                          </label>
-                        </li>
-                        <li>
-                          <input type="checkbox" id="selectType3_11">
-                          <label for="selectType3_11">
-                            <span>
-                              노온사동
-                            </span>
-                          </label>
-                        </li>
-                        <li>
-                          <input type="checkbox" id="selectType3_12">
-                          <label for="selectType3_12">
-                            <span>
-                              학온동
-                            </span>
-                          </label>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="tab03" class="tab_cont">
-              <div>
-                <div>
-                  <h3>선택된 송출지역</h3>
-                </div>
-                <div class="selectlocate_wrap flex_wrap f_sb">
-                  <ul>
-                    <li>
-                      <span>경상북도 전체</span>
-                      <i class="axi axi-close"></i>
-                    </li>
-                    <li>
-                      <span>충청북도 전체</span>
-                      <i class="axi axi-close"></i>
-                    </li>
-                  </ul>
-                  <button class="btn_skyblue">송출지역 적용</button>
-                </div>
-              </div>
-              <div class="select_map select_box">
-                <div class="img_map_wrap">
-                  <img src="../images/img_map.png" alt="임시 지도 이미지" class="on">
-                  <img src="../images/img_map_gyeongsangbugdo.png" alt="임시 경상북도 지도 이미지" class="on">
-                  <img src="../images/img_map_chungcheongbukdo.png" alt="임시 충청북도 지도 이미지" class="on">
-                </div>
-                <div class="group_select_map_box select_box_3">
-                  <h4>그룹지역 선택</h4>
-                  <ul class="group_select_wrap" style="height:610px;">
-                    <li>
-                      <input type="checkbox" id="selectType7_1" checked>
-                      <label for="selectType7_1">
-                        <span>
-                          인천 · 전라남도
-                        </span>
-                      </label>
-                    </li>
-                    <li>
-                      <input type="checkbox" id="selectType7_2">
-                      <label for="selectType7_2">
-                        <span>
-                          강원영동
-                        </span>
-                      </label>
-                    </li>
-                    <li>
-                      <input type="checkbox" id="selectType7_3">
-                      <label for="selectType7_3">
-                        <span>
-                          경상남도 전체
-                        </span>
-                      </label>
-                    </li>
-                    <li>
-                      <input type="checkbox" id="selectType7_4">
-                      <label for="selectType7_4">
-                        <span>
-                          전라북도 전체
-                        </span>
-                      </label>
-                    </li>
-                    <li>
-                      <input type="checkbox" id="selectType7_5">
-                      <label for="selectType7_5">
-                        <span>
-                          대전광역시 전체
-                        </span>
-                      </label>
-                    </li>
-                    <li>
-                      <input type="checkbox" id="selectType7_6">
-                      <label for="selectType7_6">
-                        <span>
-                          대구광역시 전체
-                        </span>
-                      </label>
-                    </li>
-                    <li>
-                      <input type="checkbox" id="selectType7_7">
-                      <label for="selectType7_7">
-                        <span>
-                          서해 중부
-                        </span>
-                      </label>
-                    </li>
-                    <li>
-                      <input type="checkbox" id="selectType7_8">
-                      <label for="selectType7_8">
-                        <span>
-                          대구 · 경북
-                        </span>
-                      </label>
-                    </li>
-                    <li>
-                      <input type="checkbox" id="selectType7_9">
-                      <label for="selectType7_9">
-                        <span>
-                          세종특별자치시
-                        </span>
-                      </label>
-                    </li>
-                    <li>
-                      <input type="checkbox" id="selectType7_10">
-                      <label for="selectType7_10">
-                        <span>
-                          남해동부
-                        </span>
-                      </label>
-                    </li>
-                    <li>
-                      <input type="checkbox" id="selectType7_11">
-                      <label for="selectType7_11">
-                        <span>
-                          경기북부
-                        </span>
-                      </label>
-                    </li>
-                    <li>
-                      <input type="checkbox" id="selectType7_12">
-                      <label for="selectType7_12">
-                        <span>
-                          대전 · 충북 · 충남
-                        </span>
-                      </label>
-                    </li>
-                    <li>
-                      <input type="checkbox" id="selectType7_13">
-                      <label for="selectType7_13">
-                        <span>
-                          동해중부
-                        </span>
-                      </label>
-                    </li>
-                    <li>
-                      <input type="checkbox" id="selectType7_14">
-                      <label for="selectType7_14">
-                        <span>
-                          경기북부
-                        </span>
-                      </label>
-                    </li>
-                    <li>
-                      <input type="checkbox" id="selectType7_15">
-                      <label for="selectType7_15">
-                        <span>
-                          중부지방
-                        </span>
-                      </label>
-                    </li>
-                    <li>
-                      <input type="checkbox" id="selectType7_16">
-                      <label for="selectType7_16">
-                        <span>
-                          경상남도 1-1
-                        </span>
-                      </label>
-                    </li>
-                    <li>
-                      <input type="checkbox" id="selectType7_17">
-                      <label for="selectType7_17">
-                        <span>
-                          전라북도 1-1
-                        </span>
-                      </label>
-                    </li>
-                    <li>
-                      <input type="checkbox" id="selectType7_18">
-                      <label for="selectType7_18">
-                        <span>
-                          대전광역시 1-1
-                        </span>
-                      </label>
-                    </li>
-                    <li>
-                      <input type="checkbox" id="selectType7_19">
-                      <label for="selectType7_19">
-                        <span>
-                          대구광역시 1-1
-                        </span>
-                      </label>
-                    </li>
-                    <li>
-                      <input type="checkbox" id="selectType7_20">
-                      <label for="selectType7_20">
-                        <span>
-                          경상남도 1-2
-                        </span>
-                      </label>
-                    </li>
-                    <li>
-                      <input type="checkbox" id="selectType7_21">
-                      <label for="selectType7_21">
-                        <span>
-                          전라북도 1-2
-                        </span>
-                      </label>
-                    </li>
-                    <li>
-                      <input type="checkbox" id="selectType7_22">
-                      <label for="selectType7_22">
-                        <span>
-                          대전광역시 1-2
-                        </span>
-                      </label>
-                    </li>
-                    <li>
-                      <input type="checkbox" id="selectType7_23">
-                      <label for="selectType7_23">
-                        <span>
-                          대구광역시 1-2
-                        </span>
-                      </label>
-                    </li>
-                    <li>
-                      <input type="checkbox" id="selectType7_24">
-                      <label for="selectType7_24">
-                        <span>
-                          서울-2
-                        </span>
-                      </label>
-                    </li>
-                    <li>
-                      <input type="checkbox" id="selectType7_25">
-                      <label for="selectType7_25">
-                        <span>
-                          강원도
-                        </span>
-                      </label>
-                    </li>
-                    <li>
-                      <input type="checkbox" id="selectType7_26">
-                      <label for="selectType7_26">
-                        <span>
-                          부산· 경남· 울산
-                        </span>
-                      </label>
-                    </li>
-                    <li>
-                      <input type="checkbox" id="selectType7_27">
-                      <label for="selectType7_27">
-                        <span>
-                          경기북부
-                        </span>
-                      </label>
-                    </li>
-                  </ul>
+                <div class="btn_submit_wrap">
+                  <button class="btn_skyblue">적용</button>
                 </div>
               </div>
             </div>

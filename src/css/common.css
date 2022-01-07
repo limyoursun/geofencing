@@ -179,7 +179,6 @@ cursor:pointer;}
 .paginate .first,
 .paginate .last{color:#00152e;background-color:#fff;margin:0 1px;font-size:13px;font-weight:bold;}
 
-
 /* ico_fileName Extention */
 .ico_ext{display:inline-block;width:17px;height:18px;background:url(../images/ico_fileExt.png) -223px -82px no-repeat;margin:0 1px;vertical-align:sub;font-size:0;line-height:0;}
 .ext_bmp{background-position:-3px -2px;}
