@@ -44,13 +44,13 @@
   </div>
   <nav class="gnb">
     <ul>
-      <li>
+      <li class="on">
         <a href="./main.html">모니터링</a>
       </li>
       <li>
         <a href="./issue01.html">발령현황</a>
       </li>
-      <li class="on">
+      <li>
         <a href="./issue02.html">수동발령</a>
       </li>
       <li>
@@ -229,194 +229,333 @@
 </div>
     <!-- Contents -->
     <div class="con_wrap">
-      <div class="con_l">
-        <div class="slide_tit flex_wrap f_sb">
-          <h2>실시간 모니터링</h2>
-          <i class="axi axi-info-outline">
-            <div class="how_to_use">
-              <h3 class="font_blue font_b">스마트 지오펜싱 재난정보 전달시스템 사용법</h3>
-              <ul class="dot_list">
-                <li>실시간 모니터링 목록을 확인한다.(자동 새로고침 적용, 주기 30초)</li>
-                <li>승인요청(실제) 접수시 “승인 요청 알림(팝업)” 화면으로 알림을 확인한다.(훈련 및 테스트 제외)</li>
-                <li>알림화면에서 해당 “재난경보 승인 바로가기“ 버튼을 누르고 해당 재난경보 내용을 확인한다.</li>
-                <li>재난경보 내용을 확인/편집한 후 하단의 송출/반려 버튼을 누른다.(단, 반려시 반려사유 필수 입력)</li>
-                <li>재난경보 내용 편집시 하단의 수정요청 버튼을 누른다.</li>
-                <li>여러건의 재난경보 송출시 현재시각으로부터 5분이내 송출건이 있을 경우 알림을 제공한다.</li>
-              </ul>
-              <div class="btn_howtouse"></div>
-            </div>
-          </i>
-          <script>
-            $('.btn_howtouse').on('click', function () {
-              $('.how_to_use').removeClass('on');
-            })
-          </script>
-        </div>
-        <div class="live_wrap flex_wrap f_sb">
-          <div>
-            <span>2021.08.27</span>
-            <span>실시간 재난발생 현황</span>
-            <span class="font_blue font_b">승인요청</span>
-            <span class="font_blue font_b">2</span>
-            <span class="font_blue font_b">건</span>
+      <div class="con_l_wrap">
+        <div class="con_l con_main">
+          <div class="slide_tit flex_wrap f_sb">
+            <h2>실시간 모니터링</h2>
+            <i class="axi axi-info-outline">
+              <div class="how_to_use">
+                <h3 class="font_blue font_b">스마트 지오펜싱 재난정보 전달시스템 사용법</h3>
+                <ul class="dot_list">
+                  <li>실시간 모니터링 목록을 확인한다.(자동 새로고침 적용, 주기 30초)</li>
+                  <li>승인요청(실제) 접수시 “승인 요청 알림(팝업)” 화면으로 알림을 확인한다.(훈련 및 테스트 제외)</li>
+                  <li>알림화면에서 해당 “재난경보 승인 바로가기“ 버튼을 누르고 해당 재난경보 내용을 확인한다.</li>
+                  <li>재난경보 내용을 확인/편집한 후 하단의 송출/반려 버튼을 누른다.(단, 반려시 반려사유 필수 입력)</li>
+                  <li>재난경보 내용 편집시 하단의 수정요청 버튼을 누른다.</li>
+                  <li>여러건의 재난경보 송출시 현재시각으로부터 5분이내 송출건이 있을 경우 알림을 제공한다.</li>
+                </ul>
+                <div class="btn_howtouse"></div>
+              </div>
+            </i>
+            <script>
+              $('.btn_howtouse').on('click', function () {
+                $('.how_to_use').removeClass('on');
+              })
+            </script>
           </div>
-          <i class="axi axi-bell2"></i>
+          <div class="live_wrap flex_wrap f_sb">
+            <div>
+              <span>2021.08.27</span>
+              <span>실시간 재난발생 현황</span>
+              <span class="font_blue font_b">승인요청</span>
+              <span class="font_blue font_b">2</span>
+              <span class="font_blue font_b">건</span>
+            </div>
+            <i class="axi axi-bell2"></i>
+          </div>
+          <div class="slide_main monitoring">
+            <ul class="monitoring_wrap">
+              <li class="on">
+                <a href="#" onclick="main2()">
+                  <div class="disaster_type flex_wrap f_sb">
+                    <h3 class="heavy_rain">호우경보 발표</h3>
+                    <ul class="type_wrap">
+                      <li class="auto"></li>
+                      <li class="request"></li>
+                    </ul>
+                  </div>
+                  <ul class="dot_list monitoring_detail">
+                    <li>
+                      <b>승인요청</b>
+                      <span>홍길동</span>
+                      <span>(2020-08-12 12:34:56)</span>
+                    </li>
+                    <li>
+                      <b>발령매체</b>
+                      <span>지자체, 민간</span>
+                    </li>
+                    <li>
+                      <b>발생시각</b>
+                      <span>2020-08-12 12:30:56</span>
+                    </li>
+                    <li>
+                      <b>발생지역</b>
+                      <span>서울특별시 구로구</span>
+                    </li>
+                  </ul>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="disaster_type flex_wrap f_sb">
+                    <h3 class="fire">다중밀집시설 대형화재</h3>
+                    <ul class="type_wrap">
+                      <li class="manual"></li>
+                      <li class="request"></li>
+                    </ul>
+                  </div>
+                  <ul class="monitoring_detail">
+                    <li>
+                      <b>승인요청</b>
+                      <span>홍길동</span>
+                      <span>(2020-08-12 12:34:56)</span>
+                    </li>
+                    <li>
+                      <b>발령매체</b>
+                      <span>지자체, 민간</span>
+                    </li>
+                    <li>
+                      <b>발생시각</b>
+                      <span>2020-08-12 12:30:56</span>
+                    </li>
+                    <li>
+                      <b>발생지역</b>
+                      <span>서울특별시 구로구</span>
+                    </li>
+                  </ul>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="disaster_type flex_wrap f_sb">
+                    <h3 class="heavy_rain">호우경보 발표</h3>
+                    <ul class="type_wrap">
+                      <li class="auto"></li>
+                      <li class="request"></li>
+                    </ul>
+                  </div>
+                  <ul class="monitoring_detail">
+                    <li>
+                      <b>승인요청</b>
+                      <span>홍길동</span>
+                      <span>(2020-08-12 12:34:56)</span>
+                    </li>
+                    <li>
+                      <b>발령매체</b>
+                      <span>지자체, 민간</span>
+                    </li>
+                    <li>
+                      <b>발생시각</b>
+                      <span>2020-08-12 12:30:56</span>
+                    </li>
+                    <li>
+                      <b>발생지역</b>
+                      <span>서울특별시 구로구</span>
+                    </li>
+                  </ul>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="disaster_type flex_wrap f_sb">
+                    <h3 class="fire">다중밀집시설 대형화재</h3>
+                    <ul class="type_wrap">
+                      <li class="manual"></li>
+                      <li class="request"></li>
+                    </ul>
+                  </div>
+                  <ul class="monitoring_detail">
+                    <li>
+                      <b>승인요청</b>
+                      <span>홍길동</span>
+                      <span>(2020-08-12 12:34:56)</span>
+                    </li>
+                    <li>
+                      <b>발령매체</b>
+                      <span>지자체, 민간</span>
+                    </li>
+                    <li>
+                      <b>발생시각</b>
+                      <span>2020-08-12 12:30:56</span>
+                    </li>
+                    <li>
+                      <b>발생지역</b>
+                      <span>서울특별시 구로구</span>
+                    </li>
+                  </ul>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="disaster_type flex_wrap f_sb">
+                    <h3 class="heavy_rain">호우경보 발표</h3>
+                    <ul class="type_wrap">
+                      <li class="auto"></li>
+                      <li class="request"></li>
+                    </ul>
+                  </div>
+                  <ul class="monitoring_detail">
+                    <li>
+                      <b>승인요청</b>
+                      <span>홍길동</span>
+                      <span>(2020-08-12 12:34:56)</span>
+                    </li>
+                    <li>
+                      <b>발령매체</b>
+                      <span>지자체, 민간</span>
+                    </li>
+                    <li>
+                      <b>발생시각</b>
+                      <span>2020-08-12 12:30:56</span>
+                    </li>
+                    <li>
+                      <b>발생지역</b>
+                      <span>서울특별시 구로구</span>
+                    </li>
+                  </ul>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="btn_slide"></div>
         </div>
-        <div class="slide_main monitoring">
-          <ul class="monitoring_wrap">
-            <li class="on">
-              <a href="./main_02.html">
-                <div class="disaster_type flex_wrap f_sb">
-                  <h3 class="heavy_rain">호우경보 발표</h3>
-                  <ul class="type_wrap">
-                    <li class="auto"></li>
-                    <li class="request"></li>
-                  </ul>
-                </div>
-                <ul class="dot_list monitoring_detail">
+        <div class="con_l con_sub">
+          <div class="slide_sub monitoring">
+            <div class="disaster_type flex_wrap">
+              <h3 class="heavy_rain">호우경보 발표</h3>
+              <ul class="type_wrap">
+                <li class="auto"></li>
+              </ul>
+            </div>
+            <ul class="dot_list monitoring_detail">
+              <li>
+                <b>승인요청</b>
+                <ul class="breadcrumb">
+                  <li>자연재난</li>
+                  <li>호우</li>
+                  <li>경보</li>
+                  <li>발표</li>
+                </ul>
+              </li>
+              <li>
+                <b>발령매체</b>
+                <ul>
                   <li>
-                    <b>승인요청</b>
-                    <span>홍길동</span>
-                    <span>(2020-08-12 12:34:56)</span>
+                    <input disabled="" checked="" type="checkbox" id="type1">
+                    <label for="type1">지자체</label>
                   </li>
                   <li>
-                    <b>발령매체</b>
-                    <span>지자체, 민간</span>
+                    <input disabled="" type="checkbox" id="type2">
+                    <label for="type2">민간</label>
                   </li>
                   <li>
-                    <b>발생시각</b>
-                    <span>2020-08-12 12:30:56</span>
+                    <input disabled="" type="checkbox" id="type3">
+                    <label for="type3">유관기관</label>
                   </li>
                   <li>
-                    <b>발생지역</b>
-                    <span>서울특별시 구로구</span>
+                    <input disabled="" type="checkbox" id="type4">
+                    <label for="type4">모바일</label>
                   </li>
                 </ul>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div class="disaster_type flex_wrap f_sb">
-                  <h3 class="fire">다중밀집시설 대형화재</h3>
-                  <ul class="type_wrap">
-                    <li class="manual"></li>
-                    <li class="request"></li>
-                  </ul>
+              </li>
+              <li>
+                <b>발생시각</b>
+                <span>2020-08-12 12:30:56</span>
+              </li>
+              <li class="list_area">
+                <b>발생지역</b>
+                <span>서울특별시 구로구</span>
+                <span>서울특별시 금천구</span>
+              </li>
+            </ul>
+            <div class="alignC">
+              <img src="../images/img_main_02.png" alt="호우주의보 임시이미지">
+            </div>
+            <ul class="monitoring_detail monitoring_text">
+              <li>
+                <div class="flex_wrap f_sb">
+                  <b>발령문안(전광판)</b>
+                  <p class="alignR"><span id="nowByte">39</span>/90 bytes</p>
                 </div>
-                <ul class="monitoring_detail">
-                  <li>
-                    <b>승인요청</b>
-                    <span>홍길동</span>
-                    <span>(2020-08-12 12:34:56)</span>
-                  </li>
-                  <li>
-                    <b>발령매체</b>
-                    <span>지자체, 민간</span>
-                  </li>
-                  <li>
-                    <b>발생시각</b>
-                    <span>2020-08-12 12:30:56</span>
-                  </li>
-                  <li>
-                    <b>발생지역</b>
-                    <span>서울특별시 구로구</span>
-                  </li>
-                </ul>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div class="disaster_type flex_wrap f_sb">
-                  <h3 class="heavy_rain">호우경보 발표</h3>
-                  <ul class="type_wrap">
-                    <li class="auto"></li>
-                    <li class="request"></li>
-                  </ul>
+                <textarea disabled="" id="sms_templete" title="text_example"
+                  onkeyup="fn_checkByte(this)">Lorem ipsum dolor sit amet, consectetur</textarea>
+              </li>
+              <script>
+                function fn_checkByte(obj) {
+                  const maxByte = 90; //최대 90바이트
+                  const text_val = obj.value; //입력한 문자
+                  const text_len = text_val.length; //입력한 문자수
+                  let totalByte = 0;
+                  for (let i = 0; i < text_len; i++) {
+                    const each_char = text_val.charAt(i);
+                    const uni_char = escape(each_char) //유니코드 형식으로 변환
+                    if (uni_char.length > 4) {
+                      // 한글 : 2Byte
+                      totalByte += 2;
+                    } else {
+                      // 영문,숫자,특수문자 : 1Byte
+                      totalByte += 1;
+                    }
+                  }
+                  if (totalByte > maxByte) {
+                    alert('최대 90Byte까지만 입력가능합니다.');
+                    document.getElementById("nowByte").innerText = totalByte;
+                    document.getElementById("nowByte").style.color = "red";
+                  } else {
+                    document.getElementById("nowByte").innerText = totalByte;
+                    document.getElementById("nowByte").style.color = "#3c7ed3";
+                  }
+                }
+              </script>
+              <li>
+                <div class="flex_wrap f_sb">
+                  <b>발령문안(버스정보)</b>
+                  <p class="alignR"><span id="nowByte2">102</span>/180 bytes</p>
                 </div>
-                <ul class="monitoring_detail">
-                  <li>
-                    <b>승인요청</b>
-                    <span>홍길동</span>
-                    <span>(2020-08-12 12:34:56)</span>
-                  </li>
-                  <li>
-                    <b>발령매체</b>
-                    <span>지자체, 민간</span>
-                  </li>
-                  <li>
-                    <b>발생시각</b>
-                    <span>2020-08-12 12:30:56</span>
-                  </li>
-                  <li>
-                    <b>발생지역</b>
-                    <span>서울특별시 구로구</span>
-                  </li>
-                </ul>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div class="disaster_type flex_wrap f_sb">
-                  <h3 class="fire">다중밀집시설 대형화재</h3>
-                  <ul class="type_wrap">
-                    <li class="manual"></li>
-                    <li class="request"></li>
-                  </ul>
-                </div>
-                <ul class="monitoring_detail">
-                  <li>
-                    <b>승인요청</b>
-                    <span>홍길동</span>
-                    <span>(2020-08-12 12:34:56)</span>
-                  </li>
-                  <li>
-                    <b>발령매체</b>
-                    <span>지자체, 민간</span>
-                  </li>
-                  <li>
-                    <b>발생시각</b>
-                    <span>2020-08-12 12:30:56</span>
-                  </li>
-                  <li>
-                    <b>발생지역</b>
-                    <span>서울특별시 구로구</span>
-                  </li>
-                </ul>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div class="disaster_type flex_wrap f_sb">
-                  <h3 class="heavy_rain">호우경보 발표</h3>
-                  <ul class="type_wrap">
-                    <li class="auto"></li>
-                    <li class="request"></li>
-                  </ul>
-                </div>
-                <ul class="monitoring_detail">
-                  <li>
-                    <b>승인요청</b>
-                    <span>홍길동</span>
-                    <span>(2020-08-12 12:34:56)</span>
-                  </li>
-                  <li>
-                    <b>발령매체</b>
-                    <span>지자체, 민간</span>
-                  </li>
-                  <li>
-                    <b>발생시각</b>
-                    <span>2020-08-12 12:30:56</span>
-                  </li>
-                  <li>
-                    <b>발생지역</b>
-                    <span>서울특별시 구로구</span>
-                  </li>
-                </ul>
-              </a>
-            </li>
-          </ul>
+                <textarea disabled="" id="sms_templete2" title="text_example2"
+                  onkeyup="fn_checkByte2(this)">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat sem a consectetur eleifend.</textarea>
+              </li>
+              <script>
+                function fn_checkByte2(obj) {
+                  const maxByte = 180; //최대 90바이트
+                  const text_val = obj.value; //입력한 문자
+                  const text_len = text_val.length; //입력한 문자수
+
+                  let totalByte = 0;
+                  for (let i = 0; i < text_len; i++) {
+                    const each_char = text_val.charAt(i);
+                    const uni_char = escape(each_char) //유니코드 형식으로 변환
+                    if (uni_char.length > 4) {
+                      // 한글 : 2Byte
+                      totalByte += 2;
+                    } else {
+                      // 영문,숫자,특수문자 : 1Byte
+                      totalByte += 1;
+                    }
+                  }
+                  if (totalByte > maxByte) {
+                    alert('최대 180Byte까지만 입력가능합니다.');
+                    document.getElementById("nowByte2").innerText = totalByte;
+                    document.getElementById("nowByte2").style.color = "red";
+                  } else {
+                    document.getElementById("nowByte2").innerText = totalByte;
+                    document.getElementById("nowByte2").style.color = "#3c7ed3";
+                  }
+                }
+              </script>
+
+            </ul>
+            <div class="flex_wrap f_sb">
+              <button type="button" class="btn_approval btn_l btn_blue">발령승인</button>
+              <button type="button" class="btn_reject btn_l btn_skyblue">반려</button>
+              <button type="button" class="btn_l btn_gray">수정요청</button>
+            </div>
+          </div>
+          <div class="btn_subclose">
+            <i class="axi axi-close"></i>
+          </div>
+          <div class="btn_slide"></div>
         </div>
-        <div class="btn_slide"></div>
       </div>
       <div class="con">
         <div class="weather_wrap">
@@ -505,6 +644,74 @@
 <script src="../plugins/echarts/dist/echarts.min.js"></script>
 <script src="../js/ui_common.js"></script>
 <script src="../js/file_attach.js"></script>
+  <div class="pop_overlay">
+  <div class="pop_wrap p_main03_1">
+    <div class="pop_tit">
+      <h1>발령승인</h1>
+      <button type="button" class="btn_pop_close"></button>
+    </div>
+    <div class="pop_body">
+      <div class="pop_cont">
+        <div class="pop_box">
+          <span class="alert">경고 아이콘</span>
+          <p><b>아래 요청건에 대한 승인을 진행하겠습니까?</b></p>
+        </div>
+        <div class="text_sample">
+          <h3>호우경보 발표</h3>
+          <ul class="dot_list monitoring_detail">
+            <li>
+              <b>발생지역</b>
+              <span>서울 구로구</span>
+            </li>
+            <li>
+              <b>요청시각</b>
+              <span>2021-08-22 10:35:15</span>
+            </li>
+          </ul>
+        </div>
+        <div class="btn_wrap alignC">
+          <button type="button" class="btn_l btn_blue">확인</button>
+          <button type="button" class="btn_cancel btn_l btn_gray">취소</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="pop_overlay">
+  <div class="pop_wrap p_main03_2">
+    <div class="pop_tit">
+      <h1>반려</h1>
+      <button type="button" class="btn_pop_close"></button>
+    </div>
+    <div class="pop_body">
+      <div class="pop_cont">
+        <div class="pop_box">
+          <span class="alert">경고 아이콘</span>
+          <p>
+            <b>해당 요청건을 반려합니다.</b><br>
+            하기 반려사유를 작성해주세요.
+          </p>
+        </div>
+        <div class="text_sample">
+          <label for="reject_reason"><b>반려사유 :</b></label>
+          <input type="text" id="reject_reason">
+        </div>
+        <div class="btn_wrap alignC">
+          <button type="button" class="btn_l btn_blue">확인</button>
+          <button type="button" class="btn_cancel btn_l btn_gray">취소</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <script>
+    $(".btn_approval").on('click', function () {
+      $('.p_main03_1').parent('.pop_overlay').fadeIn();
+    })
+    $(".btn_reject").on('click', function () {
+      $('.p_main03_2').parent('.pop_overlay').fadeIn();
+    })
+  </script>
 </body>
 
 </html>

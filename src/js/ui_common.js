@@ -3,7 +3,7 @@ $(function () {
   $.datetimepicker.setLocale('kr');
   $('#datetimepicker').datetimepicker();
 
-$('#date_timepicker_start0').datetimepicker({
+  $('#date_timepicker_start0').datetimepicker({
     format: 'Y/m/d',
     onShow: function (ct) {
       this.setOptions({
@@ -40,7 +40,7 @@ $('#date_timepicker_start0').datetimepicker({
     timepicker: false
   });
 
-$('#date_timepicker_end0').datetimepicker({
+  $('#date_timepicker_end0').datetimepicker({
     format: 'Y/m/d',
     onShow: function (ct) {
       this.setOptions({
@@ -112,11 +112,21 @@ $('#date_timepicker_end0').datetimepicker({
     $(this).parent('p').nextAll('ul').slideToggle('fast');
   })
 })
+  function main2(){
+    $('.con_sub').show();
+  }
 
 // main : slide & drag
 $('.btn_slide').on('click', function () {
   $('.con_l').toggleClass('close');
 })
+$('.btn_subclose').on('click', function () {
+  $('.con_sub').hide();
+})
+$('.con_sub > .btn_slide').on('click', function () {
+  $('.btn_subclose').toggleClass('on');
+})
+
 $("#draggable").draggable();
 
 // main : weather
@@ -130,7 +140,7 @@ $('.btn_weather_close').on('click', function () {
 })
 
 // alert
-$('.alert').on('click',function(){
+$('.alert').on('click', function () {
   $('.p_alert').parents('.pop_overlay').show();
 })
 // toast alert
@@ -177,12 +187,12 @@ $('.selectlocate_wrap').on('click', function () {
   }
 })
 
-  //case eqtabs
-  $('ul.eqtabs li, .eq_map_list li').on('click',function(){
-    var tab_id = $(this).attr('data_tab');
-		$('ul.eqtabs li, .eqtab_content, .eq_map_list li').removeClass('current');
-		$(this).addClass('current');
-    $()
-		$("."+tab_id).addClass('current');
-    return false;
-  });
+//case eqtabs
+$('ul.eqtabs li, .eq_map_list li').on('click', function () {
+  var tab_id = $(this).attr('data_tab');
+  $('ul.eqtabs li, .eqtab_content, .eq_map_list li').removeClass('current');
+  $(this).addClass('current');
+  $()
+  $("." + tab_id).addClass('current');
+  return false;
+});
